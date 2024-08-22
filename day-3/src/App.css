@@ -1,0 +1,33 @@
+.btn1{ 
+   font-Size: 60%;
+  position: relative;
+  top: 20vh;
+  margin-Left: 5px;
+  border-Radius: 8%;
+  color: white;
+}
+.btn{
+    font-Size: 60%;
+    position: relative;
+    top: 20vh;
+    margin-Right: 5px;
+    border-Radius: 8%;
+    color: white;
+}
+
+.div1{
+    font-Size: 120%;
+    position: relative;
+    top: 10vh;
+}
+.main{
+    display: flex;
+    flex-Direction: column;
+    align-Items: center;
+    justify-Content: center;
+    font-Size: 300%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -15%;
+}
