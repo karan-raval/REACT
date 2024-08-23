@@ -1,0 +1,283 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  background-color: #2c3e50;
+}
+.main{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.form-container {
+  background-color: #34495e;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  width: 400px;
+  height: 550px;
+  margin: 5%;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  animation: slideIn 0.8s ease-in-out, borderLight 2s infinite alternate;
+}
+
+@keyframes slideIn {
+  from {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes borderLight {
+  from {
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  }
+  to {
+      box-shadow: 0 0 20px rgba(122, 206, 167, 0.856);
+  }
+}
+body .Products{
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.form-container h2 {
+  color: #ecf0f1;
+  margin-bottom: 20px;
+}
+
+ .signup-form input {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+}
+
+
+
+/* COMMON CSS */
+
+.signup-link a {
+  color: #9294ee;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.signup-link a:hover {
+  color: #2980b9;
+}
+
+.signup-link p {
+  color: #7f8c8d;
+  margin-top: 12px;
+  font-size: 16px;
+}
+
+
+/* SIGNUP PAGE CSS */
+
+button{
+  background-color: #e74c3c;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+}
+
+button:hover {
+  background-color: #c0392b;
+}
+
+.signup-form input[type="text"],
+.signup-form input[type="password"] {
+  background-color: #cbd1d3;
+  color: #333;
+}
+
+.signup-form input[type="text"]:focus,
+.signup-form input[type="password"]:focus {
+  background-color: #9eb1b1;
+}
+.productimg{
+  width: 200px;
+  height: 180px;
+}
+.newproduct{
+  width: 200px;
+  height: 390px;
+  background-color: #cbd1d3;
+  margin-top: 10px;
+  background: transparent;
+  /* border: 1px solid red; */
+  text-align: center;
+  color: #9294ee;
+  font-weight: bolder;
+  /* border-radius: 20px; */
+}
+
+.product-name{
+  font-size: 14px;
+}
+
+.bbtn{
+  background-color: #e74c3c;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 45%;
+  margin: 2%;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+}
+
+.bbtn:hover {
+  background-color: #c0392b;
+}
+
+
+.container {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  width: 80px;
+  height: 50px;
+  position: relative;
+}
+
+.loader-text {
+  position: absolute;
+  top: 0;
+  padding: 0;
+  margin: 0;
+  color: #C8B6FF;
+  animation: text 3.5s ease both infinite;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.load {
+  background-color: #9A79FF;
+  border-radius: 50px;
+  display: block;
+  height: 16px;
+  width: 16px;
+  bottom: 0;
+  position: absolute;
+  transform: translateX(64px);
+  animation: loading 3.5s ease both infinite;
+}
+
+.load::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #D1C2FF;
+  border-radius: inherit;
+  animation: loading2 3.5s ease both infinite;
+}
+
+@keyframes text {
+  0% {
+      letter-spacing: 1px;
+      transform: translateX(0px);
+  }
+
+  40% {
+      letter-spacing: 2px;
+      transform: translateX(26px);
+  }
+
+  80% {
+      letter-spacing: 1px;
+      transform: translateX(32px);
+  }
+
+  90% {
+      letter-spacing: 2px;
+      transform: translateX(0px);
+  }
+
+  100% {
+      letter-spacing: 1px;
+      transform: translateX(0px);
+  }
+}
+
+@keyframes loading {
+  0% {
+      width: 16px;
+      transform: translateX(0px);
+  }
+
+  40% {
+      width: 100%;
+      transform: translateX(0px);
+  }
+
+  80% {
+      width: 16px;
+      transform: translateX(64px);
+  }
+
+  90% {
+      width: 100%;
+      transform: translateX(0px);
+  }
+
+  100% {
+      width: 16px;
+      transform: translateX(0px);
+  }
+}
+
+@keyframes loading2 {
+  0% {
+      transform: translateX(0px);
+      width: 16px;
+  }
+
+  40% {
+      transform: translateX(0%);
+      width: 80%;
+  }
+
+  80% {
+      width: 100%;
+      transform: translateX(0px);
+  }
+
+  90% {
+      width: 80%;
+      transform: translateX(15px);
+  }
+
+  100% {
+      transform: translateX(0px);
+      width: 16px;
+  }
+}
