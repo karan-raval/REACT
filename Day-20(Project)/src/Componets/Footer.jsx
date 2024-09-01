@@ -32,66 +32,60 @@ const Footer = () => {
                     1800-267-4444</h3>
             </div>
             <div  id="in3foot13" > 
-                <h4>(Monday to Saturday, 8AM to 10PM and Sunday, 10AM to 7PM)</h4>
+                <p className='sapnp'>(Monday to Saturday, 8AM to 10PM and Sunday, 10AM to 7PM)</p>
             </div>
         </div>
     </div>
     <div id="foot2" >
         <div id="foot2in1" >
         <img src="https://cdn.iconscout.com/icon/free/png-256/nykaa-3384872-2822953.png" />
-        <h5>Who are we?</h5>
-        <h5>Careers</h5>
-        <h5>Authenticity</h5>
-        <h5>Press</h5>
-        <h5>Testimonials</h5>
-        <h5>Nykaa CSR</h5>
-        <h5>Responsible Disclosure</h5>
-        <h5>Investor Relations</h5>
+        <p className='sapn'>Who are we?</p>
+        <p className='sapn'>Careers</p>
+        <p className='sapn'>Authenticity</p>
+        <p className='sapn'>Press</p>
+        <p className='sapn'>Testimonials</p>
+        <p className='sapn'>Nykaa CSR</p>
+        <p className='sapn'>Responsible Disclosure</p>
+        <p className='sapn'>Investor Relations</p>
     </div>
         <div id="foot2in2" >
-            <h4>Help</h4>
-            <h5>Contact Us</h5>
-            <h5>Frequently asked questions</h5>
-            <h5>Store Locator</h5>
-            <h5>Cancellation & Return
-            </h5>
-            <h5>Shipping & Delivery</h5>
-            <h5>Sell on Nykaa
-            </h5>
+            <p className='sapnp'>Help</p>
+            <p className='sapn'>Contact Us</p>
+            <p className='sapn'>Frequently asked questions</p>
+            <p className='sapn'>Store Locator</p>
+            <p className='sapn'>Cancellation & Return</p>
+            <p className='sapn'>Shipping & Delivery</p>
+            <p className='sapn'>Sell on Nykaa
+            </p>
         </div>
         <div id="foot2in3" >
-            <h4>Inspire Me</h4>
-            <h5>Beauty Book</h5>
-            <h5>Nykaa TV</h5>
-            <h5>Nykaa Network
-            </h5>
-            <h5>Buying Guides</h5>
+            <p className='sapnp'>Inspire Me</p>
+            <p className='sapn'>Beauty Book</p>
+            <p className='sapn'>Nykaa TV</p>
+            <p className='sapn'>Nykaa Network</p>
+            <p className='sapn'>Buying Guides</p>
         </div>
         <div id="foot2in4" >
-            <h4>Quick Links</h4>
-            <h5>Offer Zone</h5>
-            <h5>New Launches</h5>
-            <h5>Nykaa Man</h5>
-            <h5>Nykaa Fashion</h5>
-            <h5>Nykaa Pro
-            </h5>
-            <h5>
-                Sitemap</h5>
+            <p className='sapnp'>Quick Links</p>
+            <p className='sapn'>New Launches</p>
+            <p className='sapn'>Offer Zone</p>
+            <p className='sapn'>Nykaa Man</p>
+            <p className='sapn'>Nykaa Fashion</p>
+            <p className='sapn'>Nykaa Pro</p>
+            <p className='sapn'>Sitemap</p>
         </div>
         <div id="foot2in5" >
-        <h4>Top Categories</h4>
-        <h5>Makeup</h5>
-        <h5>Skin
-        </h5>
-        <h5>Hair
-        </h5>
-        <h5>Personal Care</h5>
-        <h5>Appliances</h5>
-        <h5>Mom and Baby</h5>
-        <h5>Wellness</h5>
-        <h5>Fragrance</h5>
-        <h5>Natura</h5>
-        <h5>Luxe</h5>
+        <p className='sapnp'>Top Categories</p>
+        <p className='sapn'>Makeup</p>
+        <p className='sapn'>Skin</p>
+        <p className='sapn'>Hair</p>
+        <p className='sapn'>Personal Care</p>
+        <p className='sapn'>Appliances</p>
+        <p className='sapn'>Mom and Baby</p>
+        <p className='sapn'>Wellness</p>
+        <p className='sapn'>Fragrance</p>
+        <p className='sapn'>Natura</p>
+        <p className='sapn'>Luxe</p>
         </div>
        
     </div>
@@ -101,8 +95,8 @@ const Footer = () => {
                 <i className="fa-solid fa-truck-fast"></i>
             </div>
             <div>
-                <h4>FREE SHIPPING</h4>
-                <h5>On Orders Above ₹499</h5>
+                <p className='sapnp'>FREE SHIPPING</p>
+                <p className='sapn'>On Orders Above ₹499</p>
             </div>
         </div>
         <div id="foot3in2" >
@@ -110,8 +104,8 @@ const Footer = () => {
                 <i className="fa-solid fa-arrow-rotate-left"></i>
             </div>
             <div>
-                <h4>EASY RETURNS</h4>
-                <h5>15-Day Return Policy</h5>
+                <p className='sapnp'>EASY RETURNS</p>
+                <p className='sapn'>15-Day Return Policy</p>
             </div>
         </div>
         <div id="foot3in3" >
@@ -119,19 +113,19 @@ const Footer = () => {
                 <i className="fa-solid fa-thumbs-up"></i>
             </div>
             <div>
-                <h4>100% AUTHENTIC</h4>
-                <h5>Products Sourced Directly</h5>
+                <p className='sapnp'>100% AUTHENTIC</p>
+                <p className='sapn'>Products Sourced Directly</p>
             </div>
         </div>
         <div id="foot3in4" >
             <div><i className="fa-solid fa-tag"></i></div>
             <div>
-                <h4>2400+ BRANDS</h4>
-                <h5>1.9 Lakh+ Products</h5>
+                <p className='sapnp'>2400+ BRANDS</p>
+                <p className='sapn'>1.9 Lakh+ Products</p>
             </div>
         </div>
         <div id="foot3in5" >
-            <h5>Show us some love ❤ on social media</h5>
+            <p className='sapnee'>Show us some love ❤ on social media</p>
             <div>
                 <i className="fa-brands fa-square-instagram"></i>
                 <i className="fa-brands fa-facebook"></i>
@@ -142,14 +136,14 @@ const Footer = () => {
         </div>
     </div>
     <div id="foot4" >
-        <div id="foot4last" >
-            <h5>Terms & Conditions</h5>
-            <h5>Shipping Policy</h5>
-            <h5>Cancellation Policy</h5>
-            <h5>Privacy Policy</h5>
+        <div id="foot4last">
+            <p className='sapn'>Terms & Conditions</p>
+            <p className='sapn'>Shipping Policy</p>
+            <p className='sapn'>Cancellation Policy</p>
+            <p className='sapn'>Privacy Policy</p>
         </div>
         <div  id='foot4last1'>
-            <h5>© 2022 Nykaa E-Retail Pvt. Ltd. All Rights Reserved.</h5>
+            <p className='sapn'>© 2022 Nykaa E-Retail Pvt. Ltd. All Rights Reserved.</p>
         </div>
     </div>
     <div id="foot5" ></div>

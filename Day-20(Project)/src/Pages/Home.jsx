@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from '../Componets/Navbar'
+import Footer from '../Componets/Footer'
 const Home = () => {
   return (
     <>
@@ -487,7 +488,7 @@ const Home = () => {
           <img src="https://images-static.nykaa.com/uploads/58c1c0b0-5a0b-4614-acfc-3205e669d8a7.jpg?tr=w-1200,cm-pad_resize"
            alt=""/>
         </div>
-    {/* </div> */}
+<Footer/>
     </>
   )
 }
