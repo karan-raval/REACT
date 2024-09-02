@@ -1,18 +1,22 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../Componets/Navbar";
-// import '../App.css'
+// import '../App.css' 
 import Footer from "../Componets/Footer";
 import "../product.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
+import Rating from '@mui/material/Rating';
 const Product = () => {
   const [dataa, setData] = useState([]);
   const [sort, setSort] = useState("");
   // const [search, setSearch] = useState("");
-  const [filterData, setFilter] = useState({
-    men: false,
-    women: false,
-    jewelry: false,
-    electronics: false,
-  });
+  // const [filterData, setFilter] = useState({
+  //   men: false,
+  //   women: false,
+  //   jewelry: false,
+  //   electronics: false,
+  // });
+  const [fourstar,setfourstar] = useState(<FontAwesomeIcon icon={faStar} />)
   useEffect(() => {
     fetch(`https://mock-server-app2-dll0.onrender.com/product`)
       .then((res) => res.json())
@@ -33,38 +37,38 @@ const Product = () => {
   // console.log(dataa);
   // console.log(filteredDatas);
   let filteredDatas = dataa;
-  let filteredcata = dataa;
-  if (
-    filterData.Hair_Styling_Tools ||
-    filterData.Shaving_Tools ||
-    filterData.Face ||
-    filterData.Hair_Removal_Tools ||
-    filterData.Massage_Tools
-  ) {
-    filteredcata = filteredcata.filter((el) => {
-      if (
-        filterData.Hair_Styling_Tools &&
-        el.category == "Hair_Styling_Tools"
-      ) {
-        return true;
-      }
-      if (filterData.Shaving_Tools && el.category == "Shaving_Tools") {
-        return true;
-      }
-      if (filterData.Face && el.category == "Face/Skin_Tools") {
-        return true;
-      }
-      if (
-        filterData.Hair_Removal_Tools &&
-        el.category == "Hair_Removal_Tools"
-      ) {
-        return true;
-      }
-      if (filterData.Massage_Tools && el.category == "Massage_Tools") {
-        return true;
-      }
-    });
-  }
+  // let filteredcata = dataa;
+  // if (
+  //   filterData.Hair_Styling_Tools ||
+  //   filterData.Shaving_Tools ||
+  //   filterData.Face ||
+  //   filterData.Hair_Removal_Tools ||
+  //   filterData.Massage_Tools
+  // ) {
+  //   filteredcata = filteredcata.filter((el) => {
+  //     if (
+  //       filterData.Hair_Styling_Tools &&
+  //       el.category == "Hair_Styling_Tools"
+  //     ) {
+  //       return true;
+  //     }
+  //     if (filterData.Shaving_Tools && el.category == "Shaving_Tools") {
+  //       return true;
+  //     }
+  //     if (filterData.Face && el.category == "Face/Skin_Tools") {
+  //       return true;
+  //     }
+  //     if (
+  //       filterData.Hair_Removal_Tools &&
+  //       el.category == "Hair_Removal_Tools"
+  //     ) {
+  //       return true;
+  //     }
+  //     if (filterData.Massage_Tools && el.category == "Massage_Tools") {
+  //       return true;
+  //     }
+  //   });
+  // }
 
   // if (search) {
   //   filteredDatas = filteredDatas.filter((el) => {
@@ -81,12 +85,12 @@ const Product = () => {
       }
     });
   }
-  const handleFilter = (e) => {
-    setFilter({
-      ...filterData,
-      [e.target.name]: e.target.checked,
-    });
-  };
+  // const handleFilter = (e) => {
+  //   setFilter({
+  //     ...filterData,
+  //     [e.target.name]: e.target.checked,
+  //   });
+  // };
 
   return (
     <>
@@ -165,7 +169,7 @@ const Product = () => {
                   <option value="asc">Price low to High</option>
                   <option value="desc">Price High to low</option>
                 </select>
-                <input
+                {/* <input
                   type="checkbox"
                   name="Hair_Styling_Tools"
                   onChange={handleFilter}
@@ -184,7 +188,7 @@ const Product = () => {
                   name="electronics"
                   onChange={handleFilter}
                 />{" "}
-                : Electronics
+                : Electronics */}
                 <select name="" id="catF">
                   <option value="">Category</option>
                   <option value="Hair_Styling_Tools">Hair_Styling_Tools</option>
@@ -198,19 +202,13 @@ const Product = () => {
             </div>
             <div id="PRODUCT">
               {dataa.map((el) => {
-                let rating;
-                if (rating > 4) {
-                  rating = "#e4e5e9;&#9733;&#9733;&#9733;&#9733;";
-                } else if (rating > 3) {
-                  rating = "&#9733;&#9733;&#9733;&#9733;&#9734;";
-                } else {
-                  rating = "&#9733;&#9733;&#9733;&#9734;&#9734;";
-                }
+                 
+                  
+                
                 return (
                   <div className="card">
-                    <h6 id="G-five">BEST SELLER</h6>
+                    <span id="G-five">BEST SELLER</span>
                     <div id="G-img">
-                      {" "}
                       <img src={el.image1} alt={el.id} />
                       <h6 id="G-des">{el.card_title}</h6>
                     </div>
@@ -218,11 +216,11 @@ const Product = () => {
                       <h6 id="price">
                         MRP: <span id="ear">₹{el.price}</span>
                         <span id="G-real"> ₹{el.off_price}</span>
-                        <span id="G-OFF"> |{el.offer}% Off</span>{" "}
+                        <span id="G-OFF"> |{el.offer}% Off</span>
                       </h6>
                     </div>
                     <h4 id="rating">
-                      {rating}(<span>{el.ratingNum}</span>)
+                    <Rating name="size-small" size="small" defaultValue={el.rating}  precision={0.1} readOnly /><span className="ratingnum">({el.ratingNum})</span>
                     </h4>
                     <div id="addToBag">
                       <div id="hert">

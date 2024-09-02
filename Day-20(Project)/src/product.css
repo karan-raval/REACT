@@ -62,10 +62,12 @@
     /* border: 2px solid crimson; */
   }
   .card{
-    display: block;
+    /* display: block; */
     background-color: white;
     text-align: center;
     height: 500px;
+    min-width: 400px;
+    border: 1px solid;
     /* border: 2px solid indianred; */
 }
 .card:hover #addToBag{
@@ -76,8 +78,14 @@
 }
 #G-five{
     color: green;
+    font-size: 11px;
     text-align: left;
-    padding: 20px 0 0 20px;
+    padding: 10px 0px 0px 10px;
+    width: 100%;
+    /* border: 1px solid; */
+}
+.ratingnum{
+  font-size: 16px;
 }
 #G-img{
       /* height: 300px; */
