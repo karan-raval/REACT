@@ -100,6 +100,9 @@ body {
   border-bottom: solid 1px rgb(202, 195, 195);
   background-color: white;
 }
+.up{
+  margin-bottom: 15px;
+}
 .category ul {
   list-style: none;
   display: flex;
