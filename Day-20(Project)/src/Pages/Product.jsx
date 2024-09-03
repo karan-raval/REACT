@@ -9,13 +9,13 @@ import Rating from '@mui/material/Rating';
 const Product = () => {
   const [dataa, setData] = useState([]);
   const [sort, setSort] = useState("");
-  // const [search, setSearch] = useState("");
-  // const [filterData, setFilter] = useState({
-  //   men: false,
-  //   women: false,
-  //   jewelry: false,
-  //   electronics: false,
-  // });
+  const [search, setSearch] = useState("");
+  const [filterData, setFilter] = useState({
+    men: false,
+    women: false,
+    jewelry: false,
+    electronics: false,
+  });
   const [fourstar,setfourstar] = useState(<FontAwesomeIcon icon={faStar} />)
   useEffect(() => {
     fetch(`https://mock-server-app2-dll0.onrender.com/product`)
@@ -31,51 +31,53 @@ const Product = () => {
   const handleSort = (e) => {
     setSort(e.target.value);
   };
-  // const handleSearch = (e) => {
-  //   setSearch(e.target.value);
-  // };
-  // console.log(dataa);
-  // console.log(filteredDatas);
+  const handleSearch = (e) => {
+    setSearch(e.target.value);
+  };
+  console.log(dataa);
+  console.log(filteredDatas);
   let filteredDatas = dataa;
-  // let filteredcata = dataa;
-  // if (
-  //   filterData.Hair_Styling_Tools ||
-  //   filterData.Shaving_Tools ||
-  //   filterData.Face ||
-  //   filterData.Hair_Removal_Tools ||
-  //   filterData.Massage_Tools
-  // ) {
-  //   filteredcata = filteredcata.filter((el) => {
-  //     if (
-  //       filterData.Hair_Styling_Tools &&
-  //       el.category == "Hair_Styling_Tools"
-  //     ) {
-  //       return true;
-  //     }
-  //     if (filterData.Shaving_Tools && el.category == "Shaving_Tools") {
-  //       return true;
-  //     }
-  //     if (filterData.Face && el.category == "Face/Skin_Tools") {
-  //       return true;
-  //     }
-  //     if (
-  //       filterData.Hair_Removal_Tools &&
-  //       el.category == "Hair_Removal_Tools"
-  //     ) {
-  //       return true;
-  //     }
-  //     if (filterData.Massage_Tools && el.category == "Massage_Tools") {
-  //       return true;
-  //     }
-  //   });
-  // }
+  let filteredcata = dataa;
+  if (
+    filterData.Hair_Styling_Tools ||
+    filterData.Shaving_Tools ||
+    filterData.Face ||
+    filterData.Hair_Removal_Tools ||
+    filterData.Massage_Tools
+  ) {
+    filteredcata = filteredcata.filter((el) => {
+      if (
+        filterData.Hair_Styling_Tools &&
+        el.category == "Hair_Styling_Tools"
+      ) {
+        return true;
+      }
+      if (filterData.Shaving_Tools && el.category == "Shaving_Tools") {
+        return true;
+      }
+      if (filterData.Face && el.category == "Face/Skin_Tools") {
+        return true;
+      }
+      if (
+        filterData.Hair_Removal_Tools &&
+        el.category == "Hair_Removal_Tools"
+      ) {
+        return true;
+      }
+      if (filterData.Massage_Tools && el.category == "Massage_Tools") {
+        return true;
+      }
+    });
+  }
 
-  // if (search) {
-  //   filteredDatas = filteredDatas.filter((el) => {
-  //     return el.title.toLowerCase().includes(search.toLowerCase());
-  //   });
-  //   console.log(filteredDatas);
-  // }
+  if (search) {
+    filteredDatas = filteredDatas.filter((el) => {
+      return el.title.toLowerCase().includes(search.toLowerCase());
+    });
+    console.log(filteredDatas);
+  }
+
+
   if (sort) {
     filteredDatas = filteredDatas.sort((a, b) => {
       if (sort == "asc") {
@@ -85,12 +87,12 @@ const Product = () => {
       }
     });
   }
-  // const handleFilter = (e) => {
-  //   setFilter({
-  //     ...filterData,
-  //     [e.target.name]: e.target.checked,
-  //   });
-  // };
+  const handleFilter = (e) => {
+    setFilter({
+      ...filterData,
+      [e.target.name]: e.target.checked,
+    });
+  };
 
   return (
     <>
@@ -169,7 +171,7 @@ const Product = () => {
                   <option value="asc">Price low to High</option>
                   <option value="desc">Price High to low</option>
                 </select>
-                {/* <input
+                <input
                   type="checkbox"
                   name="Hair_Styling_Tools"
                   onChange={handleFilter}
@@ -188,7 +190,7 @@ const Product = () => {
                   name="electronics"
                   onChange={handleFilter}
                 />{" "}
-                : Electronics */}
+                : Electronics
                 <select name="" id="catF">
                   <option value="">Category</option>
                   <option value="Hair_Styling_Tools">Hair_Styling_Tools</option>
@@ -201,7 +203,7 @@ const Product = () => {
               </div>
             </div>
             <div id="PRODUCT">
-              {dataa.map((el) => {
+              {filteredDatas.map((el) => {
                  
                   
                 
