@@ -1,22 +1,20 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../Componets/Navbar";
-// import '../App.css' 
+// import '../App.css'
 import Footer from "../Componets/Footer";
 import "../product.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStar } from "@fortawesome/free-solid-svg-icons";
-import Rating from '@mui/material/Rating';
+import Rating from "@mui/material/Rating";
 const Product = () => {
   const [dataa, setData] = useState([]);
   const [sort, setSort] = useState("");
   const [search, setSearch] = useState("");
   const [filterData, setFilter] = useState({
-    men: false,
-    women: false,
-    jewelry: false,
-    electronics: false,
+    Hair_Styling_Tools: false,
+    Face: false,
+    Hair_Removal_Tools: false,
+    Massage_Tools: false,
+    Shaving_Tools: false,
   });
-  const [fourstar,setfourstar] = useState(<FontAwesomeIcon icon={faStar} />)
   useEffect(() => {
     fetch(`https://mock-server-app2-dll0.onrender.com/product`)
       .then((res) => res.json())
@@ -34,8 +32,8 @@ const Product = () => {
   const handleSearch = (e) => {
     setSearch(e.target.value);
   };
-  console.log(dataa);
-  console.log(filteredDatas);
+  // console.log(dataa);
+  // console.log(filteredDatas);
   let filteredDatas = dataa;
   let filteredcata = dataa;
   if (
@@ -76,7 +74,6 @@ const Product = () => {
     });
     console.log(filteredDatas);
   }
-
 
   if (sort) {
     filteredDatas = filteredDatas.sort((a, b) => {
@@ -175,22 +172,30 @@ const Product = () => {
                   type="checkbox"
                   name="Hair_Styling_Tools"
                   onChange={handleFilter}
-                />{" "}
+                />
                 : Hair_Styling_Tools <br />
                 <input type="checkbox" name="women" onChange={handleFilter} /> :
-                Women
+                Women <br />
                 <input
                   type="checkbox"
-                  name="jewelry"
+                  name="Shaving_Tools"
                   onChange={handleFilter}
-                />{" "}
+                />
                 : Jewelery
+                <br />
                 <input
                   type="checkbox"
-                  name="electronics"
+                  name="Face"
                   onChange={handleFilter}
                 />{" "}
-                : Electronics
+                <br />
+                Face/Skin_Tools
+                <input
+                  type="checkbox"
+                  name="Hair_Removal_Tools"
+                  onChange={handleFilter}
+                />{" "}
+                <br />: Hair_Removal_Tools
                 <select name="" id="catF">
                   <option value="">Category</option>
                   <option value="Hair_Styling_Tools">Hair_Styling_Tools</option>
@@ -204,9 +209,6 @@ const Product = () => {
             </div>
             <div id="PRODUCT">
               {filteredDatas.map((el) => {
-                 
-                  
-                
                 return (
                   <div className="card">
                     <span id="G-five">BEST SELLER</span>
@@ -222,7 +224,14 @@ const Product = () => {
                       </h6>
                     </div>
                     <h4 id="rating">
-                    <Rating name="size-small" size="small" defaultValue={el.rating}  precision={0.1} readOnly /><span className="ratingnum">({el.ratingNum})</span>
+                      <Rating
+                        name="size-small"
+                        size="small"
+                        defaultValue={el.rating}
+                        precision={0.1}
+                        readOnly
+                      />
+                      <span className="ratingnum">({el.ratingNum})</span>
                     </h4>
                     <div id="addToBag">
                       <div id="hert">
