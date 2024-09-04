@@ -186,7 +186,8 @@ const Product = () => {
                   type="checkbox"
                   name="Hair_Removal_Tools"
                   onChange={handleFilter}
-                />Hair_Removal_Tools
+                />{" "}
+                Hair_Removal_Tools
                 <select name="" id="catF">
                   <option value="">Category</option>
                   <option name="Hair_Removal_Tools" value="Hair_Styling_Tools" onChange={handleFilter}>Hair_Styling_Tools</option>
