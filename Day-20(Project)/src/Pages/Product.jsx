@@ -34,8 +34,7 @@ const Product = () => {
   };
   // console.log(dataa);
   // console.log(filteredDatas);
-  let filteredDatas = dataa;
-  let filteredcata = dataa;
+  let FilteredDatas = dataa;
   if (
     filterData.Hair_Styling_Tools ||
     filterData.Shaving_Tools ||
@@ -43,7 +42,7 @@ const Product = () => {
     filterData.Hair_Removal_Tools ||
     filterData.Massage_Tools
   ) {
-    filteredcata = filteredcata.filter((el) => {
+    FilteredDatas = FilteredDatas.filter((el) => {
       if (
         filterData.Hair_Styling_Tools &&
         el.category == "Hair_Styling_Tools"
@@ -69,14 +68,14 @@ const Product = () => {
   }
 
   if (search) {
-    filteredDatas = filteredDatas.filter((el) => {
+    FilteredDatas = FilteredDatas.filter((el) => {
       return el.title.toLowerCase().includes(search.toLowerCase());
     });
-    console.log(filteredDatas);
+    console.log(FilteredDatas);
   }
 
   if (sort) {
-    filteredDatas = filteredDatas.sort((a, b) => {
+    FilteredDatas = FilteredDatas.sort((a, b) => {
       if (sort == "asc") {
         return a.price - b.price;
       } else if (sort == "desc") {
@@ -173,42 +172,34 @@ const Product = () => {
                   name="Hair_Styling_Tools"
                   onChange={handleFilter}
                 />
-                : Hair_Styling_Tools <br />
-                <input type="checkbox" name="women" onChange={handleFilter} /> :
-                Women <br />
-                <input
-                  type="checkbox"
-                  name="Shaving_Tools"
-                  onChange={handleFilter}
-                />
-                : Jewelery
-                <br />
+                  Hair_Styling_Tools <br />
+                <input type="checkbox" name="Shaving_Tools" onChange={handleFilter} /> 
+                Shaving_Tools <br />
                 <input
                   type="checkbox"
                   name="Face"
                   onChange={handleFilter}
                 />{" "}
-                <br />
-                Face/Skin_Tools
+               
+                Face/Skin_Tools <br />
                 <input
                   type="checkbox"
                   name="Hair_Removal_Tools"
                   onChange={handleFilter}
-                />{" "}
-                <br />: Hair_Removal_Tools
+                />Hair_Removal_Tools
                 <select name="" id="catF">
                   <option value="">Category</option>
-                  <option value="Hair_Styling_Tools">Hair_Styling_Tools</option>
+                  <option name="Hair_Removal_Tools" value="Hair_Styling_Tools" onChange={handleFilter}>Hair_Styling_Tools</option>
                   <option value="Shaving_Tools">Shaving_Tools</option>
                   <option value="Face/Skin_Tools">Face/Skin_Tools</option>
                   <option value="Hair_Removal_Tools">Hair_Removal_Tools</option>
                   <option value="Massage_Tools">Massage_Tools</option>
                 </select>
-                {/* <input type="text" onChange={handleSearch} /> */}
+                <input type="text" onChange={handleSearch} />
               </div>
             </div>
             <div id="PRODUCT">
-              {filteredDatas.map((el) => {
+              {FilteredDatas.map((el) => {
                 return (
                   <div className="card">
                     <span id="G-five">BEST SELLER</span>

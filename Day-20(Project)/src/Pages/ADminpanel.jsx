@@ -1,5 +1,5 @@
 import React from 'react'
-
+import '../assets/adminpanel.css'
 const ADminpanel = () => {
 
   const [state, setState] = useState({
