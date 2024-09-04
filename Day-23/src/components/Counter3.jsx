@@ -1,16 +1,22 @@
-import React from 'react'
-
+import React  from 'react'
+import { useDispatch, useSelector } from 'react-redux'
 const Counter3 = () => {
-  const [count, setCount] = useState(0)
-
+  const value = useSelector((deepak)=>deepak)
+  const dispatch = useDispatch()
+  const handleInc = ()=>{
+      dispatch({type : "INC50",payload : 50})
+  }
+  const handleDec = ()=>{
+      dispatch({type : "DEC50" , payload : 50})
+  }
   return (
     <>
-      <h1>React redux counter 1</h1>
+      <h1>React redux counter 3</h1>
       <div className="card">
            
-           <h1>{count}</h1>
-        <button onClick={() => setCount((count) => count + 1)}>+</button> 
-        <button disabled={count==0} onClick={() => setCount((count) => count - 1)}>-</button>
+           <h1>{value.count3}</h1>
+        <button onClick={handleInc}>+</button> 
+        <button disabled={value.count3==0} onClick={handleDec}>-</button>
         
       </div>
     </>

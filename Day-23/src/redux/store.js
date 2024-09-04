@@ -3,7 +3,8 @@ import { legacy_createStore } from "redux";
 
 let initial = {
     count : 0,
-    count1 : 0
+    count1 : 0,
+    count3 : 0
 }
 
 const reducer = (state = initial,action)=>{
@@ -11,12 +12,12 @@ const reducer = (state = initial,action)=>{
         case "INC" :
             return {
                 ...state,
-                count : state.count + 1
+                count : state.count + action.payload
             }
         case "DEC" :
             return {
                 ...state,
-                count : state.count - 1
+                count : state.count - action.payload
             }
         case "INCREASE" :
              return {
@@ -27,7 +28,17 @@ const reducer = (state = initial,action)=>{
         return {
             ...state,
             count1 : state.count1 - action.payload
-        }       
+        }      
+        case "INC50" :
+             return {
+                ...state,
+                count3 : state.count3 + action.payload
+             }  
+        case "DEC50" :
+        return {
+            ...state,
+            count3 : state.count3 - action.payload
+        }    
              
         default : return state;    
     }
