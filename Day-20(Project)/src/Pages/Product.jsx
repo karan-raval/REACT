@@ -179,14 +179,14 @@ const Product = () => {
                   type="checkbox"
                   name="Face"
                   onChange={handleFilter}
-                />{" "}
+                />
                
                 Face/Skin_Tools <br />
                 <input
                   type="checkbox"
                   name="Hair_Removal_Tools"
                   onChange={handleFilter}
-                />{" "}
+                />
                 Hair_Removal_Tools
                 <select name="" id="catF">
                   <option value="">Category</option>
