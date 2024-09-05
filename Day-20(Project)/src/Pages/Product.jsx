@@ -188,14 +188,14 @@ const Product = () => {
                   onChange={handleFilter}
                 />
                 Hair_Removal_Tools
-                <select name="" id="catF">
+                {/* <select name="" id="catF">
                   <option value="">Category</option>
                   <option name="Hair_Removal_Tools" value="Hair_Styling_Tools" onChange={handleFilter}>Hair_Styling_Tools</option>
                   <option value="Shaving_Tools">Shaving_Tools</option>
                   <option value="Face/Skin_Tools">Face/Skin_Tools</option>
                   <option value="Hair_Removal_Tools">Hair_Removal_Tools</option>
                   <option value="Massage_Tools">Massage_Tools</option>
-                </select>
+                </select> */}
                 <input type="text" onChange={handleSearch} />
               </div>
             </div>
