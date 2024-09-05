@@ -32,8 +32,6 @@ const Product = () => {
   const handleSearch = (e) => {
     setSearch(e.target.value);
   };
-  // console.log(dataa);
-  // console.log(filteredDatas);
   let FilteredDatas = dataa;
   if (
     filterData.Hair_Styling_Tools ||
@@ -71,10 +69,10 @@ const Product = () => {
     FilteredDatas = FilteredDatas.filter((el) => {
       return el.title.toLowerCase().includes(search.toLowerCase());
     });
-    // console.log(FilteredDatas);
   }
 
   if (sort) {
+    console.log(sort)
     FilteredDatas = FilteredDatas.sort((a, b) => {
       if (sort == "asc") {
         return a.price - b.price;
@@ -174,6 +172,7 @@ const Product = () => {
                   <option value="desc">Price High to low</option>
                 </select>
                 <input
+                
                   type="checkbox"
                   name="Hair_Styling_Tools"
                   onChange={handleFilter}
@@ -193,7 +192,7 @@ const Product = () => {
                   onChange={handleFilter}
                 />
                 Hair_Removal_Tools
-                {/* <select name="" id="catF">
+                {/* <select name="" >
                   <option value="">Category</option>
                   <option name="Hair_Removal_Tools" value="Hair_Styling_Tools" onChange={handleFilter}>Hair_Styling_Tools</option>
                   <option value="Shaving_Tools">Shaving_Tools</option>
@@ -221,13 +220,8 @@ const Product = () => {
                       </h6>
                     </div>
                     <h4 id="rating">
-                      <Rating
-                        name="size-small"
-                        size="small"
-                        defaultValue={el.rating}
-                        precision={0.1}
-                        readOnly
-                      />
+                      
+                      <Rating name="read-only" value={el.rating} readOnly size="small" />
                       <span className="ratingnum">({el.ratingNum})</span>
                     </h4>
                     <div id="addToBag">
