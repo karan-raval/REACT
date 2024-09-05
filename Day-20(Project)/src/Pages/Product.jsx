@@ -71,7 +71,7 @@ const Product = () => {
     FilteredDatas = FilteredDatas.filter((el) => {
       return el.title.toLowerCase().includes(search.toLowerCase());
     });
-    console.log(FilteredDatas);
+    // console.log(FilteredDatas);
   }
 
   if (sort) {
@@ -80,6 +80,12 @@ const Product = () => {
         return a.price - b.price;
       } else if (sort == "desc") {
         return b.price - a.price;
+      } else if (sort == "Aasc") {
+        return a.title.localeCompare(b.title);
+      } else if (sort == "rating") {
+        return a.rating - b.rating
+      }else if (sort == "offer") {
+        return b.offer - a.offer
       }
     });
   }
@@ -161,9 +167,9 @@ const Product = () => {
               <div id="sort">
                 <select name="" onChange={handleSort} id="sortTag">
                   <option value="">Sort By</option>
-                  <option value="Name">Name</option>
+                  <option value="Aasc">Name</option>
                   <option value="rating">Rating</option>
-                  <option value="Discount">Discount</option>
+                  <option value="offer">Discount</option>
                   <option value="asc">Price low to High</option>
                   <option value="desc">Price High to low</option>
                 </select>
@@ -172,15 +178,14 @@ const Product = () => {
                   name="Hair_Styling_Tools"
                   onChange={handleFilter}
                 />
-                  Hair_Styling_Tools <br />
-                <input type="checkbox" name="Shaving_Tools" onChange={handleFilter} /> 
-                Shaving_Tools <br />
+                Hair_Styling_Tools <br />
                 <input
                   type="checkbox"
-                  name="Face"
+                  name="Shaving_Tools"
                   onChange={handleFilter}
                 />
-               
+                Shaving_Tools <br />
+                <input type="checkbox" name="Face" onChange={handleFilter} />
                 Face/Skin_Tools <br />
                 <input
                   type="checkbox"
