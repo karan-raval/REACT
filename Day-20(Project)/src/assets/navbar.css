@@ -18,7 +18,7 @@ body {
 }
 .g_topbanner {
   height: fit-content;
-  background-image: url('./assets/top_nav_banner.png');
+  background-image: url('./top_nav_banner.png');
   background-size: 65%;
   background-repeat: no-repeat;
   background-color: #ff91bb;

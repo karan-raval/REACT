@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../Componets/Navbar";
-// import '../App.css'
 import Footer from "../Componets/Footer";
-import "../product.css";
+import "../assets/product.css";
 import Rating from "@mui/material/Rating";
 const Product = () => {
   const [dataa, setData] = useState([]);

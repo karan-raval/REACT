@@ -1,5 +1,6 @@
 import React from 'react'
 import offerlogo from '../assets/offers.png'
+import '../assets/navbar.css'
 const Navbar = () => {
   return (
     <section id="nykaa_export">
