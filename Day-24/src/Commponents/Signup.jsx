@@ -1,5 +1,6 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
+import '../App.css'
 const Signup = () => {
   return (
     <>
@@ -57,7 +58,7 @@ const Signup = () => {
                 <span className="signup">
                   Already have an account ?
                   <label for="check" >
-                    Login
+                  <Link className='link' to={'/'}>Login</Link>
                   </label>
                 </span>
               </div>

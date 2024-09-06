@@ -1,21 +1,9 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-
+import { Link } from "react-router-dom";
+import '../App.css'
 const Login = () => {
-  const dispatch = useDispatch();
-  const value = useSelector((s) => s);
-  console.log(value);
-  const [state, setState] = useState({
-    email: "",
-    password: "",
-  });
-  const handleChange = (e) => {
-    setState({ ...state, [e.target.name]: e.target.value });
-  };
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    fetchapi(dispatch, state.email);
-  };
+
   return (
     <>
       <div className="center">
@@ -35,7 +23,7 @@ const Login = () => {
           <input type="submit" value="Login" />
           <div className="signup_link">
             Not a member?
-            <a>Signup</a>
+            <Link className="link" to={'/signup'}>Signup</Link>
           </div>
         </form>
       </div>

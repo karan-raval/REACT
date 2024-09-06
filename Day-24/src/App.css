@@ -146,9 +146,9 @@ form .user-details .input-box{
   color: #009579;
   cursor: pointer;
 }
-.signup label:hover{
+/* .signup label:hover{
   text-decoration: underline;
-}
+} */
 
 
 /* login */
@@ -256,10 +256,16 @@ input[type="submit"]:hover {
   font-size: 16px;
   color: #666666;
 }
-.signup_link a {
+/* .signup_link a {
   color: #2691d9;
   text-decoration: none;
-}
-.signup_link a:hover {
+} */
+/* .signup_link a:hover {
   text-decoration: underline;
+} */
+
+.link{
+  -webkit-text-decoration:none;
+  text-decoration: none;
+  color: red;
 }
