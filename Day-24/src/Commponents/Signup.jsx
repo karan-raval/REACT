@@ -17,7 +17,6 @@ const Signup = () => {
                   <input
                     type="text"
                     placeholder="Enter your username"
-                    onChange={(d) => setName(d.target.value)}
                     required
                   />
                 </div>
@@ -26,7 +25,6 @@ const Signup = () => {
                   <input
                     type="text"
                     placeholder="Enter your email"
-                    onChange={(d) => setEmail(d.target.value)}
                     required
                   />
                 </div>
@@ -39,7 +37,7 @@ const Signup = () => {
                   <input
                     type="text"
                     placeholder="Enter your password"
-                    onChange={(d) => setPassword(d.target.value)}
+                  
                     required
                   />
                 </div>
@@ -53,12 +51,12 @@ const Signup = () => {
               </div>
               
               <div className="button">
-                <input type="button" onClick={handleClick} value="Submit" />
+                <input type="button"  value="Submit" />
               </div>
               <div className="signup">
                 <span className="signup">
                   Already have an account ?
-                  <label for="check" onClick={() => setState("Login")}>
+                  <label for="check" >
                     Login
                   </label>
                 </span>

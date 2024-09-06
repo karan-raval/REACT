@@ -28,7 +28,7 @@ const reducer = (state = initial,{type,payload})=>{
                   isLoading : false,
                   isError : true
                }  
-            default : return state   
+            default : return state
             
       }
 }
