@@ -7,6 +7,8 @@ function App() {
     <>
     <Mainroute/>
     </>
+    )
+
 }
 
 export default App
