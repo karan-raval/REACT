@@ -1,3 +1,3 @@
-export const LOADING = "LOADING"
-export const SUCCESS = "SUCCESS"
-export const ERROR = "ERROR"
+export const SLOADING = "SLOADING"
+export const SSUCCESS = "SSUCCESS"
+export const SERROR = "SERROR"

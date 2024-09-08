@@ -1,23 +1,16 @@
-import React, { useEffect, useState } from 'react'
-import Navbar from '../Components/Navbar'
-import Footer from '../Components/Footer'
-import { useParams } from 'react-router-dom'
-const Singleproduct = () => {
+import React, { useEffect } from 'react'
+import { SingleproReducer } from '../Redux/Singleproduct/singlePageReducer'
+import { useDispatch, useSelector } from 'react-redux'
+import { FetchData } from '../Redux/Singleproduct/action'
 
-  const obj = useParams()
 
-  const [data, setdata] = useState([]);
 
-  useEffect(() => {
-    fetch(`https://mock-server-app-4tp9.onrender.com/product/${obj.id}`)
-      .then((res) => res.json())
-      .then((res) => {
-        setdata(res);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  }, []);
+  const dispatch = useDispatch()
+  const data = useSelector((s)=>s.SingleproReducer)
+  console.log(data)
+  useEffect(()=>{
+     dispatch(FetchData)
+  },[])
   return (
     <>
     <Navbar/>

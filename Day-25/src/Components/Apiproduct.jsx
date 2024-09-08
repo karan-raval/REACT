@@ -2,18 +2,12 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 function Apiproduct() {
-  const [data, setdata] = useState([]);
 
-  useEffect(() => {
-    fetch(`https://mock-server-app-4tp9.onrender.com/product`)
-      .then((res) => res.json())
-      .then((res) => {
-        setdata(res);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  }, []);
+  const dispatch = useDispatch()
+  const {isLoading,isError,data} = useSelector((s)=>s.productReducer)
+  useEffect(()=>{
+      FetchData(dispatch)
+  },[])
 
   return (
     <div>
