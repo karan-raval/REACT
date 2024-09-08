@@ -7,8 +7,8 @@ const MainRoutes = () => {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Login />}></Route>
-        <Route path="/signup" element={<Signup />}></Route>
+        <Route path="/" element={<Signup />}></Route>
+        <Route path="/Login" element={<Login />}></Route>
       </Routes>
     </>
   );

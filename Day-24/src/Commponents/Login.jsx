@@ -17,53 +17,36 @@ const Login = () => {
        e.preventDefault()
       fetchapi(dispatch,state.email)
 
-
-
-      if (state.username == "" && state.email == "" && state.pass == "") {
+      let data = arr.filter((el) => {
+        return el.email == loginEmail && el.pass == loginpass;
+      });
+      // console.log(data);
+      if (data.length > 0) {
         Swal.fire({
-          icon: "error",
-          title: "Oops...",
-          text: "Fill The Above details!",
+          title: "Login Succesfully...",
+          showClass: {
+            popup: `
+                      animate__animated
+                      animate__fadeInUp
+                      animate__faster
+                    `,
+          },
+          hideClass: {
+            popup: `
+                      animate__animated
+                      animate__fadeOutDown
+                      animate__faster
+                    `,
+          },
         });
       } else {
         Swal.fire({
-          icon: "success",
-          title: "Congratsss...",
-          text: "SignUp Succesfully...",
+          icon: "error",
+          title: "Oops...",
+          text: "Login Unsuccessfull!",
         });
-      }
-    // };
-    // const handleLoginClick = () => {
-    //   let data = arr.filter((el) => {
-    //     return el.email == loginEmail && el.pass == loginpass;
-    //   });
-    //   // console.log(data);
-    //   if (data.length > 0) {
-    //     Swal.fire({
-    //       title: "Login Succesfully...",
-    //       showClass: {
-    //         popup: `
-    //                   animate__animated
-    //                   animate__fadeInUp
-    //                   animate__faster
-    //                 `,
-    //       },
-    //       hideClass: {
-    //         popup: `
-    //                   animate__animated
-    //                   animate__fadeOutDown
-    //                   animate__faster
-    //                 `,
-    //       },
-    //     });
-    //   } else {
-    //     Swal.fire({
-    //       icon: "error",
-    //       title: "Oops...",
-    //       text: "Login Unsuccessfull!",
-    //     });
-    //   }
   }
+}
 
   return (
     <>

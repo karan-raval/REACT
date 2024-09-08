@@ -1,12 +1,16 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../App.css";
+// import swal from 'sweetalert';
+import Swal from 'sweetalert2'
+
 const Signup = () => {
   const [state, setState] = useState({
     fullname: "",
     username: "",
     email: "",
     password: "",
+    pnumber:"",
   });
   const handleChange = (e) => {
     setState({ ...state, [e.target.name]: e.target.value });
@@ -14,10 +18,9 @@ const Signup = () => {
     
   };
   const handleSubmit = (e) => {
-    console.log("dabay che");
 
     e.preventDefault();
-    if (state.username == "" && state.email == "" && state.pass == "") {
+    if (state.username == "" && state.email == "" && state.password == "" && state.fullname == "") {
       Swal.fire({
         icon: "error",
         title: "Oops...",
@@ -55,6 +58,7 @@ const Signup = () => {
                 <input
                   type="text"
                   placeholder="Enter your name"
+                  name="fullname"
                   onChange={handleChange}
                 />
               </div>
@@ -64,9 +68,10 @@ const Signup = () => {
                 </span>
                 <input
                   type="text"
+                  name="username"
                   onChange={handleChange}
                   placeholder="Enter your username"
-                  required
+                  
                 />
               </div>
               <div className="input-box">
@@ -74,9 +79,10 @@ const Signup = () => {
                   Email<sup>*</sup>
                 </span>
                 <input
+                name="email"
                   type="text"
                   placeholder="Enter your email"
-                  required
+                  
                   onChange={handleChange}
                 />
               </div>
@@ -85,6 +91,7 @@ const Signup = () => {
                   Phone Number<sup>*</sup>
                 </span>
                 <input
+                name="pnumber"
                   type="text"
                   onChange={handleChange}
                   placeholder="Enter your number"
@@ -95,15 +102,16 @@ const Signup = () => {
                   Password <sup>*</sup>
                 </span>
                 <input
+                name="password"
                   type="text"
                   placeholder="Enter your password"
                   onChange={handleChange}
-                  required
+                  
                 />
               </div>
             </div>
             <div className="button">
-              <input type="button" value="Submit" />
+              <input type="submit" value="Submit" />
             </div>
             <div className="signup">
               <span className="signup">
