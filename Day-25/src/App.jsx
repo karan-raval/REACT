@@ -1,14 +1,19 @@
+import { useState } from 'react'
 import './App.css'
-import Mainroute from './Route/Mainroute'
+import Apiproduct from './Components/Apiproduct.jsx'
+import Navbar from './Components/Navbar.jsx'
+import Footer from './Components/Footer.jsx'
+
 
 function App() {
 
   return (
-    <>
-    <Mainroute/>
-    </>
-    )
-
+	<>
+  <Navbar/>
+  <Apiproduct/>
+  <Footer/>
+		</>
+  )
 }
 
 export default App

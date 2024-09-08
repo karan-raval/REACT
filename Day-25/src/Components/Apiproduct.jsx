@@ -1,13 +1,26 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
-function Apiproduct({ arr }) {
+function Apiproduct() {
+  const [data,setdata]=useState([])
+
+  useEffect(()=>{
+    fetch(`https://mock-server-app-4tp9.onrender.com/product`)
+	.then(res=>res.json())
+	.then((res)=>{
+		setdata(res)
+	})
+	.catch((err)=>{
+		console.log(err); 
+	})
+  },[])
+
   return (
     <div>
       <div className="untree_co-section product-section before-footer-section">
         <div className="container">
           <div className="row">
             {
-            arr.map((el) => {
+            data.map((el) => {
               return (
                 <div className="col-12 col-md-4 col-lg-3 mb-5 my">
                   <a className="product-item">
