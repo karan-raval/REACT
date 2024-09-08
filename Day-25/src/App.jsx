@@ -1,13 +1,12 @@
-import './App.css'
-import Mainroute from './Route/Mainroute.jsx'
+import "./App.css";
+import Mainroute from "./Route/Mainroute.jsx";
 
 function App() {
-
   return (
-	<>
-<Mainroute/>
-		</>
-  )
+    <>
+      <Mainroute />
+    </>
+  );
 }
 
-export default App
+export default App;
