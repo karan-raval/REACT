@@ -16,6 +16,53 @@ const Login = () => {
   const handleSubmit = (e)=>{
        e.preventDefault()
       fetchapi(dispatch,state.email)
+
+
+
+      if (state.username == "" && state.email == "" && state.pass == "") {
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: "Fill The Above details!",
+        });
+      } else {
+        Swal.fire({
+          icon: "success",
+          title: "Congratsss...",
+          text: "SignUp Succesfully...",
+        });
+      }
+    // };
+    // const handleLoginClick = () => {
+    //   let data = arr.filter((el) => {
+    //     return el.email == loginEmail && el.pass == loginpass;
+    //   });
+    //   // console.log(data);
+    //   if (data.length > 0) {
+    //     Swal.fire({
+    //       title: "Login Succesfully...",
+    //       showClass: {
+    //         popup: `
+    //                   animate__animated
+    //                   animate__fadeInUp
+    //                   animate__faster
+    //                 `,
+    //       },
+    //       hideClass: {
+    //         popup: `
+    //                   animate__animated
+    //                   animate__fadeOutDown
+    //                   animate__faster
+    //                 `,
+    //       },
+    //     });
+    //   } else {
+    //     Swal.fire({
+    //       icon: "error",
+    //       title: "Oops...",
+    //       text: "Login Unsuccessfull!",
+    //     });
+    //   }
   }
 
   return (
@@ -37,7 +84,7 @@ const Login = () => {
           <input type="submit" value="Login" />
           <div className="signup_link">
             Not a member?
-            <Link className="link" to={'/signup'}>Signup</Link>
+            <Link className="link" to={'/'}>Signup</Link>
           </div>
         </form>
       </div>
