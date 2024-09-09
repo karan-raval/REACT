@@ -2,18 +2,25 @@ import React, { useEffect } from 'react'
 import { SingleproReducer } from '../Redux/Singleproduct/singlePageReducer'
 import { useDispatch, useSelector } from 'react-redux'
 import { FetchData } from '../Redux/Singleproduct/action'
+import Navbar from '../Components/Navbar'
+import Footer from '../Components/Footer'
+import { useParams } from 'react-router-dom'
 
 
 
+const Singleproduct = () => {
+  const {id} = useParams()
+  console.log(id)
   const dispatch = useDispatch()
-  const data = useSelector((s)=>s.SingleproReducer)
+  const {data} = useSelector((s)=>s.SingleProduct)
   console.log(data)
   useEffect(()=>{
-     dispatch(FetchData)
+    //  dispatch(FetchData)
+    FetchData(dispatch,id)
   },[])
   return (
     <>
-    <Navbar/>
+       <Navbar/>
     <div className="untree_co-section before-footer-section">
             <div className="container">
               <div className="row mb-5">
@@ -44,7 +51,7 @@ import { FetchData } from '../Redux/Singleproduct/action'
                               <div className="input-group-prepend">
                                 <button className="btn btn-outline-black decrease" type="button">-</button>
                               </div>
-                              <input type="text" className="form-control text-center quantity-amount" value="1" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1"/>
+                              <input type="text" className="form-control text-center quantity-amount"  placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1"/>
                               <div className="input-group-append">
                                 <button className="btn btn-outline-black increase" type="button">+</button>
                               </div>
@@ -122,7 +129,10 @@ import { FetchData } from '../Redux/Singleproduct/action'
             </div>
           </div>
     <Footer/>
-    </>)
+    </>
+  )
 }
+
+
 
 export default Singleproduct
