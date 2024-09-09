@@ -3,6 +3,7 @@ import Navbar from "../Componets/Navbar";
 import Footer from "../Componets/Footer";
 import "../assets/product.css";
 import Rating from "@mui/material/Rating";
+import { Link } from "react-router-dom";
 const Product = () => {
   const [dataa, setData] = useState([]);
   const [sort, setSort] = useState("");
@@ -205,6 +206,7 @@ const Product = () => {
             <div id="PRODUCT">
               {FilteredDatas.map((el) => {
                 return (
+                  <Link to={`/product/${el.id}`} > 
                   <div className="card">
                     <span id="G-five">BEST SELLER</span>
                     <div id="G-img">
@@ -233,7 +235,7 @@ const Product = () => {
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </div></Link>
                 );
               })}
             </div>
