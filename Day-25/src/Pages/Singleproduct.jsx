@@ -45,7 +45,7 @@ const Singleproduct = () => {
                           <td className="product-name">
                             <h2 className="h5 text-black">{data.product}</h2>
                           </td>
-                          <td>${data.price}</td>
+                          <td>₹{data.price}</td>
                           <td>
                             <div className="input-group mb-3 d-flex align-items-center quantity-container" style={{maxwidth:120}}>
                               <div className="input-group-prepend">

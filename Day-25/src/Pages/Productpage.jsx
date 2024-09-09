@@ -28,7 +28,7 @@ const Productpage = () => {
                       className="myimg product-thumbnail"
                     />
                     <h3 className="product-title">{el.product}</h3>
-                    <strong className="product-price">${el.price}</strong>
+                    <strong className="product-price">₹{el.price}</strong>
 
                     <span className="icon-cross">
                       <img
