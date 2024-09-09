@@ -1,7 +1,7 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import Product from '../Product'
-import Singleproduct from '../Singleproduct'
+import Product from '../Pages/Product'
+import Singleproduct from '../Pages/Singleproduct'
 
 
 const MainRoutes = () => {

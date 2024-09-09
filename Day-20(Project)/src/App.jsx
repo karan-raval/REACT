@@ -1,10 +1,10 @@
-import Product from './Pages/Product'
-import Singleproduct from './Pages/Singleproduct'
+import MainRoutes from './Route/MainRoutes'
+
 function App() {
 
   return (
     <>
-   <Singleproduct/>
+<MainRoutes/>
     </>
   )
 }
