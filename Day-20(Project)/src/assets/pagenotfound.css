@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Audiowide&display=swap');
 
-html,
+/* html,
 body{
   margin: 0px;
   overflow: hidden;
-}
+} */
 
-div{
+.div1{
   position: absolute;
   top: 0%;
   left: 0%;
@@ -24,7 +24,7 @@ div{
   transform: translate(-50%, -50%);
 }
 
-h2{
+.h2{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -53,7 +53,7 @@ h2{
 
 #svgWrap_1,
 #svgWrap_2,
-div{
+.div1{
   animation: hueRotate 6s ease-in-out 3s infinite;
 }
 
