@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../App.css";
-// import swal from 'sweetalert';
 import Swal from 'sweetalert2'
 
 const Signup = () => {
@@ -18,7 +17,7 @@ const Signup = () => {
     
   };
   const handleSubmit = (e) => {
-
+   
     e.preventDefault();
     if (state.username == "" && state.email == "" && state.password == "" && state.fullname == "") {
       Swal.fire({
@@ -32,6 +31,7 @@ const Signup = () => {
         title: "Congratsss...",
         text: "SignUp Succesfully...",
       });
+      
       fetch(`https://mock-server-app2-dll0.onrender.com/user`, {
         method: "POST",
         headers: {
@@ -40,9 +40,16 @@ const Signup = () => {
         body: JSON.stringify(state),
       })
         .then((res) => res.json())
-        .then((Res) => console.log(Res))
+        .then((res) => console.log(res))
         .catch((err) => console.log(err));
     }
+    setState({
+      fullname: "",
+      username: "",
+      email: "",
+      password: "",
+      pnumber:"",
+    });
   };
   return (
     <>
@@ -59,6 +66,7 @@ const Signup = () => {
                   type="text"
                   placeholder="Enter your name"
                   name="fullname"
+                   value={state.fullname}
                   onChange={handleChange}
                 />
               </div>
@@ -69,6 +77,7 @@ const Signup = () => {
                 <input
                   type="text"
                   name="username"
+                  value={state.username}
                   onChange={handleChange}
                   placeholder="Enter your username"
                   
@@ -80,6 +89,7 @@ const Signup = () => {
                 </span>
                 <input
                 name="email"
+                value={state.email}
                   type="text"
                   placeholder="Enter your email"
                   
@@ -92,6 +102,7 @@ const Signup = () => {
                 </span>
                 <input
                 name="pnumber"
+                value={state.pnumber}
                   type="text"
                   onChange={handleChange}
                   placeholder="Enter your number"
@@ -103,6 +114,7 @@ const Signup = () => {
                 </span>
                 <input
                 name="password"
+                value={state.password}
                   type="text"
                   placeholder="Enter your password"
                   onChange={handleChange}
