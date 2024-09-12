@@ -8,7 +8,7 @@ const Productpage = () => {
   const dispatch = useDispatch()
   const {isLoading,isError,data} = useSelector((s)=>s.productReducer)
   useEffect(()=>{
-      FetchData(dispatch)
+    dispatch(FetchData)
   },[])
 
   return (

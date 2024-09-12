@@ -15,8 +15,8 @@ const Singleproduct = () => {
   const {data} = useSelector((s)=>s.SingleProduct)
   console.log(data)
   useEffect(()=>{
-    //  dispatch(FetchData)
-    FetchData(dispatch,id)
+     dispatch(FetchData)
+    // FetchData(dispatch,id)
   },[])
   return (
     <>
