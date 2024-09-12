@@ -10,12 +10,12 @@ import { useParams } from 'react-router-dom'
 
 const Singleproduct = () => {
   const {id} = useParams()
-  console.log(id)
+  // console.log(id)
   const dispatch = useDispatch()
   const {data} = useSelector((s)=>s.SingleProduct)
   console.log(data)
   useEffect(()=>{
-     dispatch(FetchData)
+     dispatch(FetchData)(id)
     // FetchData(dispatch,id)
   },[])
   return (
@@ -40,10 +40,10 @@ const Singleproduct = () => {
                       <tbody>
                         {<tr>
                           <td className="product-thumbnail">
-                            <img src={data.imageURL} alt={data.imageURL} className="img-fluid"/>
+                            <img src={data.image1} alt={data.image1} className="img-fluid"/>
                           </td>
                           <td className="product-name">
-                            <h2 className="h5 text-black">{data.product}</h2>
+                            <h2 className="h5 text-black">{data.title}</h2>
                           </td>
                           <td>₹{data.price}</td>
                           <td>
@@ -51,7 +51,7 @@ const Singleproduct = () => {
                               <div className="input-group-prepend">
                                 <button className="btn btn-outline-black decrease" type="button">-</button>
                               </div>
-                              <input type="text" className="form-control text-center quantity-amount"  placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1"/>
+                              <input type="text" className="form-control text-center quantity-amount"  placeholder="" />
                               <div className="input-group-append">
                                 <button className="btn btn-outline-black increase" type="button">+</button>
                               </div>

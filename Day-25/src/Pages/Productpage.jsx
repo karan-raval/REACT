@@ -24,11 +24,11 @@ const Productpage = () => {
                   <Link to={`/product/${el.id}`}>
                   <a className="product-item">
                     <img
-                      src={el.image}
+                      src={el.image1}
                       className="myimg product-thumbnail"
                     />
-                    <h3 className="product-title">{el.name} {el.type}-{el.brand}</h3>
-                    <strong className="product-price">₹{el.price}-{el.category}</strong>
+                    <h3 className="product-title">{el.title}</h3>
+                    <strong className="product-price">₹{el.price}</strong>
 
                     <span className="icon-cross">
                       <img
