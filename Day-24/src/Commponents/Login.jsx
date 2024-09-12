@@ -17,34 +17,8 @@ const Login = () => {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetchapi(dispatch, datas.email);
-    console.log(datas.email);
-
-    // if (datas.email) {
-      // Swal.fire({
-    //     title: "Login Succesfully...",
-    //     showClass: {
-    //       popup: `
-    //                   animate__animated
-    //                   animate__fadeInUp
-    //                   animate__faster
-    //                 `,
-    //     },
-    //     hideClass: {
-    //       popup: `
-    //                   animate__animated
-    //                   animate__fadeOutDown
-    //                   animate__faster
-    //                 `,
-    //     },
-    //   });
-    // } else {
-    //   Swal.fire({
-    //     icon: "error",
-    //     title: "Oops...",
-    //     text: "Login Unsuccessfull!",
-    //   });
-    // }
+    dispatch(fetchapi)(datas)
+   
   };
 
   return (

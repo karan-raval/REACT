@@ -1,4 +1,6 @@
-import { legacy_createStore } from "redux";
+import { applyMiddleware, legacy_createStore } from "redux";
+import { thunk } from "redux-thunk";
+import Swal from "sweetalert2";
 
 let initial = {
   isLogin: false,
@@ -18,7 +20,7 @@ const reducer = (state = initial, { type, payload }) => {
       return {
         ...state,
         user: payload,
-        isLogin: true,
+        isLogin: false,
         isLoading: false,
       };
     case "ERROR":
@@ -32,20 +34,46 @@ const reducer = (state = initial, { type, payload }) => {
   }
 };
 
-export function fetchapi(data, email) {
+export const fetchapi = (data) => (obj) => {
   data({ type: "LOADING" });
-  fetch(`https://mock-server-app2-dll0.onrender.com/user?email=${email}`)
+  fetch(`https://mock-server-app2-dll0.onrender.com/user?email=${obj.email}`)
     .then((res) => {
       return res.json();
     })
     .then((res) => {
       console.log(res);
-      data({ type: "SUCCESS", payload: res });
+      if (res[0].password == obj.password) {
+        Swal.fire({
+          title: "Login Succesfully...",
+          showClass: {
+            popup: `
+                        animate__animated
+                        animate__fadeInUp
+                        animate__faster
+                      `,
+          },
+          hideClass: {
+            popup: `
+                        animate__animated
+                        animate__fadeOutDown
+                        animate__faster
+                      `,
+          },
+        });
+        data({ type: "SUCCESS", payload: res });
+      } else {
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: "Login Unsuccessfull!",
+        });
+        data({ type: "PASSWORDERROR" });
+      }
     })
     .catch((err) => {
       console.log(err);
       data({ type: "ERROR" });
     });
-}
+};
 
-export const store = legacy_createStore(reducer);
+export const store = legacy_createStore(reducer, applyMiddleware(thunk));
