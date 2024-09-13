@@ -41,24 +41,7 @@ const ADminpanel = () => {
    .catch((err)=>console.log(err))
   }
 
-  // const handleDelete = (ID)=>{
-  //   let a = [];  
-  //   for(let x=0; x<arr.length; x++){
-  //    if(arr[x].id != ID){
-  //      a.push(arr[x])
-  //    }
-  //   }
-  //   setArr(a)
-  //  }
 
-  //  const handleEdit = (ed)=>{
-  //   setDis(ed)
-  //   arr.forEach(ele=>{
-  //     if(ele.id == ed){
-  //       setState(ele)
-  //     }
-  //   })
-  //     }
 
   let {card_title,title,rating,ratingNum,reviews,price,off_price,offer,image1,image2,image3,brand,category,sub_category,description} = state;
   
