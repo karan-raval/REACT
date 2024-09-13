@@ -29,7 +29,7 @@ const ADminpanel = () => {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch('https://mock-server-app2-dll0.onrender.com/product',{
+    fetch('https://mock-server-app2-dll0.onrender.com/newproduct',{
       method  : "POST",
       headers : {
          "Content-Type" : "application/json"

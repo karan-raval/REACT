@@ -1,10 +1,9 @@
-import MainRoutes from './Route/MainRoutes'
-
+import ADminpanel from './Pages/ADminpanel'
 function App() {
 
   return (
     <>
-<MainRoutes/>
+<ADminpanel/>
     </>
   )
 }
