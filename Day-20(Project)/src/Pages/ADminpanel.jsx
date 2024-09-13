@@ -1,5 +1,8 @@
 import React, { useState } from 'react'
 import '../assets/adminpanel.css'
+import Navbar from '../Componets/Navbar';
+import Table from 'react-bootstrap/Table';
+
 const ADminpanel = () => {
 
   const [state, setState] = useState({
@@ -18,7 +21,6 @@ const ADminpanel = () => {
     category: "",
     sub_category: "",
     description: "",
-    quan: 1,
   });
 
   const handleChange = (e) => {
@@ -34,15 +36,35 @@ const ADminpanel = () => {
       },
       body : JSON.stringify(state)
    }).then((res)=>res.json())
-   .then((res)=>console.log(res))
+   .then((res)=>console.log(res)
+  )
    .catch((err)=>console.log(err))
   }
 
+  // const handleDelete = (ID)=>{
+  //   let a = [];  
+  //   for(let x=0; x<arr.length; x++){
+  //    if(arr[x].id != ID){
+  //      a.push(arr[x])
+  //    }
+  //   }
+  //   setArr(a)
+  //  }
+
+  //  const handleEdit = (ed)=>{
+  //   setDis(ed)
+  //   arr.forEach(ele=>{
+  //     if(ele.id == ed){
+  //       setState(ele)
+  //     }
+  //   })
+  //     }
 
   let {card_title,title,rating,ratingNum,reviews,price,off_price,offer,image1,image2,image3,brand,category,sub_category,description} = state;
   
   return (
     <>
+    <Navbar/>
         <div className="body">
         <div className="wrapper">
           <div className="title">Admin Panel</div>
@@ -198,6 +220,42 @@ const ADminpanel = () => {
           </div>
         </div>
       </div> 
+
+
+      <div className="data">
+        <Table striped bordered hover variant="dark">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Product Title</th>
+              <th>Product Brand Name</th>
+              <th>Product Image URL</th>
+              <th>Product Discount Price</th>
+              <th>Product Orignal Price</th>
+              <th>Product catagory</th>
+              <th>Delet</th>
+              <th>Edit</th>
+            </tr>
+          </thead>
+          <tbody>
+            {arr.map((el) => {
+              return (
+                <tr>
+                  <td>Product ID:-{el.id}</td>
+                  <td> <img src={el.image} alt={el.title} /></td>
+                  <td>{el.title}</td>
+                  <td>{el.bname}</td>
+                  <td>{el.dprice}</td>
+                  <td>{el.oprice}</td>
+                  <td>{el.des}</td>
+                  <td><button className="btns" onClick={()=>handleDelete(el.id)}>Delete</button></td>
+                  <td><button className="btns" onClick={()=>handleEdit(el.id)}>edit</button></td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </Table>
+      </div>
     </>
   )
 }

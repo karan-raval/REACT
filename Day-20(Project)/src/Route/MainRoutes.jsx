@@ -4,6 +4,7 @@ import Product from '../Pages/Product'
 import Singleproduct from '../Pages/Singleproduct'
 import PageNotFound from '../Pages/PageNotFound'
 import Home from '../Pages/Home'
+import ADminpanel from '../Pages/ADminpanel' 
 
 const MainRoutes = () => {
   return (
@@ -12,6 +13,7 @@ const MainRoutes = () => {
       <Route path="/" element={<Home/>}></Route>
       <Route path="/product" element={<Product/>}></Route>
       <Route path="/product/:id" element={<Singleproduct/>}></Route>  
+      <Route path="/adminpanel" element={<ADminpanel/>}></Route>  
       <Route path="*" element={<PageNotFound/>}></Route>  
     </Routes>   
     </>
