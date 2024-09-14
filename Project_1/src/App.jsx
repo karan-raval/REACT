@@ -1,13 +1,10 @@
-import './App.css'
-import Navbar from './Components/Navbar'
-import Mainroutes from './Routes/MainRoutes'
+import MainRoutes from "./Route/MainRoutes"
 
 function App() {
 
   return (
     <>
-    <Navbar/>
-    <Mainroutes/>
+    <MainRoutes/>
     </>
   )
 }

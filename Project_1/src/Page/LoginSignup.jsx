@@ -1,12 +1,11 @@
 import React from 'react'
 
-const Cart = () => {
+const LoginSignup = () => {
   return (
     <>
-    
     
     </>
   )
 }
 
-export default Cart
+export default LoginSignup
