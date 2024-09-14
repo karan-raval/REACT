@@ -2,10 +2,121 @@ import React from 'react'
 import Navbar from '../Componets/Navbar'
 import Footer from '../Componets/Footer'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import alternative from "../assets/alternative.png"
+import img2 from "../assets/image3.png"
+import img3 from "../assets/image4.png"
+import img4 from "../assets/image5.png"
+import img5 from "../assets/image6.png"
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
+import '../assets/home.css'
 const Home = () => {
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1
+    }
+  };
+  const responsive1 = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 1
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 1
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 1
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1
+    }
+  };
+
+  const responsive2 = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 6
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 5
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 3
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 2
+    }
+  };
   return (
     <>
     <Navbar/>
+
+
+    <div className='slide'>
+        <Carousel responsive={responsive}>
+        <div>
+            <img src={alternative} alt="" />
+        </div>
+        <div>
+            <img src={img2} alt="" />
+        </div>
+        <div>
+            <img src={img3} alt="" />
+        </div>
+        <div>
+            <img src={img4} alt="" />
+        </div>
+        <div>
+            <img src={img5} alt="" />
+        </div>
+        </Carousel>
+        </div>
+
+        {/* <div>
+            <img style={{width:"97%",margin:"auto",borderRadius:"5px"}} src={img6} alt="" />
+        </div> */}
+
+{/* 
+        <div className='slide2'>
+        <h1>First Purchase App Offers</h1>
+        <Carousel responsive={responsive1}>
+        <div>
+            <img src={offer1} alt="" />
+        </div>
+        <div>
+            <img src={offer2} alt="" />
+        </div>
+        <div>
+            <img src={offer3} alt="" />
+        </div>
+        <div>
+            <img src={offer3} alt="" />
+        </div>
+        
+        </Carousel>
+        </div> */}
     <div id="G-slide">
         <div id="carouselExampleDark" className="carousel carousel-dark slide" data-bs-ride="carousel">
             <div className="carousel-indicators d"  >

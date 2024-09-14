@@ -1,0 +1,180 @@
+.slide{
+    padding: 13px;
+    position: relative;
+    /* z-index: 900; */
+}
+.slide img{
+    max-width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    
+}
+
+.slide2{
+    width: 100%;
+    padding: 12px;
+    position: relative;
+    /* z-index: 900; */
+    
+}
+.slide2 h1{
+    padding: 12px;
+    font-size: 23px;
+    font-weight: 600;
+}
+.slide2 img{
+    
+    padding: 10px;
+    border-radius: 20px;
+}
+.topBrands{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 10px;
+    gap: 20px;
+    
+}
+.topBrands img{
+    border-radius: 10px;
+    border: 0.1px solid #e0e2e4;
+}
+.brands{
+    width: 100%;
+    padding: 12px;
+}
+.brands h1{
+    padding: 12px;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.slide3{
+    width: 100%;
+    padding: 22px;
+    position: relative;
+    /* z-index: 900; */
+}
+.slide3 img{
+    
+    /* margin: 10px; */
+    border-radius: 20px;
+    width: 92%;
+    border: 0.1px solid #e0e2e4;
+    border-radius: 10px;
+}
+.slide3 h1{
+    padding: 12px 12px 12px 0px;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.slide4{
+    width: 100%;
+    padding: 22px;
+    background-color: #f3f4f6;
+    position: relative;
+    /* z-index: 900; */
+}
+.slide4 img{
+    
+    
+    border-radius: 20px;
+    width: 100%;
+    border: 0.1px solid #e0e2e4;
+    border-radius: 10px;
+}
+.slide4 h1{
+    padding: 12px 12px 12px 0px;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.slide5{
+    width: 100%;
+    padding: 13px;
+    background-color: #f3f4f6;
+    position: relative;
+    /* z-index: 900; */
+    
+}
+.slide5 img{
+    
+    border-radius: 20px;
+    /* width: 97%; */
+    padding: 10px;
+    border-radius: 20px;
+}
+.slide5 h1{
+    padding: 12px;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.topBrands2{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    padding: 10px;
+    gap: 20px;
+    
+}
+.topBrands2 img{
+    border-radius: 10px;
+    border: 0.1px solid #e0e2e4;
+}
+
+.focus h1{
+    padding: 22px;
+    font-size: 23px;
+    font-weight: 600;
+}
+.focus2{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+
+}
+.focus2 img{
+    width: 185px;
+    padding: 12px;
+
+}
+
+.topBrands4{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 10px;
+    gap: 20px;
+}
+.topBrands4 img{
+    
+    border-radius: 10px;
+}
+
+.topBrands5{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 10px;
+    gap: 20px;
+}
+.brands p{
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    padding-top: 0;
+}
+
+.slide6{
+    width: 100%;
+    padding: 12px;
+    position: relative;
+    z-index: 900;
+    
+}
+.slide6 img{
+    /* padding: 10px; */
+    margin: 10px;
+    width: 92%;
+    border: 0.1px solid #e0e2e4;
+    border-radius: 10px;
+}
