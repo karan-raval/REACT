@@ -1,15 +1,15 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../assets/Login.css";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchapi } from "../Redux/Login/action";
 import logo from "../assets/logo.jpeg";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 // import Swal from "sweetalert2";
 
 const Login = () => {
+    const navigate=useNavigate()
   const dispatch = useDispatch();
-  const value = useSelector((s) => s.loginreducer);
-  console.log(value);
+  const {isLoading,isError,data} = useSelector((s) => s.loginreducer);
   const [datas, setdata] = useState({
     email: "",
     password: "",
@@ -20,17 +20,24 @@ const Login = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     dispatch(fetchapi)(datas);
-
     setdata({ email: "", password: "" });
   };
+
+  useEffect(() => {
+    if (data && !isError && !isLoading) {
+      navigate("/"); // Redirect to dashboard after successful login
+    }
+  }, [data, isError, navigate]); 
+ 
   return (
     <>
+    <div className="bodyy">
       <div className="form-container">
         <div className="form-logo">
           <img src={logo} alt="Myntra Logo" />
         </div>
         <form onSubmit={handleSubmit}>
-          <h2>Create Account</h2>
+          <h2>Login</h2>
           <input
             type="email"
             name="email"
@@ -51,7 +58,7 @@ const Login = () => {
             Already have an account? <Link to={"/Signup"}>Signup</Link>
           </p>
         </form>
-      </div>
+      </div></div>
     </>
   );
 };

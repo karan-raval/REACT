@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import '../assets/Signup.css'
 import logo from '../assets/logo.jpeg'
 import Swal from 'sweetalert2'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 const LoginSignup = () => {
     // const [formData, setFormData] = useState({
     //   firstName: '',
@@ -20,12 +20,12 @@ const LoginSignup = () => {
     //   // handle form submission
     //   console.log('Form submitted', formData);
     // };
+    const navigate=useNavigate()
     const [state, setState] = useState({
       fullname: "",
       username: "",
       email: "",
       password: "",
-      pnumber:"",
     });
     const handleChange = (e) => {
       setState({ ...state, [e.target.name]: e.target.value });
@@ -47,6 +47,7 @@ const LoginSignup = () => {
           title: "Congratsss...",
           text: "SignUp Succesfully...",
         });
+        navigate('/login')
         
         fetch(`https://mock-server-app2-dll0.onrender.com/user`, {
           method: "POST",
@@ -64,12 +65,12 @@ const LoginSignup = () => {
         username: "",
         email: "",
         password: "",
-        pnumber:"",
       });
     };
   
   return (
     <>
+    <div className="body">
     <div className="form-container">
       <div className="form-logo">
         <img src={logo} alt="Myntra Logo" />
@@ -104,20 +105,14 @@ const LoginSignup = () => {
           value={state.password}
           onChange={handleChange}
         />
-        <input
-          type="tel"
-          name="pnumber"
-          placeholder="Phone Number"
-          value={state.pnumber}
-          onChange={handleChange}
-        />
+        
         <button type="submit">Create</button>
         <p>
           Already have an account? <Link to={'/Login'}>Login</Link>
         </p>
       </form>
     </div>
-
+    </div>
     </>
   )
 }

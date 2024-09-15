@@ -1,6 +1,8 @@
 import Swal from "sweetalert2";
 import { PASSWORDERROR, LOADING, SUCCESS } from "./actiontype"
 
+
+
 export const fetchapi = (data) => (obj) => {
     data({ type: LOADING });
     fetch(`https://mock-server-app2-dll0.onrender.com/user?email=${obj.email}`)
@@ -27,14 +29,9 @@ export const fetchapi = (data) => (obj) => {
           });
           data({ type: SUCCESS, payload: res });
         } else {
-        //   Swal.fire({
-        //     icon: "error",
-        //     title: "Oops...",
-        //     text: "Login Unsuccessfull!",
-        //   });
         const Toast = Swal.mixin({
             toast: true,
-            position: "top-center",
+            position: "top-start",
             showConfirmButton: false,
             timer: 3000,
             timerProgressBar: true,
