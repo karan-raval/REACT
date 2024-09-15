@@ -4,7 +4,7 @@ import { SERROR, SLOADING, SSUCCESS} from "./actiontype.js"
 
 let initial = {
     isLoading : false,
-    data :{},
+    data :null,
     isError : false
 }
 
