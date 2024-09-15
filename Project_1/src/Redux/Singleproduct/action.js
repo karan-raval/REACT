@@ -2,7 +2,7 @@ import { SERROR, SLOADING, SSUCCESS } from "./actiontype.js"
 
 export const FetchData = (dispatch)=>(id)=>{
     dispatch({type : SLOADING})
-    fetch(`https://mock-server-app2-dll0.onrender.com/product/${id}`)
+    fetch(`https://mock-server-app2-dll0.onrender.com/product?id=${id}`)
     .then((res)=>res.json())
     .then((res)=>{
         dispatch({type : SSUCCESS, payload : res})

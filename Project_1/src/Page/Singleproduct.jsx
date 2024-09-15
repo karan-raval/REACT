@@ -3,22 +3,36 @@ import '../assets/Singleproduct.css';
 import Footer from '../Componets/Footer';
 import Navbar from '../Componets/Navbar';
 import { useParams } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import { FetchData } from '../Redux/Singleproduct/action';
+import Rating from "@mui/material/Rating";
+
 
 const Singleproduct = () => {
-    const obj = useParams();
-    const [data, setData] = useState(null);
 
-    useEffect(() => {
-        fetch(`https://mock-server-app2-dll0.onrender.com/product?id=${obj.id}`)
-            .then((Res) => Res.json())
-            .then((res) => {
-                setData(res);
-                console.log(res);
-            })
-            .catch((err) => {
-                console.log(err);
-            });
-    }, [obj.id]);
+    const {id} = useParams()
+    // console.log(id)
+    const dispatch = useDispatch()
+    const {data} = useSelector((s)=>s.SingleProduct)
+    console.log(data)
+    useEffect(()=>{
+       dispatch(FetchData)(id)
+      // FetchData(dispatch,id)
+    },[])
+    // const obj = useParams();
+    // const [data, setData] = useState(null);
+
+    // useEffect(() => {
+    //     fetch(`https://mock-server-app2-dll0.onrender.com/product?id=${obj.id}`)
+    //         .then((Res) => Res.json())
+    //         .then((res) => {
+    //             setData(res);
+    //             console.log(res);
+    //         })
+    //         .catch((err) => {
+    //             console.log(err);
+    //         });
+    // }, [obj.id]);
 
     if (!data) {
         // Return a loader or fallback content while waiting for the data to be fetched
@@ -30,27 +44,28 @@ const Singleproduct = () => {
             <Navbar />
             <div id="GK_PARENT">
                 <div id="Div_container">
-                    <p id="PPKT" className='ppp'>Home - Hair - Shop By Hair Type - {data.category}</p>
+                    <p id="PPKT" className='ppp'>Home - Hair - Shop By Hair Type - {data[0].category}</p>
                     <div id="Div_1">
                         <div id="Div_2">
-                            <img id="Div_2_img" src={data.image1} alt="Product" />
+                            <img id="Div_2_img" src={data[0].image1} alt="Product" />
                         </div>
                         <div id="Div_3">
                             <div id="Div_4">
-                                <p id="Div4_p1">{data.card_title}</p>
+                                <p id="Div4_p1">{data[0].card_title}</p>
                             </div>
                             <div id="Div_5">
-                                <p id="Div_5_p1">{data.rating}/5</p>
-                                <p id="Div_5_p2">{data.ratingNum} Rating</p>
+                            <Rating name="read-only" value={data[0].rating} readOnly size="small" />
+                                <p id="Div_5_p1">{data[0].rating}/5</p>
+                                <p id="Div_5_p2">{data[0].ratingNum} Rating</p>
                                 <p>&</p>
-                                <p id="Div_5_p3">{data.reviews} reviews</p>
+                                <p id="Div_5_p3">{data[0].reviews} reviews</p>
                             </div>
                             <div id="Div_6">
                                 <div id="Div_7">
                                     <p>MRP:</p>
-                                    <p id="Div7_p1" className='d7p1'>₹{data.price}</p>
-                                    <p id="Div7_p2" className='d7p2'>₹{data.off_price}</p>
-                                    <p id="Div7_p3" className='d7p3'>{data.offer}% Off</p>
+                                    <p id="Div7_p1" className='d7p1'>₹{data[0].price}</p>
+                                    <p id="Div7_p2" className='d7p2'>₹{data[0].off_price}</p>
+                                    <p id="Div7_p3" className='d7p3'>{data[0].offer}% Off</p>
                                 </div>
                                 <p className='d7p3'>inclusive of all taxes</p>
                             </div>
@@ -67,13 +82,13 @@ const Singleproduct = () => {
                             <div id="Div_11">
                                 <p>100% Genuine Products</p>
                                 <p>Return Policy</p>
-                                <p id="Div11_p3">Sold by {data.brand}</p>
+                                <p id="Div11_p3">Sold by  {data[0].brand}</p>
                             </div>
                         </div>
                     </div>
                     <div id="Div_12">
                         <p className='d12p'>Description</p>
-                        <p id="DESCO" className='d12pp'>{data.description}</p>
+                        <p id="DESCO" className='d12pp'>{data[0].description}</p>
                     </div>
                 </div>
             </div>
