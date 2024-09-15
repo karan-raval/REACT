@@ -4,7 +4,8 @@ import Footer from "../Componets/Footer";
 import "../assets/product.css";
 import Rating from "@mui/material/Rating";
 import { Link } from "react-router-dom";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { FetchData } from "../Redux/Productpage/action";
 const Product = () => {
   const dispatch = useDispatch()
   const {isLoading,isError,data} = useSelector((s)=>s.productReducer)
@@ -12,15 +13,15 @@ const Product = () => {
     dispatch(FetchData)
   },[])
   // const [dataa, setData] = useState([]);
-  // const [sort, setSort] = useState("");
-  // const [search, setSearch] = useState("");
-  // const [filterData, setFilter] = useState({
-  //   Hair_Styling_Tools: false,
-  //   Face: false,
-  //   Hair_Removal_Tools: false,
-  //   Massage_Tools: false,
-  //   Shaving_Tools: false,
-  // });
+  const [sort, setSort] = useState("");
+  const [search, setSearch] = useState("");
+  const [filterData, setFilter] = useState({
+    Hair_Styling_Tools: false,
+    Face: false,
+    Hair_Removal_Tools: false,
+    Massage_Tools: false,
+    Shaving_Tools: false,
+  });
   // useEffect(() => {
   //   fetch(`https://mock-server-app2-dll0.onrender.com/product`)
   //     .then((res) => res.json())
@@ -31,7 +32,7 @@ const Product = () => {
   //       console.log(err);
   //     });
   // }, []);
-  
+
 
   const handleSort = (e) => {
     setSort(e.target.value);
@@ -39,7 +40,7 @@ const Product = () => {
   const handleSearch = (e) => {
     setSearch(e.target.value);
   };
-  let FilteredDatas = dataa;
+  let FilteredDatas = data;
   if (
     filterData.Hair_Styling_Tools ||
     filterData.Shaving_Tools ||
