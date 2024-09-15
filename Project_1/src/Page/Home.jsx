@@ -117,64 +117,7 @@ const Home = () => {
         
         </Carousel>
         </div> */}
-    <div id="G-slide">
-        <div id="carouselExampleDark" className="carousel carousel-dark slide" data-bs-ride="carousel">
-            <div className="carousel-indicators d"  >
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1" style={{borderradius: 50, width: 10, height: 10}} ></button>
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2" style={{borderradius: 50, width: 10, height: 10}}></button>
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3" style={{borderradius: 50, width: 10, height: 10}}></button>
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4" style={{borderradius: 50, width: 10, height: 10}}></button>
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 4" style={{borderradius: 50, width: 10, height: 10}}></button>
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 4" style={{borderradius: 50, width: 10, height: 10}}></button>
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="6" aria-label="Slide 4" style={{borderradius: 50, width: 10, height: 10}}></button>
-            </div>
-            <div className="carousel-inner">
-              <div className="carousel-item active" data-bs-interval="2000">
-                <img src="https://images-static.nykaa.com/uploads/4067ba8b-5681-4a3a-b39d-f3b468959006.jpg?tr=w-1200,cm-pad_resize" className="d-block w-100" alt="..."/>
-                <div className="carousel-caption d-none d-md-block">
-                </div>
-              </div>
-              <div className="carousel-item" data-bs-interval="2000">
-                <img src="https://images-static.nykaa.com/uploads/60910dd0-23c2-4dcd-b13c-258d648118a7.jpg?tr=w-1200,cm-pad_resize" className="d-block w-100" alt="..."/>
-                <div className="carousel-caption d-none d-md-block">
-                </div>
-              </div>
-              <div className="carousel-item" data-bs-interval="2000">
-                <img src="https://images-static.nykaa.com/uploads/e9bef2a9-62a3-453d-b328-0ec54a18fbab.gif?tr=w-1200,cm-pad_resize" className="d-block w-100" alt="..."/>
-                <div className="carousel-caption d-none d-md-block">
-                </div>
-              </div>
-              <div className="carousel-item" data-bs-interval="2000">
-                <img src="https://images-static.nykaa.com/uploads/9968775e-e487-4ea4-a8f6-866ed0875262.jpg?tr=w-1200,cm-pad_resize" className="d-block w-100" alt="..."/>
-                <div className="carousel-caption d-none d-md-block">
-                </div>
-              </div>
-              <div className="carousel-item" data-bs-interval="2000">
-                <img src="https://images-static.nykaa.com/uploads/6d279214-6811-44f6-97bc-94b82e101cf2.jpg?tr=w-1200,cm-pad_resize" className="d-block w-100" alt="..."/>
-                <div className="carousel-caption d-none d-md-block">
-                </div>
-              </div>
-              <div className="carousel-item" data-bs-interval="2000">
-                <img src="https://images-static.nykaa.com/uploads/a18ac2e3-3994-498a-8f44-b98e9576475f.jpg?tr=w-1200,cm-pad_resize" className="d-block w-100" alt="..."/>
-                <div className="carousel-caption d-none d-md-block">
-                </div>
-              </div>
-              <div className="carousel-item" data-bs-interval="2000">
-                <img src="https://images-static.nykaa.com/uploads/b5d42467-0cc0-4128-be1a-c9467f3cc637.gif?tr=w-1200,cm-pad_resize" className="d-block w-100" alt="..."/>
-                <div className="carousel-caption d-none d-md-block">
-                </div>
-              </div>
-            </div>
-                <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-                  <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span className="visually-hidden">Previous</span>
-                </button>
-            <button className="carousel-control-next"  type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-              <span className="carousel-control-next-icon"  aria-hidden="true"></span>
-              <span className="visually-hidden">Next</span>
-            </button>
-          </div>
-    </div>
+   
     <div id="Slide-down-sec1">
         <div id="G-one">
           {/* <!-- <img src="https://images-static.nykaa.com/uploads/8bd6e0df-7f5c-4585-95d9-1e0311dc994a.jpg?tr=w-1200,cm-pad_resize" alt="G-one"> --> */}
