@@ -120,6 +120,20 @@ body {
   color: orangered;
   font-weight: 600;
 }
+
+.upto {
+  list-style: none;
+  font-weight: 600;
+  font-size: 14px;
+color: black;
+text-decoration: none;
+}
+
+.upto:hover {
+  color: orangered;
+  font-weight: 600;
+}
+
 .search {
   display: grid;
   grid-template-columns: repeat(3, 0.5fr);

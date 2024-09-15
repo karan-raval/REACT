@@ -4,27 +4,34 @@ import Footer from "../Componets/Footer";
 import "../assets/product.css";
 import Rating from "@mui/material/Rating";
 import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
 const Product = () => {
-  const [dataa, setData] = useState([]);
-  const [sort, setSort] = useState("");
-  const [search, setSearch] = useState("");
-  const [filterData, setFilter] = useState({
-    Hair_Styling_Tools: false,
-    Face: false,
-    Hair_Removal_Tools: false,
-    Massage_Tools: false,
-    Shaving_Tools: false,
-  });
-  useEffect(() => {
-    fetch(`https://mock-server-app2-dll0.onrender.com/product`)
-      .then((res) => res.json())
-      .then((res) => {
-        setData(res);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  }, []);
+  const dispatch = useDispatch()
+  const {isLoading,isError,data} = useSelector((s)=>s.productReducer)
+  useEffect(()=>{
+    dispatch(FetchData)
+  },[])
+  // const [dataa, setData] = useState([]);
+  // const [sort, setSort] = useState("");
+  // const [search, setSearch] = useState("");
+  // const [filterData, setFilter] = useState({
+  //   Hair_Styling_Tools: false,
+  //   Face: false,
+  //   Hair_Removal_Tools: false,
+  //   Massage_Tools: false,
+  //   Shaving_Tools: false,
+  // });
+  // useEffect(() => {
+  //   fetch(`https://mock-server-app2-dll0.onrender.com/product`)
+  //     .then((res) => res.json())
+  //     .then((res) => {
+  //       setData(res);
+  //     })
+  //     .catch((err) => {
+  //       console.log(err);
+  //     });
+  // }, []);
+  
 
   const handleSort = (e) => {
     setSort(e.target.value);
