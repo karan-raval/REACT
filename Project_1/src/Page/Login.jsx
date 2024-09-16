@@ -9,7 +9,7 @@ import { Link, useNavigate } from "react-router-dom";
 const Login = () => {
     const navigate=useNavigate()
   const dispatch = useDispatch();
-  const {isLoading,isError,data} = useSelector((s) => s.loginreducer);
+  const {isLoading,isError,data,ISLOGIN} = useSelector((s) => s.loginreducer);
   const [datas, setdata] = useState({
     email: "",
     password: "",

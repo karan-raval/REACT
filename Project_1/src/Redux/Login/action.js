@@ -1,5 +1,5 @@
 import Swal from "sweetalert2";
-import { PASSWORDERROR, LOADING, SUCCESS } from "./actiontype"
+import { PASSWORDERROR, LOADING, SUCCESS, } from "./actiontype"
 
 
 

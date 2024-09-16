@@ -22,16 +22,6 @@ const Product = () => {
     Massage_Tools: false,
     Shaving_Tools: false,
   });
-  // useEffect(() => {
-  //   fetch(`https://mock-server-app2-dll0.onrender.com/product`)
-  //     .then((res) => res.json())
-  //     .then((res) => {
-  //       setData(res);
-  //     })
-  //     .catch((err) => {
-  //       console.log(err);
-  //     });
-  // }, []);
 
 
   const handleSort = (e) => {

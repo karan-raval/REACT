@@ -4,29 +4,31 @@ import { Link, useNavigate } from "react-router-dom";
 import Footer from "../Componets/Footer";
 import "../assets/cart.css";
 import { useDispatch, useSelector } from "react-redux";
-// import { fetchCartItems } from '../Redux/Cartpage/action'; // Assuming this is the action creator
 import axios from "axios";
 import Swal from "sweetalert2";
+import { cartData } from "../Redux/Cartpage/action";
 
 const Cartbutton = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
-  const { isLoading, isError, data } = useSelector(
-    (state) => state.cartReducer
-  );
+  const { isLoading, isError, data } = useSelector((s) => s.cartReducer);
+
+  useEffect(() => {
+    dispatch(cartData);
+  }, []);
 
   const handleclick = () => {
-    axios.get("https://mock-server-app2-dll0.onrender.com/cart")
+    axios
+      .get("https://mock-server-app2-dll0.onrender.com/cart")
       .then((res) => {
-        const cartItems = res.data;
-        console.log(res.data)
+        const cartItems = res.data; // All items in the cart
         if (cartItems.length > 0) {
+          // Create an array of promises to delete each item
           const deletePromises = cartItems.map((el) =>
-            axios.delete(
-              `https://mock-server-app2-dll0.onrender.com/cart/${el}`
-            )
+            axios.delete(`https://mock-server-app2-dll0.onrender.com/cart/${el.id}`) // Use `el.id`
           );
-
+  
+          // Wait for all delete requests to complete
           Promise.all(deletePromises)
             .then(() => {
               Swal.fire({
@@ -36,13 +38,14 @@ const Cartbutton = () => {
                 showConfirmButton: false,
                 timer: 1500,
               }).then(() => {
-                navigate("/");
+                navigate("/"); // Navigate to homepage
               });
             })
             .catch((err) => {
               console.error("Error clearing cart:", err);
             });
         } else {
+          // If cart is already empty
           Swal.fire({
             position: "top-end",
             icon: "info",
@@ -50,7 +53,7 @@ const Cartbutton = () => {
             showConfirmButton: false,
             timer: 1500,
           }).then(() => {
-            navigate("/");
+            navigate("/"); // Navigate to homepage
           });
         }
       })

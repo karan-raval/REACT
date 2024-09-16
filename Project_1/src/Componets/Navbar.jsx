@@ -2,6 +2,7 @@ import React from 'react'
 import offerlogo from '../assets/offers.png'
 import '../assets/navbar.css'
 import { Link } from 'react-router-dom'
+
 const Navbar = () => {
   return (
     <section id="nykaa_export">
@@ -418,10 +419,9 @@ const Navbar = () => {
                    <span className="material-symbols-outlined">search</span> 
                     <input type="text" placeholder="Search on Nykaa" style={{height: 30 , marginleft:0}}/>
                 </form>
-                <div className="account">
-                    <span className="material-symbols-outlined" id="person" >person</span>
-                    <a   style={{color: "black",textdecoration: "none"}}><p > Account</p></a>
-                    <a   style={{color: "black", marginleft: 40}}><span className="material-symbols-outlined" id="shopping_bag">shopping_bag</span></a>
+                <div className="account"><Link to={'/login'}>
+                    <span className="material-symbols-outlined" id="person" >person</span></Link>
+                    <Link to={'/cart'}><a   style={{color: "black", marginleft: 40}}><span className="material-symbols-outlined" id="shopping_bag">shopping_bag</span></a></Link>
                 </div>
              </div>
         </div>
