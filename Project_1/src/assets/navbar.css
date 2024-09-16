@@ -25,7 +25,7 @@
 }
 #beauty_bonanza {
   margin-left: 20%;
-  /* margin-top: 2px; */
+  margin-top: -7px;
   animation: slide 3s infinite;
   font-family: "Inter", sans-serif;
   font-size: 16px;
@@ -76,7 +76,7 @@
   font-weight: 500;
   font-family: "Inter", sans-serif;
   font-size: 14px;
-  margin-top: 15px;
+  /* margin-top: 15px; */
 }
 .navbar_icons > p:hover {
   cursor: pointer;
@@ -95,9 +95,7 @@
   border-bottom: solid 1px rgb(202, 195, 195);
   background-color: white;
 }
-.up{
-  margin-bottom: 15px;
-}
+
 .category ul {
   list-style: none;
   display: flex;
@@ -108,7 +106,7 @@
   font-family: "Inter", sans-serif;
   font-weight: 600;
   font-size: 14px;
-  margin-top: 25px;
+  margin-top: 15px;
 }
 
 .category > ul > li > p:hover {

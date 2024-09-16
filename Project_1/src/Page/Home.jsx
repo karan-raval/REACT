@@ -13,7 +13,6 @@ import '../assets/home.css'
 const Home = () => {
   const responsive = {
     superLargeDesktop: {
-      // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
       items: 5
     },
@@ -30,50 +29,11 @@ const Home = () => {
       items: 1
     }
   };
-  const responsive1 = {
-    superLargeDesktop: {
-      // the naming can be any, depends on you.
-      breakpoint: { max: 4000, min: 3000 },
-      items: 1
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 1
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 1
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1
-    }
-  };
+  
 
-  const responsive2 = {
-    superLargeDesktop: {
-      // the naming can be any, depends on you.
-      breakpoint: { max: 4000, min: 3000 },
-      items: 6
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 5
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 3
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 2
-    }
-  };
   return (
     <>
     <Navbar/>
-
-
     <div className='slide'>
         <Carousel responsive={responsive}>
         <div>
@@ -94,33 +54,9 @@ const Home = () => {
         </Carousel>
         </div>
 
-        {/* <div>
-            <img style={{width:"97%",margin:"auto",borderRadius:"5px"}} src={img6} alt="" />
-        </div> */}
-
-{/* 
-        <div className='slide2'>
-        <h1>First Purchase App Offers</h1>
-        <Carousel responsive={responsive1}>
-        <div>
-            <img src={offer1} alt="" />
-        </div>
-        <div>
-            <img src={offer2} alt="" />
-        </div>
-        <div>
-            <img src={offer3} alt="" />
-        </div>
-        <div>
-            <img src={offer3} alt="" />
-        </div>
-        
-        </Carousel>
-        </div> */}
    
     <div id="Slide-down-sec1">
         <div id="G-one">
-          {/* <!-- <img src="https://images-static.nykaa.com/uploads/8bd6e0df-7f5c-4585-95d9-1e0311dc994a.jpg?tr=w-1200,cm-pad_resize" alt="G-one"> --> */}
           <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
             <div className="carousel-inner">
               <div className="carousel-item active">
@@ -158,7 +94,6 @@ const Home = () => {
                 <img src="https://images-static.nykaa.com/uploads/002b9f6c-9be2-4d4c-b55d-036b22507bc8.gif?tr=w-600,cm-pad_resize" alt="G-1"/>
               </div> 
                 <div id="insideimg">
-                    {/* <!-- <h3 style="text-align:center; padding: 4.2%;">Gaurav</h3> --> */}
                     <h3 id="h3tag">Upto 50% Off + Free Lipstick/Serum</h3>
                     <h4 id="h4tag">On Order Over Rs. 799</h4>
                 </div>
@@ -168,7 +103,6 @@ const Home = () => {
                 <img src="https://images-static.nykaa.com/uploads/ead3f4ae-c620-4f8d-850a-b0af2b664925.jpg?tr=w-600,cm-pad_resize" alt="G-1"/>
               </div> 
                 <div id="insideimg">
-                    {/* <!-- <h3 style="text-align:center; padding: 4.2%;">Gaurav</h3> --> */}
                     <h3 id="h3tag">Upto 50% Off + Free Lipstick/Serum</h3>
                     <h4 id="h4tag">On Order Over Rs. 799</h4>
                 </div>
@@ -178,62 +112,51 @@ const Home = () => {
                 <img src="https://images-static.nykaa.com/uploads/9788df49-4036-4e7c-a485-b3965814b3a4.jpg?tr=w-600,cm-pad_resize" alt="G-1"/>
               </div> 
                 <div id="insideimg">
-                    {/* <!-- <h3 style="text-align:center; padding: 4.2%;">Gaurav</h3> --> */}
                     <h3 id="h3tag">Upto 50% Off + Free Lipstick/Serum</h3>
                     <h4 id="h4tag">On Order Over Rs. 799</h4>
                 </div>
             </div>
             <div id="card">
               <div id="img">
-                {/* <!-- <img src="https://images-static.nykaa.com/uploads/9788df49-4036-4e7c-a485-b3965814b3a4.jpg?tr=w-600,cm-pad_resize" alt="G-1"> --> */}
                 <img src="https://images-static.nykaa.com/uploads/cbccfa68-995f-4e81-9989-b673e04eed47.gif?tr=w-600,cm-pad_resize" alt=""/>
               </div> 
                 <div id="insideimg">
-                    {/* <!-- <h3 style="text-align:center; padding: 4.2%;">Gaurav</h3> --> */}
                     <h3 id="h3tag">Upto 50% Off + Free Lipstick/Serum</h3>
                     <h4 id="h4tag">On Order Over Rs. 799</h4>
                 </div>
             </div>
             <div id="card">
               <div id="img">
-                {/* <!-- <img src="https://images-static.nykaa.com/uploads/9788df49-4036-4e7c-a485-b3965814b3a4.jpg?tr=w-600,cm-pad_resize" alt="G-1"> --> */}
                 <img src="https://images-static.nykaa.com/uploads/e41c2691-661c-4f64-9a18-167626a58e62.jpg?tr=w-600,cm-pad_resize" alt=""/>
               </div> 
                 <div id="insideimg">
-                    {/* <!-- <h3 style="text-align:center; padding: 4.2%;">Gaurav</h3> --> */}
                     <h3 id="h3tag">Upto 50% Off + Free Lipstick/Serum</h3>
                     <h4 id="h4tag">On Order Over Rs. 799</h4>
                 </div>
             </div>
             <div id="card">
               <div id="img">
-                {/* <!-- <img src="https://images-static.nykaa.com/uploads/9788df49-4036-4e7c-a485-b3965814b3a4.jpg?tr=w-600,cm-pad_resize" alt="G-1"> --> */}
                 <img src="https://images-static.nykaa.com/uploads/b3eb7431-5863-4866-b878-5abba5e42e4e.gif?tr=w-600,cm-pad_resize" alt=""/>
               </div> 
                 <div id="insideimg">
-                    {/* <!-- <h3 style="text-align:center; padding: 4.2%;">Gaurav</h3> --> */}
                     <h3 id="h3tag">Upto 50% Off + Free Lipstick/Serum</h3>
                     <h4 id="h4tag">On Order Over Rs. 799</h4>
                 </div>
             </div>
             <div id="card">
               <div id="img">
-                {/* <!-- <img src="https://images-static.nykaa.com/uploads/9788df49-4036-4e7c-a485-b3965814b3a4.jpg?tr=w-600,cm-pad_resize" alt="G-1"> --> */}
                 <img src="https://images-static.nykaa.com/uploads/6f44626f-09b9-4ea0-af21-e5a2004b894a.gif?tr=w-600,cm-pad_resize" alt=""/>
               </div> 
                 <div id="insideimg">
-                    {/* <!-- <h3 style="text-align:center; padding: 4.2%;">Gaurav</h3> --> */}
                     <h3 id="h3tag">Upto 50% Off + Free Lipstick/Serum</h3>
                     <h4 id="h4tag">On Order Over Rs. 799</h4>
                 </div>
             </div>
             <div id="card">
               <div id="img">
-                {/* <!-- <img src="https://images-static.nykaa.com/uploads/9788df49-4036-4e7c-a485-b3965814b3a4.jpg?tr=w-600,cm-pad_resize" alt="G-1"> --> */}
                 <img src="https://images-static.nykaa.com/uploads/21e24cff-d875-433a-a3cc-766fc6063501.jpg?tr=w-600,cm-pad_resize" alt=""/>
               </div> 
                 <div id="insideimg">
-                    {/* <!-- <h3 style="text-align:center; padding: 4.2%;">Gaurav</h3> --> */}
                     <h3 id="h3tag">Upto 50% Off + Free Lipstick/Serum</h3>
                     <h4 id="h4tag">On Order Over Rs. 799</h4>
                 </div>
@@ -245,7 +168,6 @@ const Home = () => {
         </div>
 
 
-        {/* <!--ONLY AT NYKAA --> */}
         <div id="ONLYATNYKAA" >
           <div id="ONLYTAG"> <h2>ONLY AT NYKAA</h2> </div>
           <div id="ONLYITEMS">
@@ -255,7 +177,6 @@ const Home = () => {
                   <img src="https://images-static.nykaa.com/uploads/0b1e6401-1af6-4157-ab24-74a1219288ab.gif?tr=w-600,cm-pad_resize" alt="G-1"/>
                 </div> 
                   <div id="insideimg">
-                      {/* <!-- <h3 style="text-align:center; padding: 4.2%;">Gaurav</h3> --> */}
                       <h3 id="h3tag">Flat 25% Off On Combos</h3>
                       <h4 id="h4tag">Build Your Healthy Hair Regime</h4>
                   </div>
@@ -267,7 +188,6 @@ const Home = () => {
                   <img src="https://images-static.nykaa.com/uploads/73e875f2-b463-4d43-a6b9-27cd81161509.gif?tr=w-600,cm-pad_resize" alt="G-1"/>
                 </div> 
                   <div id="insideimg">
-                      {/* <!-- <h3 style="text-align:center; padding: 4.2%;">Gaurav</h3> --> */}
                       <h3 id="h3tag">On Rs. 5000: Mini Matte Lipstick +</h3>
                       <h4 id="h4tag">On Rs.7000: Deluxe Airbrush Flawless Finish</h4>
                   </div>
@@ -279,7 +199,6 @@ const Home = () => {
                   <img src="https://images-static.nykaa.com/uploads/5d3e306c-f6a9-4b27-baf0-94eb7dcafb12.gif?tr=w-600,cm-pad_resize" alt="G-1"/>
                 </div> 
                   <div id="insideimg">
-                      {/* <!-- <h3 style="text-align:center; padding: 4.2%;">Gaurav</h3> --> */}
                       <h3 id="h3tag">Get 3 Complimentary Gifts</h3>
                       <h4 id="h4tag">On Rs.3000</h4>
                   </div>
@@ -291,7 +210,6 @@ const Home = () => {
                   <img src="https://images-static.nykaa.com/uploads/f8fcea1d-99d7-495a-82ff-998c80fe2e27.jpg?tr=w-600,cm-pad_resize" alt="G-1"/>
                 </div> 
                   <div id="insideimg">
-                      {/* <!-- <h3 style="text-align:center; padding: 4.2%;">Gaurav</h3> --> */}
                       <h3 id="h3tag">Buy 5 Get 5 Free + Min 20% Off </h3>
                       <h4 id="h4tag">On Korean Beauty: Sleeping Masks & Spot Patches</h4>
                   </div>
@@ -313,7 +231,6 @@ const Home = () => {
           </div>
         </div>
         <div>
-          {/* <!-- <div id="ONLYTAG"> <h1>FEATURED BRANDS</h1></div> --> */}
           <div id="featured">
             <div>
               <img  src="https://images-static.nykaa.com/uploads/058e2e03-66b4-4583-828c-769f0c06e964.jpg?tr=w-300,cm-pad_resize" alt=""/>
@@ -394,23 +311,18 @@ const Home = () => {
         <div id="twocards">
             <div id="card">
               <div id="img">
-                {/* <!-- <img src="https://images-static.nykaa.com/uploads/9788df49-4036-4e7c-a485-b3965814b3a4.jpg?tr=w-600,cm-pad_resize" alt="G-1"> --> */}
                 <img src="https://images-static.nykaa.com/uploads/1e367355-902b-43b5-b229-9c58c7658843.gif?tr=w-600,cm-pad_resize" alt=""/>
               </div> 
                 <div id="insideimg">
-                    {/* <!-- <h3 style="text-align:center; padding: 4.2%;">Gaurav</h3> --> */}
                     <h3 id="h3tag">Upto 50% Off + Free Lipstick/Serum</h3>
                     <h4 id="h4tag">On Order Over Rs. 799</h4>
                 </div>
           </div>
             <div id="card">
               <div id="img">
-                {/* <!-- <img src="https://images-static.nykaa.com/uploads/9788df49-4036-4e7c-a485-b3965814b3a4.jpg?tr=w-600,cm-pad_resize" alt="G-1"> --> */}
                 <img src="https://images-static.nykaa.com/uploads/e7db7c17-19d3-4a58-9b58-b862327daa89.gif?tr=w-600,cm-pad_resize" alt=""/>
               </div> 
                 <div id="insideimg">
-                    {/* <!-- <h3 style="text-align:center; padding: 4.2%;">Gaurav</h3> --> */}
-                    <h3 id="h3tag">Upto 50% Off + Free Lipstick/Serum</h3>
                     <h4 id="h4tag">On Order Over Rs. 799</h4>
                 </div>
           </div>
