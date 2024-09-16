@@ -6,6 +6,7 @@ import PageNotFound from '../Page/PageNotFound'
 import Home from '../Page/Home'
 import Signup from '../Page/Signup'
 import Login from '../Page/Login'
+import Cartbutton from '../Page/Cartbutton'
 // import ADminpanel from '../Page/ADminpanel' 
 
 const MainRoutes = () => {
@@ -17,6 +18,7 @@ const MainRoutes = () => {
       <Route path="/login" element={<Login/>}></Route>
       <Route path="/product" element={<Product/>}></Route>
       <Route path="/product/:id" element={<Singleproduct/>}></Route>  
+      <Route path="/cart" element={<Cartbutton/>}></Route>  
       {/* <Route path="/adminpanel" element={<ADminpanel/>}></Route>   */}
       <Route path="*" element={<PageNotFound/>}></Route>  
     </Routes>   

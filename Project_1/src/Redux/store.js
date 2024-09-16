@@ -7,7 +7,7 @@ import { loginreducer } from "./Login/loginreducer";
 let combine = combineReducers({
     loginreducer: loginreducer,
     productReducer : proReducer,
-    SingleProduct : SingleproReducer
+    SingleProduct : SingleproReducer,
 })
 
 
