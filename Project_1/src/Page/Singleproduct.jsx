@@ -6,7 +6,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { FetchData } from '../Redux/Singleproduct/action';
 import Rating from "@mui/material/Rating";
-import axios from 'axios'
+import axios, { Axios } from 'axios'
 
 const Singleproduct = () => {
     const navigate =useNavigate()
@@ -15,27 +15,37 @@ const Singleproduct = () => {
     const dispatch = useDispatch()
     const {data} = useSelector((s)=>s.SingleProduct)
     console.log(data)
+    
     useEffect(()=>{
        dispatch(FetchData)(id)
     },[])
-    const handleclick=()=>{
-        fetch('https://mock-server-app2-dll0.onrender.com/cart',{
-            method:'POST',
-            headers:{
-                'Content-type':'Application/JSON'
-            },
-            body:JSON.stringify(data[0])
-        }).then((res)=>res.json())
-        .then((res)=>{
-            console.log(res)
-            navigate('/cart')
+    // const handleclick=()=>{
+        // fetch('https://mock-server-app2-dll0.onrender.com/cart',{
+        //     method:'POST',
+        //     headers:{
+        //         'Content-type':'Application/JSON'
+        //     },
+        //     body:JSON.stringify(data)
+        // }).then((res)=>res.json())
+        // .then((res)=>{
+        //     console.log(res)
+        //     navigate('/cart')
+        // }).catch((err)=>{
+        //     console.log(err);
+        // })
+        const handleclick = () => {
+            axios.post('https://mock-server-app2-dll0.onrender.com/cart', data[0])  // Sending only the first item of `data`
+                .then((res) => {
+                    console.log(res);
+                    navigate('/cart'); // Navigate to the cart page after successful addition
+                })
+                .catch((err) => {
+                    console.error("Error adding to cart:", err);
+                });
+        };
+        
             
-        }).catch((err)=>{
-            console.log(err);
-            
-        })
-            
-    }
+    // }
 
     if (!data) {
         return <p>Loading...</p>;

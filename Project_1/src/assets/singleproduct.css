@@ -110,7 +110,8 @@ html {
   justify-content: space-around;
   align-items: center;
   background-color: #f3f4f6;
-  margin-bottom: 0px;
+  margin-top: 110px;
+  /* border: 1px solid; */
 }
 #Div_12 {
   margin-top: 30px;
