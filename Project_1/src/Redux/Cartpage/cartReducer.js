@@ -7,7 +7,7 @@ let initial = {
     isError : false
 }
 
-export const proReducer = (state = initial,{type,payload})=>{
+export const cartReducer = (state = initial,{type,payload})=>{
     switch(type){
         case LOADING:
             return {

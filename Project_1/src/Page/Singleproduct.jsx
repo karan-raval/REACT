@@ -2,40 +2,42 @@ import React, { useEffect, useState } from 'react';
 import '../assets/Singleproduct.css';
 import Footer from '../Componets/Footer';
 import Navbar from '../Componets/Navbar';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { FetchData } from '../Redux/Singleproduct/action';
 import Rating from "@mui/material/Rating";
-
+import axios from 'axios'
 
 const Singleproduct = () => {
+    const navigate =useNavigate()
 
     const {id} = useParams()
-    // console.log(id)
     const dispatch = useDispatch()
     const {data} = useSelector((s)=>s.SingleProduct)
     console.log(data)
     useEffect(()=>{
        dispatch(FetchData)(id)
-      // FetchData(dispatch,id)
     },[])
-    // const obj = useParams();
-    // const [data, setData] = useState(null);
-
-    // useEffect(() => {
-    //     fetch(`https://mock-server-app2-dll0.onrender.com/product?id=${obj.id}`)
-    //         .then((Res) => Res.json())
-    //         .then((res) => {
-    //             setData(res);
-    //             console.log(res);
-    //         })
-    //         .catch((err) => {
-    //             console.log(err);
-    //         });
-    // }, [obj.id]);
+    const handleclick=()=>{
+        fetch('https://mock-server-app2-dll0.onrender.com/cart',{
+            method:'POST',
+            headers:{
+                'Content-type':'Application/JSON'
+            },
+            body:JSON.stringify(data[0])
+        }).then((res)=>res.json())
+        .then((res)=>{
+            console.log(res)
+            navigate('/cart')
+            
+        }).catch((err)=>{
+            console.log(err);
+            
+        })
+            
+    }
 
     if (!data) {
-        // Return a loader or fallback content while waiting for the data to be fetched
         return <p>Loading...</p>;
     }
 
@@ -70,7 +72,7 @@ const Singleproduct = () => {
                                 <p className='d7p3'>inclusive of all taxes</p>
                             </div>
                             <div id="Div_8">
-                                <button className="Div8_b1">Add to Bag</button>
+                                <button className="Div8_b1" onClick={handleclick}>Add to Bag</button>
                                 <div id="Div_9">
                                     <p className='d9'>Delivery Options</p>
                                     <div id="Div_10">

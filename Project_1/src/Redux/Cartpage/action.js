@@ -1,10 +1,10 @@
 import { ERROR, LOADING, SUCCESS } from "./actiontype"
 
 
-export const FetchData = (dispatch)=>{
+export const cartReducer = (dispatch)=>{
     dispatch({type : LOADING})
     // fetch(`https://mock-server-app2-dll0.onrender.com/newproduct`)
-    fetch(`https://mock-server-app2-dll0.onrender.com/product`)
+    fetch(`https://mock-server-app2-dll0.onrender.com/cart`)
     .then((res)=>res.json())
     .then((res)=>{
         dispatch({type : SUCCESS, payload : res})
