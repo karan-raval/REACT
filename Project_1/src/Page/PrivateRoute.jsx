@@ -3,7 +3,7 @@ import { Navigate } from 'react-router-dom'
 
 const PrivateRoute = ({children}) => {
   const [val, setval] = useState( 
-    JSON.parse(localStorage.getItem("Islogin")) || false
+    JSON.parse(localStorage.getItem("Islogin")) || true
   );
   return (
     val==true?children:<Navigate to={'/Login'}/>

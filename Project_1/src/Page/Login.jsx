@@ -4,12 +4,11 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchapi } from "../Redux/Login/action";
 import logo from "../assets/logo.jpeg";
 import { Link, useNavigate } from "react-router-dom";
-// import Swal from "sweetalert2";
 
 const Login = () => {
     const navigate=useNavigate()
   const dispatch = useDispatch();
-  const {isLoading,isError,data,ISLOGIN} = useSelector((s) => s.loginreducer);
+  const {isLoading,isError,data} = useSelector((s) => s.loginreducer);
   const [datas, setdata] = useState({
     email: "",
     password: "",
@@ -25,7 +24,7 @@ const Login = () => {
 
   useEffect(() => {
     if (data && !isError && !isLoading) {
-      navigate("/"); // Redirect to dashboard after successful login
+      navigate("/"); 
     }
   }, [data, isError, navigate]); 
  

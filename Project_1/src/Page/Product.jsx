@@ -175,29 +175,22 @@ const Product = () => {
                   name="Hair_Styling_Tools"
                   onChange={handleFilter}
                 />
-                Hair_Styling_Tools <br />
+                Hair Styling Tools <br />
                 <input
                   type="checkbox"
                   name="Shaving_Tools"
                   onChange={handleFilter}
                 />
-                Shaving_Tools <br />
+                Shaving Tools <br />
                 <input type="checkbox" name="Face" onChange={handleFilter} />
-                Face/Skin_Tools <br />
+                Face/Skin Tools <br />
                 <input
                   type="checkbox"
                   name="Hair_Removal_Tools"
                   onChange={handleFilter}
                 />
-                Hair_Removal_Tools
-                {/* <select name="" >
-                  <option value="">Category</option>
-                  <option name="Hair_Removal_Tools" value="Hair_Styling_Tools" onChange={handleFilter}>Hair_Styling_Tools</option>
-                  <option value="Shaving_Tools">Shaving_Tools</option>
-                  <option value="Face/Skin_Tools">Face/Skin_Tools</option>
-                  <option value="Hair_Removal_Tools">Hair_Removal_Tools</option>
-                  <option value="Massage_Tools">Massage_Tools</option>
-                </select> */}
+                Hair Removal Tools
+               
                 <input type="text" onChange={handleSearch} />
               </div>
             </div>
