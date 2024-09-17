@@ -204,7 +204,7 @@ const Product = () => {
             <div id="PRODUCT">
               {FilteredDatas.map((el) => {
                 return (
-                  <Link className="link" to={`/product/${el.id}`} > 
+                  <Link className="link" key={el.id} to={`/product/${el.id}`} > 
                   <div className="card">
                     <span id="G-five">BEST SELLER</span>
                     <div id="G-img">
