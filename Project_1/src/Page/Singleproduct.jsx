@@ -14,17 +14,17 @@ const Singleproduct = () => {
     const {id} = useParams()
     const dispatch = useDispatch()
     const {data} = useSelector((s)=>s.SingleProduct)
-    console.log(data)
+    // console.log(data)
     
     useEffect(()=>{
        dispatch(FetchData)(id)
     },[])
     
         const handleclick = () => {
-            axios.post('https://mock-server-app2-dll0.onrender.com/cart', data[0])  // Sending only the first item of `data`
+            axios.post('https://mock-server-app2-dll0.onrender.com/cart', data[0])
                 .then((res) => {
-                    console.log(res);
-                    navigate('/cart'); // Navigate to the cart page after successful addition
+                    // console.log(res);
+                    navigate('/cart'); 
                 })
                 .catch((err) => {
                     console.error("Error adding to cart:", err);
