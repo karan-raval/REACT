@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import '../assets/Singleproduct.css';
 import Footer from '../Componets/Footer';
 import Navbar from '../Componets/Navbar';
@@ -14,7 +14,6 @@ const Singleproduct = () => {
     const {id} = useParams()
     const dispatch = useDispatch()
     const {data} = useSelector((s)=>s.SingleProduct)
-    // console.log(data)
     
     useEffect(()=>{
        dispatch(FetchData)(id)
@@ -23,7 +22,6 @@ const Singleproduct = () => {
         const handleclick = () => {
             axios.post('https://mock-server-app2-dll0.onrender.com/cart', data[0])
                 .then((res) => {
-                    // console.log(res);
                     navigate('/cart'); 
                 })
                 .catch((err) => {
