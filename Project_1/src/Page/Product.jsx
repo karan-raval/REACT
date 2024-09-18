@@ -6,6 +6,10 @@ import Rating from "@mui/material/Rating";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { FetchData } from "../Redux/Productpage/action";
+import TextField from '@mui/material/TextField';
+import Checkbox from '@mui/material/Checkbox';
+
+const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 const Product = () => {
   const dispatch = useDispatch()
   const {isLoading,isError,data} = useSelector((s)=>s.productReducer)
@@ -169,36 +173,26 @@ const Product = () => {
                   <option value="asc">Price low to High</option>
                   <option value="desc">Price High to low</option>
                 </select>
-                <input
-                
-                  type="checkbox"
-                  name="Hair_Styling_Tools"
-                  onChange={handleFilter}
-                />
+                <Checkbox {...label} name="Hair_Styling_Tools" onChange={handleFilter}  color="success" />
                 Hair Styling Tools <br />
-                <input
-                  type="checkbox"
-                  name="Shaving_Tools"
-                  onChange={handleFilter}
-                />
+                <Checkbox {...label} name="Shaving_Tools" onChange={handleFilter}  color="success" />
                 Shaving Tools <br />
-                <input type="checkbox" name="Face" onChange={handleFilter} />
+                <Checkbox {...label} name="Face" onChange={handleFilter}  color="success" />
                 Face/Skin Tools <br />
-                <input
-                  type="checkbox"
-                  name="Hair_Removal_Tools"
-                  onChange={handleFilter}
-                />
+                <Checkbox {...label} name="Hair_Removal_Tools" onChange={handleFilter}  color="success" />
                 Hair Removal Tools
-               
-                <input type="text" onChange={handleSearch} />
+                <br />
+                <br />
+                <h1 className="se">search</h1>
+                <TextField id="outlined-basic" onChange={handleSearch} label="Search Your Favrite Product" variant="outlined" />
+                {/* <input type="text" onChange={handleSearch} /> */}
               </div>
             </div>
             <div id="PRODUCT">
               {FilteredDatas.map((el) => {
                 return (
                   <Link className="link" key={el.id} to={`/product/${el.id}`} > 
-                  <div className="card">
+                  <div className="cardd">
                     <span id="G-five">BEST SELLER</span>
                     <div id="G-img">
                       <img src={el.image1} alt={el.id} />

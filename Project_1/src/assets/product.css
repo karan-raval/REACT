@@ -43,6 +43,8 @@
   width: 23%;
   height: 800px;
   position: sticky;
+  background-color: white;
+  /* border: 1px solid; */
   top: 150px;
 }
 #PRODUCT {
@@ -52,12 +54,12 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 25px;
 }
-.card {
+.cardd {
   background-color: white;
   text-align: center;
-  /* height: 400px; */
-  min-width: 400px;
-  border: 1px solid;
+  height: 415px;
+  min-width: 270px;
+  /* border: 1px solid; */
   transition : 0.3s ease-in-out;
   
 }
@@ -69,15 +71,29 @@
   display: flex;
   visibility: hidden;
   position : relative;
-  top : -140px;
+  top : -90px;
   opacity : 0;
 }
 
-.card:hover #addToBag {
+.cardd:hover #addToBag {
   visibility: visible;
   transition-delay: 0.2s;
   opacity : 1;
   top : 0px;
+}
+
+#outlined-basic{
+  /* background-color: #fc2779; */
+  /* margin-left: 10px; */
+  padding-left: 100px;
+}
+.se{
+  text-align: center;
+  color: #fc2779;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 40px;
+  /* margin: auto; */
 }
 
 #G-five,

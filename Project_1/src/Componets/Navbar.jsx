@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 
 const Navbar = () => {
-  const { isLoading, isError, data } = useSelector((s) => s.loginreducer);
+  // const {data} = useSelector((s) => s.loginreducer);
 
-  console.log(data);
+  // console.log(data);
   
 
 //   const [userdata, setuserdata] = useState(data);
@@ -1081,10 +1081,10 @@ const Navbar = () => {
             </form>
             <div className="account">
               <Link to={"/login"}>
-                {/* <span className="material-symbols-outlined" id="person"> */}
-                  {/* person */}
-                <p className="uname">{data[0].username}</p>
-                {/* </span> */}
+                <span className="material-symbols-outlined" id="person">
+                  person
+                {/* <p className="uname">{data[0].username}</p> */}
+                </span>
               </Link>
               <Link to={"/cart"}>
                 <a style={{ color: "black", marginleft: 40 }}>
