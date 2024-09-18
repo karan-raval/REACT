@@ -108,7 +108,10 @@
   font-size: 14px;
   margin-top: 15px;
 }
-
+.uname{
+  font-size: 20px;
+  font-weight: 600;
+}
 .category > ul > li > p:hover {
   color: orangered;
   font-weight: 600;
@@ -163,8 +166,11 @@ text-decoration: none;
   cursor: pointer;
 }
 .account {
+  /* border: 1px solid; */
+  width: 190px;
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
 }
 .account:hover {
   cursor: pointer;
