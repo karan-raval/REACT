@@ -100,9 +100,7 @@ const Product = () => {
     <>
       <div id="parent">
         <Navbar />
-        <div id="HairTools">
-          <h3>Hair Tools & Hair Styling Accessories</h3>
-        </div>
+
         <div id="G-slide">
           <div
             id="carouselExampleInterval"
@@ -158,9 +156,7 @@ const Product = () => {
             </button>
           </div>
         </div>
-        <div id="G-lable">
-          <h3>ALL PRODUCTS</h3>
-        </div>
+ 
         <div id="mainProd">
           <div id="area">
             <div className="FILTERANDSORT">
