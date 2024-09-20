@@ -4,7 +4,6 @@ const mainroute = () => {
   return (
     <>
     
-    
     </>
   )
 }
