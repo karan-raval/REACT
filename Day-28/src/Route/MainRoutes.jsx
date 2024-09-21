@@ -3,15 +3,15 @@ import {Route,Routes} from 'react-router-dom'
 import Login from '../Components/Login'
 import Signup from '../Components/Signup'
 
-const Mainroute = () => {
+const MainRoutes = () => {
   return (
     <>
     <Routes>
-        <Route path='/' Component={<Login/>}></Route>        
-        <Route path='/signup' Component={<Signup/>}></Route>        
+        <Route path='/' element={<Login/>}></Route>        
+        <Route path='/signup' element={<Signup/>}></Route>        
     </Routes>
     </>
   )
 }
 
-export default Mainroute
+export default MainRoutes

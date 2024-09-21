@@ -1,35 +1,36 @@
 import React from 'react'
 import '../assets/Login.css'
+import { Link } from 'react-router-dom'
 const Login = () => {
   return (
     <>
-       <div class="wrapper">
-         <div class="title">
+       <div className="wrapper">
+         <div className="title">
             Login Form
          </div>
          <form action="#">
-            <div class="field">
+            <div className="field">
                <input type="text" required/>
                <label>Email Address</label>
             </div>
-            <div class="field">
+            <div className="field">
                <input type="password" required/>
                <label>Password</label>
             </div>
-            <div class="content">
-               <div class="checkbox">
+            <div className="content">
+               <div className="checkbox">
                   <input type="checkbox" id="remember-me"/>
                   <label >Remember me</label>
                </div>
-               <div class="pass-link">
-                  <a href="#">Forgot password?</a>
+               <div className="pass-link">
+                  <a>Forgot password?</a>
                </div>
             </div>
-            <div class="field">
+            <div className="field">
                <input type="submit" value="Login"/>
             </div>
-            <div class="signup-link">
-               Not a member? <a href="#">Signup now</a>
+            <div className="signup-link">
+               Not a member? <Link to={'/signup'}>Signup now</Link>
             </div>
          </form>
       </div>

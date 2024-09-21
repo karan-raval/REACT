@@ -1,10 +1,10 @@
-import Mainroute from "./Route/Mainroute"
+import MainRoutes from "./Route/MainRoutes"
 
 function App() {
 
   return (
     <>
-    <Mainroute/>
+    <MainRoutes/>
     </>
   )
 }

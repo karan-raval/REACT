@@ -1,18 +1,19 @@
 import React from "react";
 import "../assets/Signup.css";
+import { Link } from "react-router-dom";
 const Signup = () => {
   return (
     <>
-      <div class="login-page">
-        <div class="form">
-          <form class="register-form">
+      <div className="login-page">
+        <div className="form">
+          <form className="register-form">
             <input type="text" placeholder="name" />
             <input type="text" placeholder="User Name" />
             <input type="text" placeholder="email address" />
             <input type="password" placeholder="password" />
             <button type="submit">create</button>
-            <p class="message">
-              Already registered? <a>Sign In</a>
+            <p className="message">
+              Already registered? <Link to={'/'}>Login Now</Link>
             </p>
           </form>
         </div>
