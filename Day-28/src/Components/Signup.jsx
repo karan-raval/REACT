@@ -1,9 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import "../assets/Signup.css";
 import { Link } from "react-router-dom";
+import { db } from "../FirebaseFolder/firebase";
+import { addDoc, collection } from 'firebase/firestore';
+import Swal from 'sweetalert2'
 const Signup = () => {
-  const handleSubmit = (e) => {
+  const [state, setState] = useState({
+    fullname: "",
+    username: "",
+    email: "",
+    password: "",
+  });
+  const UserCollection = collection(db,"users")
+  const handleChange = (e) => {
+    setState({ ...state, [e.target.name]: e.target.value });
+  };
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    
     if (state.username == "") {
       Swal.fire({
         icon: "error",
@@ -29,23 +43,18 @@ const Signup = () => {
         text: "Fill The Full Name Input Field!",
       });
     } else {
+
+      let a  = await addDoc(UserCollection,state)
+
       Swal.fire({
         icon: "success",
         title: "Congratsss...",
         text: "SignUp Succesfully...",
       });
-      navigate("/login");
+      // navigate("/login");
 
-      fetch(`https://mock-server-app2-dll0.onrender.com/user`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(state),
-      })
-        .then((res) => res.json())
-        .then((res) => console.log(res))
-        .catch((err) => console.log(err));
+    
+   
     }
     setState({
       fullname: "",
@@ -58,14 +67,14 @@ const Signup = () => {
     <>
       <div className="login-page">
         <div className="form">
-          <form className="register-form">
-            <input type="text" placeholder="name" />
-            <input type="text" placeholder="User Name" />
-            <input type="text" placeholder="email address" />
-            <input type="password" placeholder="password" />
+          <form className="register-form" onSubmit={handleSubmit}>
+            <input type="text" name="fullname" value={state.fullname} placeholder="Full Name"   onChange={handleChange} />
+            <input type="text" name="username" value={state.username} placeholder="User Name"    onChange={handleChange}/>
+            <input type="text" name="email" value={state.email} placeholder="email Address"   onChange={handleChange} />
+            <input type="password" name="password" value={state.password} placeholder="password"   onChange={handleChange} />
             <button type="submit">create</button>
             <p className="message">
-              Already registered? <Link to={'/'}>Login Now</Link>
+              Already registered? <Link to={"/"}>Login Now</Link>
             </p>
           </form>
         </div>
