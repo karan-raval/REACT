@@ -7,7 +7,7 @@ const MainRoutes = () => {
   return (
     <>
     <Routes>
-        <Route path='/' element={<Login/>}></Route>        
+        <Route path='/' element={<Login/>}></Route>     
         <Route path='/signup' element={<Signup/>}></Route>        
     </Routes>
     </>
