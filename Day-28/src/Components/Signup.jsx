@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import "../assets/Signup.css";
-import { Link } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 import { db } from "../FirebaseFolder/firebase";
 import { addDoc, collection } from 'firebase/firestore';
 import Swal from 'sweetalert2'
 const Signup = () => {
+  const navigate =useNavigate()
   const [state, setState] = useState({
     fullname: "",
     username: "",
@@ -51,10 +52,7 @@ const Signup = () => {
         title: "Congratsss...",
         text: "SignUp Succesfully...",
       });
-      // navigate("/login");
-
-    
-   
+      navigate("/");
     }
     setState({
       fullname: "",
