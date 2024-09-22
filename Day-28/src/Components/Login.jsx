@@ -1,9 +1,33 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import '../assets/Login.css'
 import { Link } from 'react-router-dom'
+import { collection, doc, getDocs } from 'firebase/firestore'
+import { db } from '../FirebaseFolder/firebase'
 const Login = () => {
-   const handlsubmit=() =>{
-
+   const [data,setData] = useState([])
+   const [i,setI] = useState(false)
+   const [state, setState] = useState({
+      email: "",
+      password: "",
+    });
+    const handleChange = (e) => {
+      setState({ ...state, [e.target.name]: e.target.value });
+    };
+    const UserCollection = collection(db,"users")
+    useEffect(()=>{
+      async function getData (){
+         let data = await getDocs(UserCollection)
+      }
+      getData()
+  },[i])  
+   const handlsubmit= async (e) =>{
+      e.preventDefault()
+      const data = doc(db,"users")
+      let arr = data.docs.map((el)=>{
+         return { id : el.id, ...el.data()}
+     })
+     setData(arr)
+      
    }
   return (
     <>
@@ -13,11 +37,11 @@ const Login = () => {
          </div>
          <form onSubmit={handlsubmit}>
             <div className="field">
-               <input type="text" required/>
+               <input type="text"  value={state.email} name='email' onChange={handleChange} required/>
                <label>Email Address</label>
             </div>
             <div className="field">
-               <input type="password" required/>
+               <input type="password" value={state.password} name='password' onChange={handleChange} required/>
                <label>Password</label>
             </div>
             <div className="content">
