@@ -2,13 +2,16 @@ import React from 'react'
 import '../assets/Login.css'
 import { Link } from 'react-router-dom'
 const Login = () => {
+   const handlsubmit=() =>{
+
+   }
   return (
     <>
        <div className="wrapper">
          <div className="title">
             Login Form
          </div>
-         <form action="#">
+         <form onSubmit={handlsubmit}>
             <div className="field">
                <input type="text" required/>
                <label>Email Address</label>
