@@ -5,6 +5,20 @@ import { db } from "../FirebaseFolder/firebase";
 import { addDoc, collection } from 'firebase/firestore';
 import Swal from 'sweetalert2'
 const Signup = () => {
+  const [d,setD] = useState([])
+
+  useEffect(()=>{
+    async function getData(){
+        let data = await getDocs(UserCollection)
+        let val = data.docs.map((el)=>{
+            return {id : el.id , ...el.data()}
+        })
+        setD(val)
+    }
+    getData()
+},[])
+
+
   const navigate =useNavigate()
   const [state, setState] = useState({
     fullname: "",
