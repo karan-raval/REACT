@@ -37,6 +37,7 @@ const Login = () => {
   };
   return (
     <>
+    <div className="body">
       <div className="wrapper">
         <div className="title">Login Form</div>
         <form onSubmit={handlsubmit}>
@@ -76,6 +77,7 @@ const Login = () => {
             Not a member? <Link to={"/signup"}>Signup now</Link>
           </div>
         </form>
+      </div>
       </div>
     </>
   );
