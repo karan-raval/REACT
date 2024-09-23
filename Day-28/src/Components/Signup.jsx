@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../assets/Signup.css";
 import { Link, Navigate, useNavigate } from "react-router-dom";
 import { db } from "../FirebaseFolder/firebase";
-import { addDoc, collection } from 'firebase/firestore';
+import { addDoc, collection, getDocs } from 'firebase/firestore';
 import Swal from 'sweetalert2'
 const Signup = () => {
   const [d,setD] = useState([])
@@ -34,7 +34,7 @@ const Signup = () => {
     e.preventDefault();
 
     let a = d.filter((el)=>{
-      return el.email == email
+      return el.email == state.email
     })
     if (state.username == "") {
       Swal.fire({
