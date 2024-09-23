@@ -29,6 +29,18 @@ const Signup = () => {
   const handleChange = (e) => {
     setState({ ...state, [e.target.name]: e.target.value });
   };
+
+  const handleBluremail =()=>{
+    let regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+
+
+    if (regex.test(obj.email)) {
+      setisbluremail(false);
+    } else {
+      setisbluremail(true);
+    }
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -91,6 +103,7 @@ const Signup = () => {
               value={state.fullname}
               placeholder="Full Name"
               onChange={handleChange}
+              onBlur={handleBluremail}
             />
             <input
               type="text"
@@ -98,6 +111,7 @@ const Signup = () => {
               value={state.username}
               placeholder="User Name"
               onChange={handleChange}
+              onBlur={handleBluremail}
             />
             <input
               type="text"
@@ -105,12 +119,14 @@ const Signup = () => {
               value={state.email}
               placeholder="email Address"
               onChange={handleChange}
+              onBlur={handleBluremail}
             />
             <input
               type="password"
               name="password"
               value={state.password}
               placeholder="password"
+              onBlur={handleBluremail}
               onChange={handleChange}
             />
             <button type="submit">create</button>
