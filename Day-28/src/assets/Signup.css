@@ -95,3 +95,6 @@ body {
   -moz-osx-font-smoothing: grayscale;      
 }
 
+.valid{
+  color: red;
+}

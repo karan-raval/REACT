@@ -5,6 +5,7 @@ import { db } from "../FirebaseFolder/firebase";
 import { addDoc, collection, getDocs } from "firebase/firestore";
 import Swal from "sweetalert2";
 const Signup = () => {
+  const [isbluremail, setisbluremail] = useState(false);
   const [d, setD] = useState([]);
 
   useEffect(() => {
@@ -34,7 +35,7 @@ const Signup = () => {
     let regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
 
 
-    if (regex.test(obj.email)) {
+    if (regex.test(state.email)) {
       setisbluremail(false);
     } else {
       setisbluremail(true);
@@ -103,7 +104,6 @@ const Signup = () => {
               value={state.fullname}
               placeholder="Full Name"
               onChange={handleChange}
-              onBlur={handleBluremail}
             />
             <input
               type="text"
@@ -111,7 +111,6 @@ const Signup = () => {
               value={state.username}
               placeholder="User Name"
               onChange={handleChange}
-              onBlur={handleBluremail}
             />
             <input
               type="text"
@@ -121,12 +120,16 @@ const Signup = () => {
               onChange={handleChange}
               onBlur={handleBluremail}
             />
+            {isbluremail == false ? (
+                  ""
+                ) : (
+                  <p className="valid">Enter Valid Email</p>
+                )}
             <input
               type="password"
               name="password"
               value={state.password}
               placeholder="password"
-              onBlur={handleBluremail}
               onChange={handleChange}
             />
             <button type="submit">create</button>
