@@ -32,7 +32,10 @@ const Signup = () => {
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
+
+    let a = d.filter((el)=>{
+      return el.email == email
+    })
     if (state.username == "") {
       Swal.fire({
         icon: "error",
@@ -58,6 +61,9 @@ const Signup = () => {
         text: "Fill The Full Name Input Field!",
       });
     } else {
+      if(a.length > 0){
+        alert("User alerady registered")
+      }else{
 
       let a  = await addDoc(UserCollection,state)
 
@@ -67,7 +73,7 @@ const Signup = () => {
         text: "SignUp Succesfully...",
       });
       navigate("/");
-    }
+    }}
     setState({
       fullname: "",
       username: "",
