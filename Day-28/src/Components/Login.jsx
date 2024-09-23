@@ -5,7 +5,7 @@ import { collection, doc, getDocs } from "firebase/firestore";
 import { db } from "../FirebaseFolder/firebase";
 const Login = () => {
   const [data, setData] = useState([]);
-  const [i, setI] = useState(false);
+  const [d,setD] = useState([])
   const [state, setState] = useState({
     email: "",
     password: "",
@@ -14,19 +14,26 @@ const Login = () => {
     setState({ ...state, [e.target.name]: e.target.value });
   };
   const UserCollection = collection(db, "users");
-  useEffect(() => {
-    async function getData() {
-      let data = await getDocs(UserCollection);
-    }
-    getData();
-  }, [i]);
+  useEffect(()=>{
+   async function getData(){
+       let data = await getDocs(UserCollection)
+       let val = data.docs.map((el)=>{
+           return {id : el.id , ...el.data()}
+       })
+       setD(val)
+   }
+   getData()
+},[])
   const handlsubmit = async (e) => {
     e.preventDefault();
-    const data = doc(db, "users");
-    let arr = data.docs.map((el) => {
-      return { id: el.id, ...el.data() };
-    });
-    setData(arr);
+    let a = d.filter((el)=>{
+      return el.email == state.email && el.password == state.password
+  })
+  if(a.length > 0){
+      alert("Login Successfull")
+  }else{
+      alert("Login Unsuccesfull")
+  }
   };
   return (
     <>
