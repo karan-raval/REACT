@@ -5,13 +5,13 @@ const Navbar = () => {
     <>
       <nav className="sidebar">
         <div className="logo d-flex justify-content-between">
-          <a className="large_logo" href="index.html">
+          <a className="large_logo">
             <img
               src="https://demo.dashboardpack.com/analytic-html/img/logo.png"
               alt
             />
           </a>
-          <a className="small_logo" href="index.html">
+          <a className="small_logo">
             <img src="img/mini_logo.png" alt />
           </a>
           <div className="sidebar_close_icon d-lg-none">
@@ -20,7 +20,7 @@ const Navbar = () => {
         </div>
         <ul id="sidebar_menu">
           <li>
-            <a href="index.html" aria-expanded="false">
+            <a aria-expanded="false">
               <div className="nav_icon_small">
                 <img
                   src="https://demo.dashboardpack.com/analytic-html/img/menu-icon/dashboard.svg"
@@ -33,7 +33,7 @@ const Navbar = () => {
             </a>
           </li>
           <li>
-            <a href="index_2.html" aria-expanded="false">
+            <a aria-expanded="false">
               <div className="nav_icon_small">
                 <img
                   src="https://demo.dashboardpack.com/analytic-html/img/menu-icon/2.svg"
@@ -46,7 +46,7 @@ const Navbar = () => {
             </a>
           </li>
           <li>
-            <a href="index_3.html" aria-expanded="false">
+            <a aria-expanded="false">
               <div className="nav_icon_small">
                 <img
                   src="https://demo.dashboardpack.com/analytic-html/img/menu-icon/3.svg"
@@ -62,7 +62,7 @@ const Navbar = () => {
             <span>CUSTOM</span> <i className="fas fa-ellipsis-h"></i>{" "}
           </h4>
           <li className>
-            <a className="has-arrow" href="#" aria-expanded="false">
+            <a className="has-arrow" aria-expanded="false">
               <div className="nav_icon_small">
                 <img
                   src="https://demo.dashboardpack.com/analytic-html/img/menu-icon/5.svg"
@@ -75,21 +75,21 @@ const Navbar = () => {
             </a>
             <ul>
               <li>
-                <a href="editor.html">editor</a>
+                <a>editor</a>
               </li>
               <li>
-                <a href="mail_box.html">Mail Box</a>
+                <a>Mail Box</a>
               </li>
               <li>
-                <a href="chat.html">Chat</a>
+                <a>Chat</a>
               </li>
               <li>
-                <a href="faq.html">FAQ</a>
+                <a>FAQ</a>
               </li>
             </ul>
           </li>
           <li className>
-            <a className="has-arrow" href="#" aria-expanded="false">
+            <a className="has-arrow" aria-expanded="false">
               <div className="nav_icon_small">
                 <img
                   src="https://demo.dashboardpack.com/analytic-html/img/menu-icon/16.svg"
@@ -102,22 +102,22 @@ const Navbar = () => {
             </a>
             <ul>
               <li>
-                <a href="login.html">Login</a>
+                <a>Login</a>
               </li>
               <li>
-                <a href="resister.html">Register</a>
+                <a>Register</a>
               </li>
               <li>
-                <a href="error_400.html">Error 404</a>
+                <a>Error 404</a>
               </li>
               <li>
-                <a href="error_500.html">Error 500</a>
+                <a>Error 500</a>
               </li>
               <li>
-                <a href="forgot_pass.html">Forgot Password</a>
+                <a>Forgot Password</a>
               </li>
               <li>
-                <a href="gallery.html">Gallery</a>
+                <a>Gallery</a>
               </li>
             </ul>
           </li>
@@ -125,7 +125,7 @@ const Navbar = () => {
             <span>LAYOUT</span> <i className="fas fa-ellipsis-h"></i>{" "}
           </h4>
           <li className>
-            <a className="has-arrow" href="#" aria-expanded="false">
+            <a className="has-arrow" aria-expanded="false">
               <div className="nav_icon_small">
                 <img
                   src="https://demo.dashboardpack.com/analytic-html/img/menu-icon/4.svg"
@@ -138,15 +138,15 @@ const Navbar = () => {
             </a>
             <ul>
               <li>
-                <a href="dark_sidebar.html">Dark Sidebar</a>
+                <a>Dark Sidebar</a>
               </li>
               <li>
-                <a href="light_sidebar.html">light Sidebar</a>
+                <a>light Sidebar</a>
               </li>
             </ul>
           </li>
           <li className>
-            <a className="has-arrow" href="#" aria-expanded="false">
+            <a className="has-arrow" aria-expanded="false">
               <div className="nav_icon_small">
                 <img
                   src="https://demo.dashboardpack.com/analytic-html/img/menu-icon/16.svg"
@@ -159,18 +159,18 @@ const Navbar = () => {
             </a>
             <ul>
               <li>
-                <a href="Minimized_Aside.html">Minimized Aside</a>
+                <a>Minimized Aside</a>
               </li>
               <li>
-                <a href="empty_page.html">Empty page</a>
+                <a>Empty page</a>
               </li>
               <li>
-                <a href="fixed_footer.html">Fixed Footer</a>
+                <a>Fixed Footer</a>
               </li>
             </ul>
           </li>
           <li>
-            <a href="Builder.html" aria-expanded="false">
+            <a aria-expanded="false">
               <div className="nav_icon_small">
                 <img
                   src="https://demo.dashboardpack.com/analytic-html/img/menu-icon/2.svg"
@@ -186,7 +186,7 @@ const Navbar = () => {
             <span>Elements</span> <i className="fas fa-ellipsis-h"></i>{" "}
           </h4>
           <li className>
-            <a href="invoice.html" aria-expanded="false">
+            <a aria-expanded="false">
               <div className="nav_icon_small">
                 <img
                   src="https://demo.dashboardpack.com/analytic-html/img/menu-icon/6.svg"
@@ -199,7 +199,7 @@ const Navbar = () => {
             </a>
           </li>
           <li className>
-            <a className="has-arrow" href="#" aria-expanded="false">
+            <a className="has-arrow" aria-expanded="false">
               <div className="nav_icon_small">
                 <img
                   src="https://demo.dashboardpack.com/analytic-html/img/menu-icon/4.svg"
@@ -212,21 +212,21 @@ const Navbar = () => {
             </a>
             <ul>
               <li>
-                <a href="Basic_Elements.html">Basic Elements</a>
+                <a>Basic Elements</a>
               </li>
               <li>
-                <a href="Groups.html">Groups</a>
+                <a>Groups</a>
               </li>
               <li>
-                <a href="Max_Length.html">Max Length</a>
+                <a>Max Length</a>
               </li>
               <li>
-                <a href="Layouts.html">Layouts</a>
+                <a>Layouts</a>
               </li>
             </ul>
           </li>
           <li className>
-            <a href="Board.html" aria-expanded="false">
+            <a aria-expanded="false">
               <div className="nav_icon_small">
                 <img
                   src="https://demo.dashboardpack.com/analytic-html/img/menu-icon/5.svg"
@@ -239,7 +239,7 @@ const Navbar = () => {
             </a>
           </li>
           <li className>
-            <a href="calender.html" aria-expanded="false">
+            <a aria-expanded="false">
               <div className="nav_icon_small">
                 <img
                   src="https://demo.dashboardpack.com/analytic-html/img/menu-icon/7.svg"
@@ -252,7 +252,7 @@ const Navbar = () => {
             </a>
           </li>
           <li className>
-            <a className="has-arrow" href="#" aria-expanded="false">
+            <a className="has-arrow" aria-expanded="false">
               <div className="nav_icon_small">
                 <img
                   src="https://demo.dashboardpack.com/analytic-html/img/menu-icon/8.svg"
@@ -265,21 +265,21 @@ const Navbar = () => {
             </a>
             <ul>
               <li>
-                <a href="Products.html">Products</a>
+                <a>Products</a>
               </li>
               <li>
-                <a href="Product_Details.html">Product Details</a>
+                <a>Product Details</a>
               </li>
               <li>
-                <a href="Cart.html">Cart</a>
+                <a>Cart</a>
               </li>
               <li>
-                <a href="Checkout.html">Checkout</a>
+                <a>Checkout</a>
               </li>
             </ul>
           </li>
           <li className>
-            <a className="has-arrow" href="#" aria-expanded="false">
+            <a className="has-arrow" aria-expanded="false">
               <div className="nav_icon_small">
                 <img
                   src="https://demo.dashboardpack.com/analytic-html/img/menu-icon/9.svg"
@@ -292,10 +292,10 @@ const Navbar = () => {
             </a>
             <ul>
               <li>
-                <a href="Fontawesome_Icon.html">Fontawesome Icon</a>
+                <a>Fontawesome Icon</a>
               </li>
               <li>
-                <a href="themefy_icon.html">themefy icon</a>
+                <a>themefy icon</a>
               </li>
             </ul>
           </li>
@@ -303,31 +303,32 @@ const Navbar = () => {
             <span>Features</span> <i className="fas fa-ellipsis-h"></i>{" "}
           </h4>
           <li className>
-            <a className="has-arrow" href="#" aria-expanded="false">
+            <a className="has-arrow" aria-expanded="false">
               <div className="nav_icon_small">
                 <img
                   src="https://demo.dashboardpack.com/analytic-html/img/menu-icon/8.svg"
                   alt
                 />
               </div>
+              
               <div className="nav_title">
-                <span>Animations</span>
+                <span id='metismenu'>Animations</span>
               </div>
             </a>
             <ul>
               <li>
-                <a href="wow_animation.html">Animate</a>
+                <a>Animate</a>
               </li>
               <li>
-                <a href="Scroll_Reveal.html">Scroll Reveal</a>
+                <a>Scroll Reveal</a>
               </li>
               <li>
-                <a href="tilt.html">Tilt Animation</a>
+                <a>Tilt Animation</a>
               </li>
             </ul>
           </li>
           <li className>
-            <a className="has-arrow" href="#" aria-expanded="false">
+            <a className="has-arrow" aria-expanded="false">
               <div className="nav_icon_small">
                 <img
                   src="https://demo.dashboardpack.com/analytic-html/img/menu-icon/9.svg"
@@ -340,24 +341,24 @@ const Navbar = () => {
             </a>
             <ul>
               <li>
-                <a href="accordion.html">Accordions</a>
+                <a>Accordions</a>
               </li>
               <li>
-                <a href="Scrollable.html">Scrollable</a>
+                <a>Scrollable</a>
               </li>
               <li>
-                <a href="notification.html">Notifications</a>
+                <a>Notifications</a>
               </li>
               <li>
-                <a href="carousel.html">Carousel</a>
+                <a>Carousel</a>
               </li>
               <li>
-                <a href="Pagination.html">Pagination</a>
+                <a>Pagination</a>
               </li>
             </ul>
           </li>
           <li className>
-            <a className="has-arrow" href="#" aria-expanded="false">
+            <a className="has-arrow" aria-expanded="false">
               <div className="nav_icon_small">
                 <img
                   src="https://demo.dashboardpack.com/analytic-html/img/menu-icon/11.svg"
@@ -370,15 +371,15 @@ const Navbar = () => {
             </a>
             <ul>
               <li>
-                <a href="data_table.html">Data Tables</a>
+                <a>Data Tables</a>
               </li>
               <li>
-                <a href="bootstrap_table.html">Bootstrap</a>
+                <a>Bootstrap</a>
               </li>
             </ul>
           </li>
           <li className>
-            <a className="has-arrow" href="#" aria-expanded="false">
+            <a className="has-arrow" aria-expanded="false">
               <div className="nav_icon_small">
                 <img
                   src="https://demo.dashboardpack.com/analytic-html/img/menu-icon/12.svg"
@@ -391,18 +392,18 @@ const Navbar = () => {
             </a>
             <ul>
               <li>
-                <a href="basic_card.html">Basic Card</a>
+                <a>Basic Card</a>
               </li>
               <li>
-                <a href="theme_card.html">Theme Card</a>
+                <a>Theme Card</a>
               </li>
               <li>
-                <a href="dargable_card.html">Draggable Card</a>
+                <a>Draggable Card</a>
               </li>
             </ul>
           </li>
           <li className>
-            <a className="has-arrow" href="#" aria-expanded="false">
+            <a className="has-arrow" aria-expanded="false">
               <div className="nav_icon_small">
                 <img
                   src="https://demo.dashboardpack.com/analytic-html/img/menu-icon/12.svg"
@@ -415,24 +416,24 @@ const Navbar = () => {
             </a>
             <ul>
               <li>
-                <a href="chartjs.html">ChartJS</a>
+                <a>ChartJS</a>
               </li>
               <li>
-                <a href="apex_chart.html">Apex Charts</a>
+                <a>Apex Charts</a>
               </li>
               <li>
-                <a href="chart_sparkline.html">Chart sparkline</a>
+                <a>Chart sparkline</a>
               </li>
               <li>
-                <a href="am_chart.html">am-charts</a>
+                <a>am-charts</a>
               </li>
               <li>
-                <a href="nvd3_charts.html">nvd3 charts.</a>
+                <a>nvd3 charts.</a>
               </li>
             </ul>
           </li>
           <li className>
-            <a className="has-arrow" href="#" aria-expanded="false">
+            <a className="has-arrow" aria-expanded="false">
               <div className="nav_icon_small">
                 <img
                   src="https://demo.dashboardpack.com/analytic-html/img/menu-icon/3.svg"
@@ -445,39 +446,39 @@ const Navbar = () => {
             </a>
             <ul>
               <li>
-                <a href="colors.html">colors</a>
+                <a>colors</a>
               </li>
               <li>
-                <a href="Alerts.html">Alerts</a>
+                <a>Alerts</a>
               </li>
               <li>
-                <a href="buttons.html">Buttons</a>
+                <a>Buttons</a>
               </li>
               <li>
-                <a href="modal.html">modal</a>
+                <a>modal</a>
               </li>
               <li>
-                <a href="dropdown.html">Droopdowns</a>
+                <a>Droopdowns</a>
               </li>
               <li>
-                <a href="Badges.html">Badges</a>
+                <a>Badges</a>
               </li>
               <li>
-                <a href="Loading_Indicators.html">Loading Indicators</a>
+                <a>Loading Indicators</a>
               </li>
               <li>
-                <a href="State_color.html">State color</a>
+                <a>State color</a>
               </li>
               <li>
-                <a href="typography.html">Typography</a>
+                <a>Typography</a>
               </li>
               <li>
-                <a href="datepicker.html">Date Picker</a>
+                <a>Date Picker</a>
               </li>
             </ul>
           </li>
           <li className>
-            <a className="has-arrow" href="#" aria-expanded="false">
+            <a className="has-arrow" aria-expanded="false">
               <div className="nav_icon_small">
                 <img
                   src="https://demo.dashboardpack.com/analytic-html/img/menu-icon/14.svg"
@@ -490,15 +491,15 @@ const Navbar = () => {
             </a>
             <ul>
               <li>
-                <a href="chart_box_1.html">Chart Boxes 1</a>
+                <a>Chart Boxes 1</a>
               </li>
               <li>
-                <a href="profilebox.html">Profile Box</a>
+                <a>Profile Box</a>
               </li>
             </ul>
           </li>
           <li className>
-            <a className="has-arrow" href="#" aria-expanded="false">
+            <a className="has-arrow" aria-expanded="false">
               <div className="nav_icon_small">
                 <img
                   src="https://demo.dashboardpack.com/analytic-html/img/menu-icon/15.svg"
@@ -511,10 +512,10 @@ const Navbar = () => {
             </a>
             <ul>
               <li>
-                <a href="mapjs.html">Maps JS</a>
+                <a>Maps JS</a>
               </li>
               <li>
-                <a href="vector_map.html">Vector Maps</a>
+                <a>Vector Maps</a>
               </li>
             </ul>
           </li>
