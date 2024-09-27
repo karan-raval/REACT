@@ -1,7 +1,7 @@
 @import "https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400&display=swap";
 .CRM_dropdown.dropdown .dropdown-toggle:hover,
 .CRM_dropdown.dropdown .dropdown-toggle:focus {
-  background: -webkit-gradient(
+  background:gradient(
     linear,
     left top,
     right top,
@@ -7075,7 +7075,7 @@ canvas#highlights {
 .sales_card_wrapper {
   background-color: #f65365;
   position: relative;
-  background-image: url(../img/plane_thumb.svg);
+  background-image: url(../assets/images/plane_thumb.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-size: 100% 58%;
@@ -9713,7 +9713,7 @@ a.pswp__share--download:hover {
 }
 .project_complete {
   background: #e2fff6;
-  background-image: url(../img/pro_complete.png);
+  background-image: url(../assets/images/pro_complete.png);
   height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
