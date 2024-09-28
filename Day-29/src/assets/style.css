@@ -5022,7 +5022,7 @@ canvas#highlights {
 .weatcher_update_wrapper .weather_img_2 {
   background-color: #e5fffe;
   border-radius: 15px;
-  background-image: url(../img/weather_1.png);
+  background-image: url(../assets/images/weather_1.png);
   background-repeat: no-repeat;
   background-size: 100% auto;
   width: 100%;
