@@ -3838,8 +3838,8 @@ const Home = () => {
                             </g>
                             <g></g>
                           </svg>
-                          <div class="jvectormap-zoomin">+</div>
-                          <div class="jvectormap-zoomout">−</div>
+                          {/* <div class="jvectormap-zoomin">+</div> */}
+                          {/* <div class="jvectormap-zoomout">−</div> */}
                           <div class="jvectormap-legend-cnt jvectormap-legend-cnt-h"></div>
                           <div class="jvectormap-legend-cnt jvectormap-legend-cnt-v"></div>
                         </div>
@@ -3854,7 +3854,7 @@ const Home = () => {
                                 <h6 className="f_s_14 f_w_400">USA</h6>
                                 <div id="bar4" className="barfiller">
                                   <div className="tipWrap">
-                                    <span className="tip"></span>
+                                  <span class="tip ff" >81%</span>
                                   </div>
                                   <span class="fill bars" data-percentage="81" ></span>
                                 </div>
