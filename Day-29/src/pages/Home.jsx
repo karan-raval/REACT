@@ -263,7 +263,7 @@ const Home = () => {
                           version="1.1"
                           xmlns:xlink="http://www.w3.org/1999/xlink"
                           xmlns:svgjs="http://svgjs.com/svgjs"
-                          className="apexcharts-svg"
+                          // className="apexcharts-svg"
                           xmlns:data="ApexChartsNS"
                           transform="translate(0, 0)"
                           className="bgtrans"

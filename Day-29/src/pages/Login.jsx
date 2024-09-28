@@ -1,4 +1,9 @@
-<section class="main_content dashboard_part large_header_bg">
+import React from 'react'
+
+const Login = () => {
+  return (
+    <>
+    <section class="main_content dashboard_part large_header_bg">
 
 <div class="container-fluid g-0">
 <div class="row">
@@ -184,3 +189,8 @@
 </div>
 </div>
 </section>
+    </>
+  )
+}
+
+export default Login
