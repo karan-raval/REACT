@@ -74,6 +74,7 @@ const Login = () => {
     <Navbar/>
       <section class="main_content dashboard_part large_header_bg">
        <Header/>
+       <ToastContainer />
 
         <div class="main_content_iner ">
           <div class="container-fluid p-0">
@@ -124,14 +125,14 @@ const Login = () => {
                                 value={pass} onChange={(e)=>setPass(e.target.value)}
                               />
                             </div>
-                            <a class="btn_1 full_width text-center">
+                            <button type='submit' class="btn_1 full_width text-center">
                               Log in
-                            </a>
+                            </button>
                             <hr />
-                            <a onClick={handleClick} class="btn_1 green full_width text-center">
+                            <button onClick={handleClick} class="btn_1 green full_width text-center">
                               Log in With Google &nbsp;&nbsp; 
                             <i class="fas fa-caret-right"></i>
-                            </a>
+                            </button>
                             <p>
                               Need an account?
                               <a>
