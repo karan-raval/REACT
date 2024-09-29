@@ -65,10 +65,7 @@ const Login = () => {
         
       }
   },[state.isLogin])
-  const handleLogout=()=>{
-    GoogleLogout()
-    toast.success("Logout Successful!", { autoClose: 3000 });
-  }
+  
   return (
     <>
     <Navbar/>
