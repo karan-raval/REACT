@@ -1,14 +1,80 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from 'react'
+// import { Link } from "react-router-dom";
 import Navbar from "../Components/Navbar";
 import Header from "../Components/Header";
+import { collection, getDocs } from 'firebase/firestore';
+import { useDispatch, useSelector } from 'react-redux';
+import { Link, useNavigate } from 'react-router-dom'
+import { db, GoogleLogout } from '../FirebaseFolder/Firebase';
+import { toast, ToastContainer } from 'react-toastify';
+import { google, UserReducer } from '../Redux/User/UserReducer';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
+  const [email, setEmail] = useState("");
+  const [pass, setPass] = useState("");
+  const [d, setD] = useState([]);
+  const UserCollection = collection(db, "users");
+  const navigate = useNavigate();
+  const dispatch  = useDispatch()
+  const state = useSelector((s)=>s.UserReducer)
+  const [user,setUser] = useState(null)
+  console.log(state)
+  console.log(state.isLogin)
+
+  useEffect(() => {
+      const getData = async () => {
+          try {
+              let data = await getDocs(UserCollection);
+              let val = data.docs.map((el) => ({
+                  id: el.id,
+                  ...el.data(),
+              }));
+              setD(val);
+          } catch (error) {
+              toast.error("Failed to load user data", { autoClose: 3000 });
+          }
+      };
+      getData();
+  }, []);
+
+  const handleSubmit = (e) => {
+      e.preventDefault();
+
+      let user = d.filter((el) => el.email === email && el.pass === pass);
+
+      if (user.length > 0) {
+          toast.success("Login Successful!", { autoClose: 3000 });
+          setTimeout(() => {
+            navigate("/");
+        }, 3000); 
+      } else {
+          toast.error("Login Unsuccessful! Please check your credentials.", { autoClose: 3000 });
+      }
+  };
+
+  const handleClick=()=>{
+    dispatch(google)
+   
+    
+  }
+  useEffect(()=>{
+    if(state.isLogin == true)
+      {
+        navigate('/')
+        
+      }
+  },[state.isLogin])
+  const handleLogout=()=>{
+    GoogleLogout()
+    toast.success("Logout Successful!", { autoClose: 3000 });
+  }
   return (
     <>
     <Navbar/>
       <section class="main_content dashboard_part large_header_bg">
        <Header/>
+       <ToastContainer />
 
         <div class="main_content_iner ">
           <div class="container-fluid p-0">
@@ -42,12 +108,13 @@ const Login = () => {
                           <h5 class="modal-title text_white">Log in</h5>
                         </div>
                         <div class="modal-body">
-                          <form>
+                          <form onSubmit={handleSubmit}>
                             <div class>
                               <input
                                 type="text"
                                 class="form-control"
                                 placeholder="Enter your email"
+                                value={email} onChange={(e)=>setEmail(e.target.value)}
                               />
                             </div>
                             <div class>
@@ -55,16 +122,17 @@ const Login = () => {
                                 type="password"
                                 class="form-control"
                                 placeholder="Password"
+                                value={pass} onChange={(e)=>setPass(e.target.value)}
                               />
                             </div>
-                            <a class="btn_1 full_width text-center">
+                            <button type='submit' class="btn_1 full_width text-center">
                               Log in
-                            </a>
+                            </button>
                             <hr />
-                            <a class="btn_1 green full_width text-center">
+                            <button onClick={handleClick} class="btn_1 green full_width text-center">
                               Log in With Google &nbsp;&nbsp; 
                             <i class="fas fa-caret-right"></i>
-                            </a>
+                            </button>
                             <p>
                               Need an account?
                               <a>
