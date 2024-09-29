@@ -20,6 +20,7 @@ const Login = () => {
                       <div class="dashboard_header_title">
                         <h3> Login</h3>
                       </div>
+                      
                     </div>
                     <div class="col-lg-6">
                       <div class="dashboard_breadcam text-end">
@@ -56,13 +57,17 @@ const Login = () => {
                                 placeholder="Password"
                               />
                             </div>
-                            <a href="#" class="btn_1 full_width text-center">
+                            <a class="btn_1 full_width text-center">
                               Log in
                             </a>
+                            <hr />
+                            <a class="btn_1 green full_width text-center">
+                              Log in With Google &nbsp;&nbsp; 
+                            <i class="fas fa-caret-right"></i>
+                            </a>
                             <p>
-                              Need an account?{" "}
+                              Need an account?
                               <a>
-                                {" "}
                                 <Link to={"/signup"}>Sign Up</Link>
                               </a>
                             </p>
