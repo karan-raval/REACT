@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-// import { Link } from "react-router-dom";
 import Navbar from "../Components/Navbar";
 import Header from "../Components/Header";
 import { collection, getDocs } from 'firebase/firestore';

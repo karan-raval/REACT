@@ -1,15 +1,15 @@
-import {React,useState } from 'react'
-import { addData } from '../Redux/Product/action';
-import { useDispatch, useSelector } from 'react-redux';
-import { Link, Navigate, useNavigate } from 'react-router-dom';
+import { React, useState } from "react";
+import { addData } from "../Redux/Product/action";
+import { useDispatch, useSelector } from "react-redux";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 import Navbar from "../Components/Navbar";
 import "../assets/style1.css";
 import Header from "../Components/Header";
 const AddProduct = () => {
-    const dispatch = useDispatch()
-    const state = useSelector((s)=>s.proReducer)
-    const navigate=useNavigate()
-    console.log(state)
+  const dispatch = useDispatch();
+  const state = useSelector((s) => s.proReducer);
+  const navigate = useNavigate();
+  console.log(state);
   const [fromdata, setState] = useState({
     product: "",
     brand: "",
@@ -26,15 +26,15 @@ const AddProduct = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     let obj = {
-        product,
-        brand,
-        price,
-        strikedOffPrice,
-        category,
-        imageURL,
-    }
-    dispatch(addData)(obj)
-    navigate('/product')
+      product,
+      brand,
+      price,
+      strikedOffPrice,
+      category,
+      imageURL,
+    };
+    dispatch(addData)(obj);
+    navigate("/product");
   };
 
   let { product, brand, price, strikedOffPrice, category, imageURL } = fromdata;
@@ -73,7 +73,9 @@ const AddProduct = () => {
                     <div className="col-lg-6">
                       <div className="modal-content cs_modal">
                         <div className="modal-header theme_bg_1 justify-content-center">
-                          <h5 className="modal-title text_white">ADD PRODUCT</h5>
+                          <h5 className="modal-title text_white">
+                            ADD PRODUCT
+                          </h5>
                         </div>
                         <div className="modal-body">
                           <form onSubmit={handleSubmit}>
@@ -125,7 +127,6 @@ const AddProduct = () => {
                               placeholder="Enter Product image-URL"
                               onChange={handleChange}
                             />
-
                             <button
                               type="submit"
                               className="btn_1 full_width text-center"
