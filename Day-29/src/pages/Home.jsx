@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../Components/Navbar";
 import "../assets/style1.css";
-
+import Header from "../Components/Header";
 import crome from "../assets/images/crome.png";
 import safari from "../assets/images/safari.png";
 import OBJECTS from "../assets/images/OBJECTS.png";
@@ -12,8 +12,7 @@ const Home = () => {
     <>
       <Navbar />
       <section className="main_content dashboard_part large_header_bg">
-       
-
+       <Header/>
         <div className="main_content_iner overly_inner ">
           <div className="container-fluid p-0 ">
             <div className="row">
