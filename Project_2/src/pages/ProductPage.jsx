@@ -5,6 +5,7 @@ import { deleteDoc, doc } from "firebase/firestore";
 import { db } from "../FirebaseFolder/Firebase";
 import { Link, useNavigate } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
+// import Rating from '@mui/material/Rating';
 import Navbar from "../Components/Navbar";
 
 const ProductPage = () => {
@@ -251,7 +252,8 @@ const ProductPage = () => {
                                 <del>₹{el.strikedOffPrice}</del>
                               </small>
                             </h4>
-                            <ul className="list-inline mb-0 product-review align-self-center">
+                            {/* <Rating name="read-only" value={3} readOnly /> */}
+                            {/* <ul className="list-inline mb-0 product-review align-self-center">
                               <li className="list-inline-item">
                                 <i className="fas fa-star text-warning font-16"></i>
                               </li>
@@ -267,7 +269,7 @@ const ProductPage = () => {
                               <li className="list-inline-item">
                                 <i className="fas fa-star-half text-warning font-16 ms-n2"></i>
                               </li>
-                            </ul>
+                            </ul> */}
                           </div>
                         </div>
                         <div className="d-grid">
