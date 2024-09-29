@@ -16,7 +16,7 @@ const Login = () => {
   const [d, setD] = useState([]);
   const UserCollection = collection(db, "users");
   const navigate = useNavigate();
-  const dispatch  = useDispatch()
+  const dispatch  = useDispatch();
   const state = useSelector((s)=>s.UserReducer)
   const [user,setUser] = useState(null)
   console.log(state)

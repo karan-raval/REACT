@@ -86,7 +86,6 @@ const Login = () => {
                       <div class="dashboard_header_title">
                         <h3> Login</h3>
                       </div>
-                      
                     </div>
                     <div class="col-lg-6">
                       <div class="dashboard_breadcam text-end">
