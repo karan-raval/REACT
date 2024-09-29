@@ -3,7 +3,7 @@ import Mainroutes from "./Routes/Mainroutes";
 function App() {
   return (
     <>
-    <Navbar/>
+    {/* <Navbar/> */}
       <Mainroutes />
     </>
   );

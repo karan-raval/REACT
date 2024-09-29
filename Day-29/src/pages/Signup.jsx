@@ -1,11 +1,13 @@
 import React from 'react'
 import "../assets/style1.css";
 import { Link } from 'react-router-dom';
+import Navbar from "../Components/Navbar";
 
 
 const Signup = () => {
   return (
     <>
+    <Navbar/>
     <section className="main_content dashboard_part large_header_bg">
 
 <div className="container-fluid g-0">
@@ -186,7 +188,7 @@ Keep me up to date
 </label>
 </div>
 <a href="#" className="btn_1 full_width text-center"> Sign Up</a>
-<p>Need an account? <a data-bs-toggle="modal" data-bs-target="#sing_up" data-bs-dismiss="modal"> <Link to={"/login"}>Log in</Link></a></p>
+<p>Need an account? <a > <Link to={"/login"}>Log in</Link></a></p>
 <div className="text-center">
 <a href="#" data-bs-toggle="modal" data-bs-target="#forgot_password" data-bs-dismiss="modal" className="pass_forget_btn">Forget Password?</a>
 </div>
