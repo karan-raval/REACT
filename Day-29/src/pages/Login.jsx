@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import Navbar from "../Components/Navbar";
 import Header from "../Components/Header";
 import { collection, getDocs } from 'firebase/firestore';
@@ -107,12 +107,13 @@ const Login = () => {
                           <h5 class="modal-title text_white">Log in</h5>
                         </div>
                         <div class="modal-body">
-                          <form>
+                          <form onSubmit={handleSubmit}>
                             <div class>
                               <input
                                 type="text"
                                 class="form-control"
                                 placeholder="Enter your email"
+                                value={email} onChange={(e)=>setEmail(e.target.value)}
                               />
                             </div>
                             <div class>
@@ -120,13 +121,14 @@ const Login = () => {
                                 type="password"
                                 class="form-control"
                                 placeholder="Password"
+                                value={pass} onChange={(e)=>setPass(e.target.value)}
                               />
                             </div>
                             <a class="btn_1 full_width text-center">
                               Log in
                             </a>
                             <hr />
-                            <a class="btn_1 green full_width text-center">
+                            <a onClick={handleClick} class="btn_1 green full_width text-center">
                               Log in With Google &nbsp;&nbsp; 
                             <i class="fas fa-caret-right"></i>
                             </a>
