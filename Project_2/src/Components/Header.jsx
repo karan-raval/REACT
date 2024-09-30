@@ -1,15 +1,20 @@
-import React from 'react'
+import React from 'react';
 import bell from "../assets/images/bell.svg";
 import msg from "../assets/images/msg.svg";
 import client from "../assets/images/client_img.png";
 import { GoogleLogout } from '../FirebaseFolder/Firebase';
 import { toast, ToastContainer } from 'react-toastify';
+import { useNavigate } from 'react-router-dom';
 
 
 const Header = () => {
+  const navigate =useNavigate()
   const handleLogout=()=>{
     GoogleLogout()
-    toast.success("Logout Successful!", { autoClose: 3000 });
+    setTimeout(() => {
+      toast.success("Logout Successful!", { autoClose: 3000 });
+    }, 100);
+    navigate('/login')
   }
   return (
     <>

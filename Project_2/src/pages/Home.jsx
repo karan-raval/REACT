@@ -29,7 +29,7 @@ const Home = () => {
                   </div>
                   <div className="page_title_right">
                     <div className="page_date_button">
-                      August 1, 2020 - August 31, 2020
+                      September 1, 2024 - September 31, 2024
                     </div>
                     <div className="dropdown common_bootstrap_button ">
                       <span
