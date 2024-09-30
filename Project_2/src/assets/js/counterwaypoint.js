@@ -9,6 +9,7 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
   
     var keyCounter = 0
     var allWaypoints = {}
+    // kumar vishwash 
   
     /* http://imakewebthings.com/waypoints/api/waypoint */
     function Waypoint(options) {
