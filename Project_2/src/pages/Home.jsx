@@ -12,7 +12,7 @@ const Home = () => {
     <>
       <Navbar />
       <section className="main_content dashboard_part large_header_bg">
-       <Header/>
+        <Header />
         <div className="main_content_iner overly_inner ">
           <div className="container-fluid p-0 ">
             <div className="row">
@@ -90,7 +90,7 @@ const Home = () => {
                           height="380"
                           xmlns="http://www.w3.org/2000/svg"
                           version="1.1"
-                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          // xmlns:xlink="http://www.w3.org/1999/xlink"
                           xmlns:svgjs="http://svgjs.com/svgjs"
                           className="apexcharts-svg"
                           xmlns:data="ApexChartsNS"
@@ -142,7 +142,7 @@ const Home = () => {
                                   opacity="1"
                                   stroke-width="0"
                                   stroke="none"
-                                  stroke-dasharray="0"
+                                   
                                 ></rect>
                               </clipPath>
                               <clipPath id="gridRectMarkerMaskbo8g3kco">
@@ -158,7 +158,7 @@ const Home = () => {
                                   opacity="1"
                                   stroke-width="0"
                                   stroke="none"
-                                  stroke-dasharray="0"
+                                   
                                 ></rect>
                               </clipPath>
                             </defs>
@@ -173,7 +173,7 @@ const Home = () => {
                               fill="url(#SvgjsLinearGradient2030)"
                               opacity="1"
                               stroke-width="0"
-                              stroke-dasharray="3"
+                               
                               className="apexcharts-xcrosshairs"
                               y2="307.348"
                               filter="none"
@@ -307,7 +307,7 @@ const Home = () => {
                                   x2="687.640625"
                                   y2="0"
                                   stroke="#ffccd2"
-                                  stroke-dasharray="4"
+                                   
                                   className="apexcharts-gridline"
                                 ></line>
                                 <line
@@ -317,7 +317,7 @@ const Home = () => {
                                   x2="687.640625"
                                   y2="76.837"
                                   stroke="#ffccd2"
-                                  stroke-dasharray="4"
+                                   
                                   className="apexcharts-gridline"
                                 ></line>
                                 <line
@@ -327,7 +327,7 @@ const Home = () => {
                                   x2="687.640625"
                                   y2="153.674"
                                   stroke="#ffccd2"
-                                  stroke-dasharray="4"
+                                   
                                   className="apexcharts-gridline"
                                 ></line>
                                 <line
@@ -337,7 +337,7 @@ const Home = () => {
                                   x2="687.640625"
                                   y2="230.51100000000002"
                                   stroke="#ffccd2"
-                                  stroke-dasharray="4"
+                                   
                                   className="apexcharts-gridline"
                                 ></line>
                                 <line
@@ -347,7 +347,7 @@ const Home = () => {
                                   x2="687.640625"
                                   y2="307.348"
                                   stroke="#ffccd2"
-                                  stroke-dasharray="4"
+                                   
                                   className="apexcharts-gridline"
                                 ></line>
                               </g>
@@ -362,7 +362,7 @@ const Home = () => {
                                 x2="687.640625"
                                 y2="307.348"
                                 stroke="transparent"
-                                stroke-dasharray="0"
+                                 
                               ></line>
                               <line
                                 id="SvgjsLine2084"
@@ -371,7 +371,7 @@ const Home = () => {
                                 x2="0"
                                 y2="307.348"
                                 stroke="transparent"
-                                stroke-dasharray="0"
+                                 
                               ></line>
                             </g>
                             <g
@@ -394,7 +394,7 @@ const Home = () => {
                                   stroke-opacity="1"
                                   stroke-linecap="butt"
                                   stroke-width="2"
-                                  stroke-dasharray="0"
+                                   
                                   className="apexcharts-bar-area"
                                   index="0"
                                   clip-path="url(#gridRectMaskbo8g3kco)"
@@ -416,7 +416,7 @@ const Home = () => {
                                   stroke-opacity="1"
                                   stroke-linecap="butt"
                                   stroke-width="2"
-                                  stroke-dasharray="0"
+                                   
                                   className="apexcharts-bar-area"
                                   index="0"
                                   clip-path="url(#gridRectMaskbo8g3kco)"
@@ -438,7 +438,7 @@ const Home = () => {
                                   stroke-opacity="1"
                                   stroke-linecap="butt"
                                   stroke-width="2"
-                                  stroke-dasharray="0"
+                                   
                                   className="apexcharts-bar-area"
                                   index="0"
                                   clip-path="url(#gridRectMaskbo8g3kco)"
@@ -460,7 +460,7 @@ const Home = () => {
                                   stroke-opacity="1"
                                   stroke-linecap="butt"
                                   stroke-width="2"
-                                  stroke-dasharray="0"
+                                   
                                   className="apexcharts-bar-area"
                                   index="0"
                                   clip-path="url(#gridRectMaskbo8g3kco)"
@@ -482,7 +482,7 @@ const Home = () => {
                                   stroke-opacity="1"
                                   stroke-linecap="butt"
                                   stroke-width="2"
-                                  stroke-dasharray="0"
+                                   
                                   className="apexcharts-bar-area"
                                   index="0"
                                   clip-path="url(#gridRectMaskbo8g3kco)"
@@ -504,7 +504,7 @@ const Home = () => {
                                   stroke-opacity="1"
                                   stroke-linecap="butt"
                                   stroke-width="2"
-                                  stroke-dasharray="0"
+                                   
                                   className="apexcharts-bar-area"
                                   index="0"
                                   clip-path="url(#gridRectMaskbo8g3kco)"
@@ -538,7 +538,7 @@ const Home = () => {
                                   stroke-opacity="1"
                                   stroke-linecap="butt"
                                   stroke-width="2"
-                                  stroke-dasharray="0"
+                                   
                                   className="apexcharts-bar-area"
                                   index="1"
                                   clip-path="url(#gridRectMaskbo8g3kco)"
@@ -560,7 +560,7 @@ const Home = () => {
                                   stroke-opacity="1"
                                   stroke-linecap="butt"
                                   stroke-width="2"
-                                  stroke-dasharray="0"
+                                   
                                   className="apexcharts-bar-area"
                                   index="1"
                                   clip-path="url(#gridRectMaskbo8g3kco)"
@@ -582,7 +582,7 @@ const Home = () => {
                                   stroke-opacity="1"
                                   stroke-linecap="butt"
                                   stroke-width="2"
-                                  stroke-dasharray="0"
+                                   
                                   className="apexcharts-bar-area"
                                   index="1"
                                   clip-path="url(#gridRectMaskbo8g3kco)"
@@ -604,7 +604,7 @@ const Home = () => {
                                   stroke-opacity="1"
                                   stroke-linecap="butt"
                                   stroke-width="2"
-                                  stroke-dasharray="0"
+                                   
                                   className="apexcharts-bar-area"
                                   index="1"
                                   clip-path="url(#gridRectMaskbo8g3kco)"
@@ -626,7 +626,7 @@ const Home = () => {
                                   stroke-opacity="1"
                                   stroke-linecap="butt"
                                   stroke-width="2"
-                                  stroke-dasharray="0"
+                                   
                                   className="apexcharts-bar-area"
                                   index="1"
                                   clip-path="url(#gridRectMaskbo8g3kco)"
@@ -648,7 +648,7 @@ const Home = () => {
                                   stroke-opacity="1"
                                   stroke-linecap="butt"
                                   stroke-width="2"
-                                  stroke-dasharray="0"
+                                   
                                   className="apexcharts-bar-area"
                                   index="1"
                                   clip-path="url(#gridRectMaskbo8g3kco)"
@@ -674,7 +674,7 @@ const Home = () => {
                               x2="687.640625"
                               y2="0"
                               stroke="#b6b6b6"
-                              stroke-dasharray="0"
+                               
                               stroke-width="1"
                               className="apexcharts-ycrosshairs"
                             ></line>
@@ -684,7 +684,7 @@ const Home = () => {
                               y1="0"
                               x2="687.640625"
                               y2="0"
-                              stroke-dasharray="0"
+                               
                               stroke-width="0"
                               className="apexcharts-ycrosshairs-hidden"
                             ></line>
@@ -707,7 +707,10 @@ const Home = () => {
                             rel="0"
                             transform="translate(22.359375, 0)"
                           >
-                            <g id="SvgjsG2070" className="apexcharts-yaxis-texts-g">
+                            <g
+                              id="SvgjsG2070"
+                              className="apexcharts-yaxis-texts-g"
+                            >
                               <text
                                 id="SvgjsText2071"
                                 font-family="Helvetica, Arial, sans-serif"
@@ -915,7 +918,7 @@ const Home = () => {
                           height="150"
                           xmlns="http://www.w3.org/2000/svg"
                           version="1.1"
-                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          // xmlns:xlink="http://www.w3.org/1999/xlink"
                           xmlns:svgjs="http://svgjs.com/svgjs"
                           className="apexcharts-svg bgtrans"
                           xmlns:data="ApexChartsNS"
@@ -940,7 +943,7 @@ const Home = () => {
                                   opacity="1"
                                   stroke-width="0"
                                   stroke="none"
-                                  stroke-dasharray="0"
+                                   
                                 ></rect>
                               </clipPath>
                               <clipPath id="gridRectMarkerMasks6rob4r2">
@@ -956,7 +959,7 @@ const Home = () => {
                                   opacity="1"
                                   stroke-width="0"
                                   stroke="none"
-                                  stroke-dasharray="0"
+                                   
                                 ></rect>
                               </clipPath>
                               <linearGradient
@@ -993,7 +996,7 @@ const Home = () => {
                               x2="0"
                               y2="80"
                               stroke="#b6b6b6"
-                              stroke-dasharray="3"
+                               
                               className="apexcharts-xcrosshairs"
                               x="0"
                               y="0"
@@ -1023,7 +1026,7 @@ const Home = () => {
                                 x2="357"
                                 y2="80"
                                 stroke="transparent"
-                                stroke-dasharray="0"
+                                 
                               ></line>
                               <line
                                 id="SvgjsLine3207"
@@ -1032,7 +1035,7 @@ const Home = () => {
                                 x2="0"
                                 y2="80"
                                 stroke="transparent"
-                                stroke-dasharray="0"
+                                 
                               ></line>
                             </g>
                             <g
@@ -1055,7 +1058,7 @@ const Home = () => {
                                   stroke-opacity="1"
                                   stroke-linecap="butt"
                                   stroke-width="0"
-                                  stroke-dasharray="0"
+                                   
                                   className="apexcharts-area"
                                   index="0"
                                   clip-path="url(#gridRectMasks6rob4r2)"
@@ -1071,7 +1074,7 @@ const Home = () => {
                                   stroke-opacity="1"
                                   stroke-linecap="butt"
                                   stroke-width="4"
-                                  stroke-dasharray="0"
+                                   
                                   className="apexcharts-area"
                                   index="0"
                                   clip-path="url(#gridRectMasks6rob4r2)"
@@ -1111,7 +1114,7 @@ const Home = () => {
                               x2="357"
                               y2="0"
                               stroke="#b6b6b6"
-                              stroke-dasharray="0"
+                               
                               stroke-width="1"
                               className="apexcharts-ycrosshairs"
                             ></line>
@@ -1121,7 +1124,7 @@ const Home = () => {
                               y1="0"
                               x2="357"
                               y2="0"
-                              stroke-dasharray="0"
+                               
                               stroke-width="0"
                               className="apexcharts-ycrosshairs-hidden"
                             ></line>
@@ -1150,7 +1153,7 @@ const Home = () => {
                             opacity="1"
                             stroke-width="0"
                             stroke="none"
-                            stroke-dasharray="0"
+                             
                           ></rect>
                           <g
                             id="SvgjsG3205"
@@ -1665,11 +1668,11 @@ const Home = () => {
                       id="world-map-markers"
                       className="dashboard_w_map pb_20"
                     >
-                      <div id="world-map-markers" className="dashboard_w_map pb_20">
-                        <div
-                          className="jvectormap-container bgtrans"
-                          
-                        >
+                      <div
+                        id="world-map-markers"
+                        className="dashboard_w_map pb_20"
+                      >
+                        <div className="jvectormap-container bgtrans">
                           <svg width="529.656" height="250">
                             <defs></defs>
                             <g transform="scale(0.5672712051204232) translate(16.845483446988936, 0)">
@@ -1691,7 +1694,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -1702,7 +1704,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -1713,7 +1714,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -1724,7 +1724,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -1735,7 +1734,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -1746,7 +1744,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -1757,7 +1754,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -1768,7 +1764,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -1779,7 +1774,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -1790,7 +1784,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -1801,7 +1794,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -1812,7 +1804,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -1823,7 +1814,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -1834,7 +1824,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -1845,7 +1834,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -1856,7 +1844,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -1867,7 +1854,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -1878,7 +1864,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -1889,7 +1874,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -1900,7 +1884,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -1911,7 +1894,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -1922,7 +1904,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -1933,7 +1914,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -1944,7 +1924,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -1955,7 +1934,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -1966,7 +1944,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -1977,7 +1954,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -1988,7 +1964,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -1999,7 +1974,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2010,7 +1984,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2021,7 +1994,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2032,7 +2004,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2043,7 +2014,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2054,7 +2024,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                                 cursor="pointer"
                               ></path>
@@ -2066,7 +2035,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2077,7 +2045,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2088,7 +2055,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2099,7 +2065,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2110,7 +2075,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2121,7 +2085,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2132,7 +2095,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2143,7 +2105,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2154,7 +2115,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2165,7 +2125,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2176,7 +2135,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2187,7 +2145,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2198,7 +2155,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2209,7 +2165,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2220,7 +2175,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2231,7 +2185,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2242,7 +2195,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2253,7 +2205,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2264,7 +2215,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2275,7 +2225,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2286,7 +2235,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2297,7 +2245,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2308,7 +2255,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2319,7 +2265,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2330,7 +2275,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2341,7 +2285,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2352,7 +2295,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2363,7 +2305,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2374,7 +2315,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2385,7 +2325,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2396,7 +2335,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2407,7 +2345,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2418,7 +2355,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2429,7 +2365,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2440,7 +2375,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2451,7 +2385,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2462,7 +2395,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2473,7 +2405,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2484,7 +2415,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2495,7 +2425,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2506,7 +2435,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2517,7 +2445,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2528,7 +2455,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2539,7 +2465,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2550,7 +2475,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2561,7 +2485,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2572,7 +2495,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2583,7 +2505,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2594,7 +2515,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2605,7 +2525,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2616,7 +2535,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2627,7 +2545,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2638,7 +2555,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2649,7 +2565,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2660,7 +2575,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2671,7 +2585,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2682,7 +2595,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2693,7 +2605,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2704,7 +2615,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2715,7 +2625,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2726,7 +2635,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2737,7 +2645,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2748,7 +2655,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2759,7 +2665,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2770,7 +2675,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2781,7 +2685,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2792,7 +2695,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2803,7 +2705,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2814,7 +2715,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                                 cursor="pointer"
                               ></path>
@@ -2826,7 +2726,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2837,7 +2736,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2848,7 +2746,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2859,7 +2756,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2870,7 +2766,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2881,7 +2776,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2892,7 +2786,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2903,7 +2796,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2914,7 +2806,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2925,7 +2816,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2936,7 +2826,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2947,7 +2836,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2958,7 +2846,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2969,7 +2856,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2980,7 +2866,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -2991,7 +2876,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -3002,7 +2886,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -3013,7 +2896,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -3024,7 +2906,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -3035,7 +2916,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -3046,7 +2926,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -3057,7 +2936,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -3068,7 +2946,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -3079,7 +2956,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -3090,7 +2966,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -3101,7 +2976,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -3112,7 +2986,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -3123,7 +2996,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -3134,7 +3006,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -3145,7 +3016,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -3156,7 +3026,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -3167,7 +3036,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -3178,7 +3046,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -3189,7 +3056,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                                 cursor="pointer"
                               ></path>
@@ -3201,7 +3067,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -3212,7 +3077,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -3223,7 +3087,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -3234,7 +3097,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -3245,7 +3107,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -3256,7 +3117,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -3267,7 +3127,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -3278,7 +3137,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -3289,7 +3147,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -3300,7 +3157,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -3311,7 +3167,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -3322,7 +3177,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -3333,7 +3187,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -3344,7 +3197,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -3355,7 +3207,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -3366,7 +3217,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -3377,7 +3227,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -3388,7 +3237,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -3399,7 +3247,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -3410,7 +3257,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -3421,7 +3267,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -3432,7 +3277,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -3443,7 +3287,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -3454,7 +3297,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -3465,7 +3307,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -3476,7 +3317,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -3487,7 +3327,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -3498,7 +3337,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -3509,7 +3347,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -3520,7 +3357,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -3531,7 +3367,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -3542,7 +3377,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -3553,7 +3387,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -3564,7 +3397,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -3575,7 +3407,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -3586,7 +3417,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -3597,7 +3427,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                               <path
@@ -3608,7 +3437,6 @@ const Home = () => {
                                 stroke="none"
                                 stroke-width="0"
                                 stroke-opacity="1"
-                                 
                                 className="jvectormap-region jvectormap-element"
                               ></path>
                             </g>
@@ -3682,9 +3510,12 @@ const Home = () => {
                                 <h6 className="f_s_14 f_w_400">USA</h6>
                                 <div id="bar4" className="barfiller">
                                   <div className="tipWrap">
-                                  <span className="tip ff" >81%</span>
+                                    <span className="tip ff">81%</span>
                                   </div>
-                                  <span className="fill bars" data-percentage="81" ></span>
+                                  <span
+                                    className="fill bars"
+                                    data-percentage="81"
+                                  ></span>
                                 </div>
                               </div>
                             </div>
@@ -3903,69 +3734,6 @@ const Home = () => {
                 </a>
               </li>
             </ul>
-          </div>
-        </div>
-        <div className="CHAT_POPUP_BODY">
-          <p className="mesaged_send_date">Sunday, 12 January</p>
-          <div className="CHATING_SENDER">
-            <div className="SMS_thumb">
-              <img src="img/staf/1.png" alt />
-            </div>
-            <div className="SEND_SMS_VIEW">
-              {/* <P>Hi! Welcome .
-How can I help you?</P> */}
-            </div>
-          </div>
-          <div className="CHATING_SENDER CHATING_RECEIVEr">
-            <div className="SEND_SMS_VIEW">{/* <P>Hello</P> */}</div>
-            <div className="SMS_thumb">
-              <img src="img/staf/1.png" alt />
-            </div>
-          </div>
-        </div>
-        <div className="CHAT_POPUP_BOTTOM">
-          <div className="chat_input_box d-flex align-items-center">
-            <div className="input-group">
-              <input
-                type="text"
-                className="form-control"
-                placeholder="Write your message"
-                aria-label="Recipient's username"
-                aria-describedby="basic-addon2"
-              />
-              <div className="input-group-append">
-                <button className="btn " type="button">
-                  <svg
-                    width="22"
-                    height="22"
-                    viewBox="0 0 22 22"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M18.7821 3.21895C14.4908 -1.07281 7.50882 -1.07281 3.2183 3.21792C-1.07304 7.50864 -1.07263 14.4908 3.21872 18.7824C7.50882 23.0729 14.4908 23.0729 18.7817 18.7815C23.0726 14.4908 23.0724 7.50906 18.7821 3.21895ZM17.5813 17.5815C13.9525 21.2103 8.04773 21.2108 4.41871 17.5819C0.78907 13.9525 0.789485 8.04714 4.41871 4.41832C8.04752 0.789719 13.9521 0.789304 17.5817 4.41874C21.2105 8.04755 21.2101 13.9529 17.5813 17.5815ZM6.89503 8.02162C6.89503 7.31138 7.47107 6.73534 8.18131 6.73534C8.89135 6.73534 9.46739 7.31117 9.46739 8.02162C9.46739 8.73228 8.89135 9.30811 8.18131 9.30811C7.47107 9.30811 6.89503 8.73228 6.89503 8.02162ZM12.7274 8.02162C12.7274 7.31138 13.3038 6.73534 14.0141 6.73534C14.7241 6.73534 15.3002 7.31117 15.3002 8.02162C15.3002 8.73228 14.7243 9.30811 14.0141 9.30811C13.3038 9.30811 12.7274 8.73228 12.7274 8.02162ZM15.7683 13.2898C14.9712 15.1332 13.1043 16.3243 11.0126 16.3243C8.8758 16.3243 6.99792 15.1272 6.22834 13.2744C6.09642 12.9573 6.24681 12.593 6.56438 12.4611C6.64238 12.4289 6.72328 12.4136 6.80293 12.4136C7.04687 12.4136 7.27836 12.5577 7.37772 12.7973C7.95376 14.1842 9.38048 15.0799 11.0126 15.0799C12.6077 15.0799 14.0261 14.1836 14.626 12.7959C14.7625 12.4804 15.1288 12.335 15.4441 12.4717C15.7594 12.6084 15.9048 12.9745 15.7683 13.2898Z"
-                      fill="#707DB7"
-                    />
-                  </svg>
-                </button>
-                <button className="btn" type="button">
-                  <svg
-                    width="22"
-                    height="22"
-                    viewBox="0 0 22 22"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M11 0.289062C4.92455 0.289062 0 5.08402 0 10.9996C0 16.9152 4.92455 21.7101 11 21.7101C17.0755 21.7101 22 16.9145 22 10.9996C22 5.08472 17.0755 0.289062 11 0.289062ZM11 20.3713C5.68423 20.3713 1.375 16.1755 1.375 10.9996C1.375 5.82371 5.68423 1.62788 11 1.62788C16.3158 1.62788 20.625 5.82371 20.625 10.9996C20.625 16.1755 16.3158 20.3713 11 20.3713ZM15.125 10.3302H11.6875V6.98314C11.6875 6.61363 11.3795 6.31373 11 6.31373C10.6205 6.31373 10.3125 6.61363 10.3125 6.98314V10.3302H6.875C6.4955 10.3302 6.1875 10.6301 6.1875 10.9996C6.1875 11.3691 6.4955 11.669 6.875 11.669H10.3125V15.016C10.3125 15.3855 10.6205 15.6854 11 15.6854C11.3795 15.6854 11.6875 15.3855 11.6875 15.016V11.669H15.125C15.5045 11.669 15.8125 11.3691 15.8125 10.9996C15.8125 10.6301 15.5045 10.3302 15.125 10.3302Z"
-                      fill="#707DB7"
-                    />
-                  </svg>
-
-                  <input type="file" />
-                </button>
-              </div>
-            </div>
           </div>
         </div>
       </div>
