@@ -8,13 +8,13 @@ import { useNavigate } from 'react-router-dom';
 
 
 const Header = () => {
-  const navigate =useNavigate()
+  const navigate =useNavigate();
   const handleLogout=()=>{
     GoogleLogout()
     setTimeout(() => {
       toast.success("Logout Successful!", { autoClose: 3000 });
-    }, 100);
-    navigate('/login')
+    }, 1000);
+    navigate('/login');
   }
   return (
     <>

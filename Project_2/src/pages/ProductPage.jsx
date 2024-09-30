@@ -68,7 +68,7 @@ const ProductPage = () => {
                       </div>
                     </li>
                     <li>
-                      <a className="bell_notification_clicker" href="#">
+                      <a className="bell_notification_clicker">
                         {" "}
                         <img src="img/icon/bell.svg" alt />
                         <span>2</span>
@@ -81,12 +81,12 @@ const ProductPage = () => {
                         <div className="Notification_body">
                           <div className="single_notify d-flex align-items-center">
                             <div className="notify_thumb">
-                              <a href="#">
+                              <a >
                                 <img src="img/staf/2.png" alt />
                               </a>
                             </div>
                             <div className="notify_content">
-                              <a href="#">
+                              <a>
                                 <h5>Cool Marketing </h5>
                               </a>
                               <p>Lorem ipsum dolor sit amet</p>
@@ -95,12 +95,12 @@ const ProductPage = () => {
 
                           <div className="single_notify d-flex align-items-center">
                             <div className="notify_thumb">
-                              <a href="#">
+                              <a>
                                 <img src="img/staf/4.png" alt />
                               </a>
                             </div>
                             <div className="notify_content">
-                              <a href="#">
+                              <a>
                                 <h5>Awesome packages</h5>
                               </a>
                               <p>Lorem ipsum dolor sit amet</p>
@@ -109,12 +109,12 @@ const ProductPage = () => {
 
                           <div className="single_notify d-flex align-items-center">
                             <div className="notify_thumb">
-                              <a href="#">
+                              <a>
                                 <img src="img/staf/3.png" alt />
                               </a>
                             </div>
                             <div className="notify_content">
-                              <a href="#">
+                              <a>
                                 <h5>what a packages</h5>
                               </a>
                               <p>Lorem ipsum dolor sit amet</p>
@@ -123,12 +123,12 @@ const ProductPage = () => {
 
                           <div className="single_notify d-flex align-items-center">
                             <div className="notify_thumb">
-                              <a href="#">
+                              <a>
                                 <img src="img/staf/2.png" alt />
                               </a>
                             </div>
                             <div className="notify_content">
-                              <a href="#">
+                              <a>
                                 <h5>Cool Marketing </h5>
                               </a>
                               <p>Lorem ipsum dolor sit amet</p>
@@ -137,12 +137,12 @@ const ProductPage = () => {
 
                           <div className="single_notify d-flex align-items-center">
                             <div className="notify_thumb">
-                              <a href="#">
+                              <a>
                                 <img src="img/staf/4.png" alt />
                               </a>
                             </div>
                             <div className="notify_content">
-                              <a href="#">
+                              <a>
                                 <h5>Awesome packages</h5>
                               </a>
                               <p>Lorem ipsum dolor sit amet</p>
@@ -151,12 +151,12 @@ const ProductPage = () => {
 
                           <div className="single_notify d-flex align-items-center">
                             <div className="notify_thumb">
-                              <a href="#">
+                              <a>
                                 <img src="img/staf/3.png" alt />
                               </a>
                             </div>
                             <div className="notify_content">
-                              <a href="#">
+                              <a>
                                 <h5>what a packages</h5>
                               </a>
                               <p>Lorem ipsum dolor sit amet</p>
@@ -165,7 +165,7 @@ const ProductPage = () => {
                         </div>
                         <div className="nofity_footer">
                           <div className="submit_button text-center pt_20">
-                            <a href="#" className="btn_1">
+                            <a className="btn_1">
                               See More
                             </a>
                           </div>
@@ -173,7 +173,7 @@ const ProductPage = () => {
                       </div>
                     </li>
                     <li>
-                      <a className="CHATBOX_open" href="#">
+                      <a className="CHATBOX_open">
                         {" "}
                         <img src="img/icon/msg.svg" alt /> <span>2</span>{" "}
                       </a>
@@ -187,9 +187,9 @@ const ProductPage = () => {
                         <h5>Dr. Robar Smith</h5>
                       </div>
                       <div className="profile_info_details">
-                        <a href="#">My Profile </a>
-                        <a href="#">Settings</a>
-                        <a href="#">Log Out </a>
+                        <a>My Profile </a>
+                        <a>Settings</a>
+                        <a>Log Out </a>
                       </div>
                     </div>
                   </div>
@@ -213,7 +213,7 @@ const ProductPage = () => {
                       <li className="breadcrumb-item active">Product</li>
                     </ol>
                   </div>
-                  <a href="#" className="white_btn3">
+                  <a  className="white_btn3">
                     Create Report
                   </a>
                 </div>

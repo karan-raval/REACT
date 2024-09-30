@@ -1,16 +1,15 @@
-import { React, useState } from "react";
-import { addData } from "../Redux/Product/action";
+import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Link, Navigate, useNavigate } from "react-router-dom";
+import { getData } from "../Redux/Product/action";
+import { Link, useNavigate, useParams } from "react-router-dom";
+import { doc, getDoc, getDocs, updateDoc } from "firebase/firestore";
+import { db } from "../FirebaseFolder/Firebase";
+import { toast, ToastContainer } from "react-toastify";
 import Navbar from "../Components/Navbar";
-import "../assets/style1.css";
-import Header from "../Components/Header";
-const AddProduct = () => {
-  const dispatch = useDispatch();
-  const state = useSelector((s) => s.proReducer);
-  const navigate = useNavigate();
-  console.log(state);
-  const [fromdata, setState] = useState({
+import Header from '../Components/Header'
+
+const SingleEditProduct = () => {
+  const [state, setState] = useState({
     product: "",
     brand: "",
     price: "",
@@ -18,33 +17,44 @@ const AddProduct = () => {
     category: "",
     imageURL: "",
   });
+  const navigate = useNavigate();
+  // const [single,setSingle] = useState({})
+  const { id } = useParams();
+  useEffect(() => {
+    async function getData() {
+      let a = doc(db, "products", id);
+      let d = await getDoc(a);
+      console.log(d);
+      if (d.exists()) {
+        setState(d.data());
+      }
+    }
+    getData();
+  }, []);
 
   const handleChange = (e) => {
-    let { name, value } = e.target;
-    setState({ ...fromdata, [name]: value });
+    setState({ ...state, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    let obj = {
-      product,
-      brand,
-      price,
-      strikedOffPrice,
-      category,
-      imageURL,
-    };
-    
-    dispatch(addData)(obj);
-    navigate("/product");
+  const handleSubmit = async (E) => {
+    E.preventDefault();
+    let data = doc(db, "products", id);
+    await updateDoc(data, state);
+    toast.success("Item Updated Successfully", { autoClose: 3000 });
+    setTimeout(() => {
+      navigate("/product");
+    }, 2000);
   };
+  
+  let { product, brand, price, strikedOffPrice, category, imageURL } = state;
 
-  let { product, brand, price, strikedOffPrice, category, imageURL } = fromdata;
+
   return (
     <>
-      <Navbar />
+    <Navbar/>
+      <ToastContainer />
       <section className="main_content dashboard_part large_header_bg">
-        <Header />
+        <Header/>
         {/* <ToastContainer /> */}
 
         <div className="main_content_iner ">
@@ -150,4 +160,4 @@ const AddProduct = () => {
   );
 };
 
-export default AddProduct;
+export default SingleEditProduct;
