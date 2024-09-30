@@ -144,7 +144,15 @@ const SingleEditProduct = () => {
                               Add Product
                             </button>
                           </form>
+                          
                         </div>
+                        <div className="custom-card">
+  <img className="custom-card-img" src={state.imageURL} alt={state.title} />
+  <div className="custom-card-content">
+    <h6 className="custom-card-title"><b>Title:</b> {state.title}</h6>
+    <h6 className="custom-card-price"><b>Price:</b> ₹{state.price}</h6>
+  </div>
+</div>
                       </div>
                     </div>
                   </div>
@@ -152,7 +160,9 @@ const SingleEditProduct = () => {
               </div>
             </div>
           </div>
+          
         </div>
+      
       </section>
     </>
   );

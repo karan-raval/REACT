@@ -23,8 +23,8 @@ const ProductPage = () => {
   };
   return (
     <>
-      <Navbar />
       <ToastContainer />
+      <Navbar />
       <section className="main_content dashboard_part large_header_bg">
         <div className="container-fluid g-0">
           <div className="row">
