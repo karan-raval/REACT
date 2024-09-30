@@ -36,7 +36,7 @@ const ProductPage = () => {
                 </div>
                 <label
                   className="form-label switch_toggle d-none d-lg-block"
-                  for="checkbox"
+                  
                 >
                   <input type="checkbox" id="checkbox" />
                   <div className="slider round open_miniSide"></div>
@@ -48,7 +48,7 @@ const ProductPage = () => {
                         <i className="ti-search"></i>
                         <div className="serach_field-area d-flex align-items-center">
                           <div className="search_inner">
-                            <form action="#">
+                            <form>
                               <div className="search_field">
                                 <input
                                   type="text"
@@ -56,8 +56,8 @@ const ProductPage = () => {
                                 />
                               </div>
                               <button className="close_search">
-                                {" "}
-                                <i className="ti-search"></i>{" "}
+                                
+                                <i className="ti-search"></i>
                               </button>
                             </form>
                           </div>

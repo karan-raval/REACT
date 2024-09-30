@@ -137,10 +137,6 @@ const Login = () => {
                             </p>
                             <div class="text-center">
                               <a
-                                href="#"
-                                data-bs-toggle="modal"
-                                data-bs-target="#forgot_password"
-                                data-bs-dismiss="modal"
                                 class="pass_forget_btn"
                               >
                                 Forget Password?
