@@ -2,9 +2,19 @@ import React from 'react'
 import bell from "../assets/images/bell.svg";
 import msg from "../assets/images/msg.svg";
 import client from "../assets/images/client_img.png";
+import { GoogleLogout } from '../FirebaseFolder/Firebase';
+import { toast, ToastContainer } from 'react-toastify';
+
+
 const Header = () => {
+  const handleLogout=()=>{
+    GoogleLogout()
+    toast.success("Logout Successful!", { autoClose: 3000 });
+  }
   return (
     <>
+       <ToastContainer />
+
       <div className="container-fluid g-0">
           <div className="row">
             <div className="col-lg-12 p-0 ">
@@ -165,7 +175,7 @@ const Header = () => {
                       <div className="profile_info_details">
                         <a>My Profile </a>
                         <a>Settings</a>
-                        <a>Log Out </a>
+                        <a onClick={handleLogout}>Log Out </a>
                       </div>
                     </div>
                   </div>
