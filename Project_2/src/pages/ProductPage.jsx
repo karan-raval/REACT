@@ -5,7 +5,6 @@ import { deleteDoc, doc } from "firebase/firestore";
 import { db } from "../FirebaseFolder/Firebase";
 import { Link, useNavigate } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
-// import Rating from '@mui/material/Rating';
 import Navbar from "../Components/Navbar";
 
 const ProductPage = () => {
@@ -34,10 +33,7 @@ const ProductPage = () => {
                 <div className="sidebar_icon d-lg-none">
                   <i className="ti-menu"></i>
                 </div>
-                <label
-                  className="form-label switch_toggle d-none d-lg-block"
-                  
-                >
+                <label className="form-label switch_toggle d-none d-lg-block">
                   <input type="checkbox" id="checkbox" />
                   <div className="slider round open_miniSide"></div>
                 </label>
@@ -56,7 +52,6 @@ const ProductPage = () => {
                                 />
                               </div>
                               <button className="close_search">
-                                
                                 <i className="ti-search"></i>
                               </button>
                             </form>
@@ -69,11 +64,9 @@ const ProductPage = () => {
                     </li>
                     <li>
                       <a className="bell_notification_clicker">
-                        {" "}
                         <img src="img/icon/bell.svg" alt />
                         <span>2</span>
                       </a>
-
                       <div className="Menu_NOtification_Wrap">
                         <div className="notification_Header">
                           <h4>Notifications</h4>
@@ -81,7 +74,7 @@ const ProductPage = () => {
                         <div className="Notification_body">
                           <div className="single_notify d-flex align-items-center">
                             <div className="notify_thumb">
-                              <a >
+                              <a>
                                 <img src="img/staf/2.png" alt />
                               </a>
                             </div>
@@ -165,9 +158,7 @@ const ProductPage = () => {
                         </div>
                         <div className="nofity_footer">
                           <div className="submit_button text-center pt_20">
-                            <a className="btn_1">
-                              See More
-                            </a>
+                            <a className="btn_1">See More</a>
                           </div>
                         </div>
                       </div>
@@ -213,9 +204,7 @@ const ProductPage = () => {
                       <li className="breadcrumb-item active">Product</li>
                     </ol>
                   </div>
-                  <a  className="white_btn3">
-                    Create Report
-                  </a>
+                  <a className="white_btn3">Create Report</a>
                 </div>
               </div>
             </div>
@@ -247,7 +236,7 @@ const ProductPage = () => {
                           </div>
                           <div className="col-auto">
                             <h4 className="text-dark mt-0">
-                            ₹{el.price} &nbsp;&nbsp;
+                              ₹{el.price} &nbsp;&nbsp;
                               <small className="text-muted font-14">
                                 <del>₹{el.strikedOffPrice}</del>
                               </small>
@@ -273,8 +262,18 @@ const ProductPage = () => {
                           </div>
                         </div>
                         <div className="d-grid">
-                          <button className="btn_2" onClick={() => navigate(`/product/edit/${el.id}`)} >Edit</button>
-                          <button className="btn_2" onClick={() => handleDelete(el.id)} >Delete</button>
+                          <button
+                            className="btn_2"
+                            onClick={() => navigate(`/product/edit/${el.id}`)}
+                          >
+                            Edit
+                          </button>
+                          <button
+                            className="btn_2"
+                            onClick={() => handleDelete(el.id)}
+                          >
+                            Delete
+                          </button>
                         </div>
                       </div>
                     </div>

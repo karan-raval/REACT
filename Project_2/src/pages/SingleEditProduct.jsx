@@ -6,7 +6,7 @@ import { doc, getDoc, getDocs, updateDoc } from "firebase/firestore";
 import { db } from "../FirebaseFolder/Firebase";
 import { toast, ToastContainer } from "react-toastify";
 import Navbar from "../Components/Navbar";
-import Header from '../Components/Header'
+import Header from "../Components/Header";
 
 const SingleEditProduct = () => {
   const [state, setState] = useState({
@@ -45,17 +45,15 @@ const SingleEditProduct = () => {
       navigate("/product");
     }, 2000);
   };
-  
-  let { product, brand, price, strikedOffPrice, category, imageURL } = state;
 
+  let { product, brand, price, strikedOffPrice, category, imageURL } = state;
 
   return (
     <>
-    <Navbar/>
+      <Navbar />
       <ToastContainer />
       <section className="main_content dashboard_part large_header_bg">
-        <Header/>
-        {/* <ToastContainer /> */}
+        <Header />
 
         <div className="main_content_iner ">
           <div className="container-fluid p-0">
