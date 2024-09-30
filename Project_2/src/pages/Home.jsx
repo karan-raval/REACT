@@ -22,7 +22,7 @@ const Home = () => {
                     <h3 className="f_s_25 f_w_700 dark_text">Dashboard</h3>
                     <ol className="breadcrumb page_bradcam mb-0">
                       <li className="breadcrumb-item">
-                        <a href="javascript:void(0);">Home</a>
+                        <a>Home</a>
                       </li>
                       <li className="breadcrumb-item active">Analytic</li>
                     </ol>
@@ -44,10 +44,7 @@ const Home = () => {
                         className="dropdown-menu dropdown-menu-right"
                         aria-labelledby="dropdownMenuButton"
                       >
-                        <a className="dropdown-item f_s_16 f_w_600">
-                          {" "}
-                          Download
-                        </a>
+                        <a className="dropdown-item f_s_16 f_w_600">Download</a>
                         <a className="dropdown-item f_s_16 f_w_600"> Print</a>
                       </div>
                     </div>
@@ -90,12 +87,10 @@ const Home = () => {
                           height="380"
                           xmlns="http://www.w3.org/2000/svg"
                           version="1.1"
-                          // xmlns:xlink="http://www.w3.org/1999/xlink"
                           xmlns:svgjs="http://svgjs.com/svgjs"
                           className="apexcharts-svg"
                           xmlns:data="ApexChartsNS"
                           transform="translate(0, 0)"
-                          // className="bgtrans"
                         >
                           <g
                             id="SvgjsG2027"
@@ -142,7 +137,6 @@ const Home = () => {
                                   opacity="1"
                                   stroke-width="0"
                                   stroke="none"
-                                   
                                 ></rect>
                               </clipPath>
                               <clipPath id="gridRectMarkerMaskbo8g3kco">
@@ -158,7 +152,6 @@ const Home = () => {
                                   opacity="1"
                                   stroke-width="0"
                                   stroke="none"
-                                   
                                 ></rect>
                               </clipPath>
                             </defs>
@@ -173,7 +166,6 @@ const Home = () => {
                               fill="url(#SvgjsLinearGradient2030)"
                               opacity="1"
                               stroke-width="0"
-                               
                               className="apexcharts-xcrosshairs"
                               y2="307.348"
                               filter="none"
@@ -307,7 +299,6 @@ const Home = () => {
                                   x2="687.640625"
                                   y2="0"
                                   stroke="#ffccd2"
-                                   
                                   className="apexcharts-gridline"
                                 ></line>
                                 <line
@@ -317,7 +308,6 @@ const Home = () => {
                                   x2="687.640625"
                                   y2="76.837"
                                   stroke="#ffccd2"
-                                   
                                   className="apexcharts-gridline"
                                 ></line>
                                 <line
@@ -327,7 +317,6 @@ const Home = () => {
                                   x2="687.640625"
                                   y2="153.674"
                                   stroke="#ffccd2"
-                                   
                                   className="apexcharts-gridline"
                                 ></line>
                                 <line
@@ -337,7 +326,6 @@ const Home = () => {
                                   x2="687.640625"
                                   y2="230.51100000000002"
                                   stroke="#ffccd2"
-                                   
                                   className="apexcharts-gridline"
                                 ></line>
                                 <line
@@ -347,7 +335,6 @@ const Home = () => {
                                   x2="687.640625"
                                   y2="307.348"
                                   stroke="#ffccd2"
-                                   
                                   className="apexcharts-gridline"
                                 ></line>
                               </g>
@@ -362,7 +349,6 @@ const Home = () => {
                                 x2="687.640625"
                                 y2="307.348"
                                 stroke="transparent"
-                                 
                               ></line>
                               <line
                                 id="SvgjsLine2084"
@@ -371,7 +357,6 @@ const Home = () => {
                                 x2="0"
                                 y2="307.348"
                                 stroke="transparent"
-                                 
                               ></line>
                             </g>
                             <g
@@ -394,7 +379,6 @@ const Home = () => {
                                   stroke-opacity="1"
                                   stroke-linecap="butt"
                                   stroke-width="2"
-                                   
                                   className="apexcharts-bar-area"
                                   index="0"
                                   clip-path="url(#gridRectMaskbo8g3kco)"
@@ -416,7 +400,6 @@ const Home = () => {
                                   stroke-opacity="1"
                                   stroke-linecap="butt"
                                   stroke-width="2"
-                                   
                                   className="apexcharts-bar-area"
                                   index="0"
                                   clip-path="url(#gridRectMaskbo8g3kco)"
@@ -438,7 +421,6 @@ const Home = () => {
                                   stroke-opacity="1"
                                   stroke-linecap="butt"
                                   stroke-width="2"
-                                   
                                   className="apexcharts-bar-area"
                                   index="0"
                                   clip-path="url(#gridRectMaskbo8g3kco)"
@@ -460,7 +442,6 @@ const Home = () => {
                                   stroke-opacity="1"
                                   stroke-linecap="butt"
                                   stroke-width="2"
-                                   
                                   className="apexcharts-bar-area"
                                   index="0"
                                   clip-path="url(#gridRectMaskbo8g3kco)"
@@ -482,7 +463,6 @@ const Home = () => {
                                   stroke-opacity="1"
                                   stroke-linecap="butt"
                                   stroke-width="2"
-                                   
                                   className="apexcharts-bar-area"
                                   index="0"
                                   clip-path="url(#gridRectMaskbo8g3kco)"
@@ -504,7 +484,6 @@ const Home = () => {
                                   stroke-opacity="1"
                                   stroke-linecap="butt"
                                   stroke-width="2"
-                                   
                                   className="apexcharts-bar-area"
                                   index="0"
                                   clip-path="url(#gridRectMaskbo8g3kco)"
@@ -538,7 +517,6 @@ const Home = () => {
                                   stroke-opacity="1"
                                   stroke-linecap="butt"
                                   stroke-width="2"
-                                   
                                   className="apexcharts-bar-area"
                                   index="1"
                                   clip-path="url(#gridRectMaskbo8g3kco)"
@@ -560,7 +538,6 @@ const Home = () => {
                                   stroke-opacity="1"
                                   stroke-linecap="butt"
                                   stroke-width="2"
-                                   
                                   className="apexcharts-bar-area"
                                   index="1"
                                   clip-path="url(#gridRectMaskbo8g3kco)"
@@ -582,7 +559,6 @@ const Home = () => {
                                   stroke-opacity="1"
                                   stroke-linecap="butt"
                                   stroke-width="2"
-                                   
                                   className="apexcharts-bar-area"
                                   index="1"
                                   clip-path="url(#gridRectMaskbo8g3kco)"
@@ -604,7 +580,6 @@ const Home = () => {
                                   stroke-opacity="1"
                                   stroke-linecap="butt"
                                   stroke-width="2"
-                                   
                                   className="apexcharts-bar-area"
                                   index="1"
                                   clip-path="url(#gridRectMaskbo8g3kco)"
@@ -626,7 +601,6 @@ const Home = () => {
                                   stroke-opacity="1"
                                   stroke-linecap="butt"
                                   stroke-width="2"
-                                   
                                   className="apexcharts-bar-area"
                                   index="1"
                                   clip-path="url(#gridRectMaskbo8g3kco)"
@@ -648,7 +622,6 @@ const Home = () => {
                                   stroke-opacity="1"
                                   stroke-linecap="butt"
                                   stroke-width="2"
-                                   
                                   className="apexcharts-bar-area"
                                   index="1"
                                   clip-path="url(#gridRectMaskbo8g3kco)"
@@ -674,7 +647,6 @@ const Home = () => {
                               x2="687.640625"
                               y2="0"
                               stroke="#b6b6b6"
-                               
                               stroke-width="1"
                               className="apexcharts-ycrosshairs"
                             ></line>
@@ -684,7 +656,6 @@ const Home = () => {
                               y1="0"
                               x2="687.640625"
                               y2="0"
-                               
                               stroke-width="0"
                               className="apexcharts-ycrosshairs-hidden"
                             ></line>
@@ -943,7 +914,6 @@ const Home = () => {
                                   opacity="1"
                                   stroke-width="0"
                                   stroke="none"
-                                   
                                 ></rect>
                               </clipPath>
                               <clipPath id="gridRectMarkerMasks6rob4r2">
@@ -959,7 +929,6 @@ const Home = () => {
                                   opacity="1"
                                   stroke-width="0"
                                   stroke="none"
-                                   
                                 ></rect>
                               </clipPath>
                               <linearGradient
@@ -996,7 +965,6 @@ const Home = () => {
                               x2="0"
                               y2="80"
                               stroke="#b6b6b6"
-                               
                               className="apexcharts-xcrosshairs"
                               x="0"
                               y="0"
@@ -1026,7 +994,6 @@ const Home = () => {
                                 x2="357"
                                 y2="80"
                                 stroke="transparent"
-                                 
                               ></line>
                               <line
                                 id="SvgjsLine3207"
@@ -1035,7 +1002,6 @@ const Home = () => {
                                 x2="0"
                                 y2="80"
                                 stroke="transparent"
-                                 
                               ></line>
                             </g>
                             <g
@@ -1058,7 +1024,6 @@ const Home = () => {
                                   stroke-opacity="1"
                                   stroke-linecap="butt"
                                   stroke-width="0"
-                                   
                                   className="apexcharts-area"
                                   index="0"
                                   clip-path="url(#gridRectMasks6rob4r2)"
@@ -1074,7 +1039,6 @@ const Home = () => {
                                   stroke-opacity="1"
                                   stroke-linecap="butt"
                                   stroke-width="4"
-                                   
                                   className="apexcharts-area"
                                   index="0"
                                   clip-path="url(#gridRectMasks6rob4r2)"
@@ -1114,7 +1078,6 @@ const Home = () => {
                               x2="357"
                               y2="0"
                               stroke="#b6b6b6"
-                               
                               stroke-width="1"
                               className="apexcharts-ycrosshairs"
                             ></line>
@@ -1124,7 +1087,6 @@ const Home = () => {
                               y1="0"
                               x2="357"
                               y2="0"
-                               
                               stroke-width="0"
                               className="apexcharts-ycrosshairs-hidden"
                             ></line>
@@ -1153,7 +1115,6 @@ const Home = () => {
                             opacity="1"
                             stroke-width="0"
                             stroke="none"
-                             
                           ></rect>
                           <g
                             id="SvgjsG3205"

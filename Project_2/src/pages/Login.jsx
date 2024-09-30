@@ -28,7 +28,7 @@ const Login = () => {
               let val = data.docs.map((el) => ({
                   id: el.id,
                   ...el.data(),
-              }));
+              }))
               setD(val);
           } catch (error) {
               toast.error("Failed to load user data", { autoClose: 3000 });
@@ -82,12 +82,11 @@ const Login = () => {
                       <div class="dashboard_header_title">
                         <h3> Login</h3>
                       </div>
-                      
                     </div>
                     <div class="col-lg-6">
                       <div class="dashboard_breadcam text-end">
                         <p>
-                          <a href="index.html">Dashboard</a>{" "}
+                          <a href="index.html">Dashboard</a>
                           <i class="fas fa-caret-right"></i> login
                         </p>
                       </div>
