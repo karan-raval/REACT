@@ -78,8 +78,8 @@ const LoginSignup = () => {
             <h2>Create Account</h2>
             <input
               type="text"
-              name="fullname"
               placeholder="Full Name"
+              name="fullname"
               value={state.fullname}
               onChange={handleChange}
             />

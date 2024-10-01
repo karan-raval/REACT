@@ -45,7 +45,6 @@ const AddProduct = () => {
       <Navbar />
       <section className="main_content dashboard_part large_header_bg">
         <Header />
-        {/* <ToastContainer /> */}
 
         <div className="main_content_iner ">
           <div className="container-fluid p-0">
