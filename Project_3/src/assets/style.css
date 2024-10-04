@@ -6163,3 +6163,18 @@ a:hover {
 a{
   text-decoration: none;
 }
+
+.br{
+border-radius: 1rem;}
+
+.bgs{
+  background-color: #508bfc;
+}
+
+.bgs1{
+  background-color: #dd4b39;
+}
+
+.bgs2{
+  background-color: #3b5998;
+}

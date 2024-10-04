@@ -3,44 +3,44 @@ import React from "react";
 const Login = () => {
   return (
     <>
-      <section class="vh-100" style="background-color: #508bfc;">
-        <div class="container py-5 h-100">
-          <div class="row d-flex justify-content-center align-items-center h-100">
-            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
-              <div class="card shadow-2-strong" style="border-radius: 1rem;">
-                <div class="card-body p-5 text-center">
-                  <h3 class="mb-5">Sign in</h3>
+      <section className="vh-100 bgs" >
+        <div className="container py-5 h-100">
+          <div className="row d-flex justify-content-center align-items-center h-100">
+            <div className="col-12 col-md-8 col-lg-6 col-xl-5">
+              <div className="card shadow-2-strong br" >
+                <div className="card-body p-5 text-center">
+                  <h3 className="mb-5">Sign in</h3>
 
-                  <div data-mdb-input-init class="form-outline mb-4">
+                  <div data-mdb-input-init className="form-outline mb-4">
                     <input
                       type="email"
                       id="typeEmailX-2"
-                      class="form-control form-control-lg"
+                      className="form-control form-control-lg"
                     />
-                    <label class="form-label" for="typeEmailX-2">
+                    <label className="form-label" for="typeEmailX-2">
                       Email
                     </label>
                   </div>
 
-                  <div data-mdb-input-init class="form-outline mb-4">
+                  <div data-mdb-input-init className="form-outline mb-4">
                     <input
                       type="password"
                       id="typePasswordX-2"
-                      class="form-control form-control-lg"
+                      className="form-control form-control-lg"
                     />
-                    <label class="form-label" for="typePasswordX-2">
+                    <label className="form-label" for="typePasswordX-2">
                       Password
                     </label>
                   </div>
 
-                  <div class="form-check d-flex justify-content-start mb-4">
+                  <div className="form-check d-flex justify-content-start mb-4">
                     <input
-                      class="form-check-input"
+                      className="form-check-input"
                       type="checkbox"
                       value=""
                       id="form1Example3"
                     />
-                    <label class="form-check-label" for="form1Example3">
+                    <label className="form-check-label" for="form1Example3">
                       {" "}
                       Remember password{" "}
                     </label>
@@ -49,31 +49,31 @@ const Login = () => {
                   <button
                     data-mdb-button-init
                     data-mdb-ripple-init
-                    class="btn btn-primary btn-lg btn-block"
+                    className="btn btn-primary btn-lg btn-block"
                     type="submit"
                   >
                     Login
                   </button>
 
-                  <hr class="my-4" />
+                  <hr className="my-4" />
 
                   <button
                     data-mdb-button-init
                     data-mdb-ripple-init
-                    class="btn btn-lg btn-block btn-primary"
-                    style="background-color: #dd4b39;"
+                    className="btn btn-lg btn-block btn-primary bgs1"
+                   
                     type="submit"
                   >
-                    <i class="fab fa-google me-2"></i> Sign in with google
+                    <i className="fab fa-google me-2"></i> Sign in with google
                   </button>
                   <button
                     data-mdb-button-init
                     data-mdb-ripple-init
-                    class="btn btn-lg btn-block btn-primary mb-2"
-                    style="background-color: #3b5998;"
+                    className="btn btn-lg btn-block btn-primary mb-2 bgs2"
+                    
                     type="submit"
                   >
-                    <i class="fab fa-facebook-f me-2"></i>Sign in with facebook
+                    <i className="fab fa-facebook-f me-2"></i>Sign in with facebook
                   </button>
                 </div>
               </div>
