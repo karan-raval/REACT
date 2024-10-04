@@ -74,8 +74,8 @@ const Signup = () => {
     <>
     <ToastContainer />
       <section className="vh-100 gradient-custom">
-        <div className="container py-5 h-100">
-          <div className="row d-flex justify-content-center align-items-center h-100">
+        <div className="container py-5 h-90">
+          <div className="row d-flex justify-content-center align-items-center h-90">
             <div className="col-12 col-md-8 col-lg-6 col-xl-5">
               <div className="card bg-dark text-white br" >
                 <div className="card-body p-5 text-center">
@@ -142,9 +142,9 @@ const Signup = () => {
                   </div>
 
                   <div>
-                    <p className="mb-0">
+                    <p className="mb-1">
                       Don't have an account?{" "}
-                      <a   className="text-white-50 fw-bold">
+                      <a   className="text-danger-50 fw-bold">
                         Sign Up
                       </a>
                     </p>
