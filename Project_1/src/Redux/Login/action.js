@@ -4,6 +4,7 @@ import { PASSWORDERROR, LOADING, SUCCESS, } from "./actiontype"
 
 
 export const fetchapi = (data) => (obj) => {
+ 
     data({ type: LOADING });
     fetch(`https://mock-server-app2-dll0.onrender.com/user?email=${obj.email}`)
       .then((res) => {
@@ -28,6 +29,7 @@ export const fetchapi = (data) => (obj) => {
             title: "Login in successfully"
           });
           data({ type: SUCCESS, payload: res });
+
         } else {
         const Toast = Swal.mixin({
             toast: true,

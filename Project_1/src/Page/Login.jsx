@@ -25,10 +25,10 @@ const Login = () => {
   };
 
   useEffect(() => {
-    if (data && !isError && !isLoading) {
-      navigate("/"); 
+    if (data) {
+      navigate("/");
     }
-  }, [data, isError, navigate]); 
+  }, [data]); 
  
   return (
     <>
