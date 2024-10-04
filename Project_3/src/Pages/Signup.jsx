@@ -1,6 +1,3 @@
-import "../assets/style1.css";
-import Navbar from "../Components/Navbar";
-import Header from "../Components/Header";
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { db } from "../FirebaseFolder/Firebase";
