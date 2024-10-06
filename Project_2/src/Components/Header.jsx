@@ -174,8 +174,7 @@ const Header = () => {
                     <img src={client} alt="#" />
                     <div className="profile_info_iner">
                       <div className="profile_author_name">
-                        <p>Neurologist </p>
-                        <h5>Dr. Robar Smith</h5>
+                        <h5>{}</h5>
                       </div>
                       <div className="profile_info_details">
                         <a>My Profile </a>
