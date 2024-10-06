@@ -6,16 +6,16 @@ import Rating from "@mui/material/Rating";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { FetchData } from "../Redux/Productpage/action";
-import TextField from '@mui/material/TextField';
-import Checkbox from '@mui/material/Checkbox';
+import TextField from "@mui/material/TextField";
+import Checkbox from "@mui/material/Checkbox";
 
-const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
+const label = { inputProps: { "aria-label": "Checkbox demo" } };
 const Product = () => {
-  const dispatch = useDispatch()
-  const {isLoading,isError,data} = useSelector((s)=>s.productReducer)
-  useEffect(()=>{
-    dispatch(FetchData)
-  },[])
+  const dispatch = useDispatch();
+  const { isLoading, isError, data } = useSelector((s) => s.productReducer);
+  useEffect(() => {
+    dispatch(FetchData);
+  }, []);
   // const [dataa, setData] = useState([]);
   const [sort, setSort] = useState("");
   const [search, setSearch] = useState("");
@@ -26,7 +26,6 @@ const Product = () => {
     Massage_Tools: false,
     Shaving_Tools: false,
   });
-
 
   const handleSort = (e) => {
     setSort(e.target.value);
@@ -74,7 +73,7 @@ const Product = () => {
   }
 
   if (sort) {
-    console.log(sort)
+    console.log(sort);
     FilteredDatas = FilteredDatas.sort((a, b) => {
       if (sort == "asc") {
         return a.price - b.price;
@@ -83,9 +82,9 @@ const Product = () => {
       } else if (sort == "Aasc") {
         return a.title.localeCompare(b.title);
       } else if (sort == "rating") {
-        return a.rating - b.rating
-      }else if (sort == "offer") {
-        return b.offer - a.offer
+        return a.rating - b.rating;
+      } else if (sort == "offer") {
+        return b.offer - a.offer;
       }
     });
   }
@@ -156,7 +155,7 @@ const Product = () => {
             </button>
           </div>
         </div>
- 
+
         <div id="mainProd">
           <div id="area">
             <div className="FILTERANDSORT">
@@ -169,54 +168,84 @@ const Product = () => {
                   <option value="asc">Price low to High</option>
                   <option value="desc">Price High to low</option>
                 </select>
-                <Checkbox {...label} name="Hair_Styling_Tools" onChange={handleFilter}  color="success" />
+                <Checkbox
+                  {...label}
+                  name="Hair_Styling_Tools"
+                  onChange={handleFilter}
+                  color="success"
+                />
                 Hair Styling Tools <br />
-                <Checkbox {...label} name="Shaving_Tools" onChange={handleFilter}  color="success" />
+                <Checkbox
+                  {...label}
+                  name="Shaving_Tools"
+                  onChange={handleFilter}
+                  color="success"
+                />
                 Shaving Tools <br />
-                <Checkbox {...label} name="Face" onChange={handleFilter}  color="success" />
+                <Checkbox
+                  {...label}
+                  name="Face"
+                  onChange={handleFilter}
+                  color="success"
+                />
                 Face/Skin Tools <br />
-                <Checkbox {...label} name="Hair_Removal_Tools" onChange={handleFilter}  color="success" />
+                <Checkbox
+                  {...label}
+                  name="Hair_Removal_Tools"
+                  onChange={handleFilter}
+                  color="success"
+                />
                 Hair Removal Tools
                 <br />
                 <br />
                 <h1 className="se">search</h1>
-                <TextField id="outlined-basic" onChange={handleSearch} label="Search Your Favrite Product" variant="outlined" />
+                <TextField
+                  id="outlined-basic"
+                  onChange={handleSearch}
+                  label="Search Your Favrite Product"
+                  variant="outlined"
+                />
                 {/* <input type="text" onChange={handleSearch} /> */}
               </div>
             </div>
             <div id="PRODUCT">
               {FilteredDatas.map((el) => {
                 return (
-                  <Link className="link" key={el.id} to={`/product/${el.id}`} > 
-                  <div className="cardd">
-                    <span id="G-five">BEST SELLER</span>
-                    <div id="G-img">
-                      <img src={el.image1} alt={el.id} />
-                      <h6 id="G-des">{el.card_title}</h6>
-                    </div>
-                    <div id="Price-Div">
-                      <h6 id="price">
-                        MRP: <span id="ear">₹{el.price}</span>
-                        <span id="G-real"> ₹{el.off_price}</span>
-                        <span id="G-OFF"> |{el.offer}% Off</span>
-                      </h6>
-                    </div>
-                    <h4 id="rating">
-                      
-                      <Rating name="read-only" value={el.rating} readOnly size="small" />
-                      <span className="ratingnum">({el.ratingNum})</span>
-                    </h4>
-                    <div id="addToBag">
-                      <div id="hert">
-                        <span id="heart">&#x2661;</span>
+                  <Link className="link" key={el.id} to={`/product/${el.id}`}>
+                    <div className="cardd">
+                      <span id="G-five">BEST SELLER</span>
+                      <div id="G-img">
+                        <img src={el.image1} alt={el.id} />
+                        <h6 id="G-des">{el.card_title}</h6>
                       </div>
-                      <div id="add">
-                        <div id="add1">
-                          <h5>Add to Bag</h5>
+                      <div id="Price-Div">
+                        <h6 id="price">
+                          MRP: <span id="ear">₹{el.price}</span>
+                          <span id="G-real"> ₹{el.off_price}</span>
+                          <span id="G-OFF"> |{el.offer}% Off</span>
+                        </h6>
+                      </div>
+                      <h4 id="rating">
+                        <Rating
+                          name="read-only"
+                          value={el.rating}
+                          readOnly
+                          size="small"
+                        />
+                        <span className="ratingnum">({el.ratingNum})</span>
+                      </h4>
+                      <div id="addToBag">
+                        <div id="hert">
+                          <span id="heart">&#x2661;</span>
+                        </div>
+                        <div id="add">
+                          <div id="add1">
+                            <h5>Add to Bag</h5>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div></Link>
+                  </Link>
                 );
               })}
             </div>
