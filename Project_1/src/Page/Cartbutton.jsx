@@ -17,18 +17,19 @@ const Cartbutton = () => {
     dispatch(cartData);
   }, []);
 
+  let total = data.reduce((sum, el) => sum + +el.price, 0); 
+  let discount = Math.round(total * 0.1);
+  let mainTotal = total - discount; 
+
   const handleclick = () => {
     axios
       .get("https://mock-server-app2-dll0.onrender.com/cart")
       .then((res) => {
-        const cartItems = res.data; // All items in the cart
+        const cartItems = res.data; 
         if (cartItems.length > 0) {
-          // Create an array of promises to delete each item
           const deletePromises = cartItems.map((el) =>
-            axios.delete(`https://mock-server-app2-dll0.onrender.com/cart/${el.id}`) // Use `el.id`
+            axios.delete(`https://mock-server-app2-dll0.onrender.com/cart/${el.id}`) 
           );
-  
-          // Wait for all delete requests to complete
           Promise.all(deletePromises)
             .then(() => {
               Swal.fire({
@@ -38,14 +39,13 @@ const Cartbutton = () => {
                 showConfirmButton: false,
                 timer: 1500,
               }).then(() => {
-                navigate("/"); // Navigate to homepage
+                navigate("/"); 
               });
             })
             .catch((err) => {
               console.error("Error clearing cart:", err);
             });
         } else {
-          // If cart is already empty
           Swal.fire({
             position: "top-end",
             icon: "info",
@@ -53,7 +53,7 @@ const Cartbutton = () => {
             showConfirmButton: false,
             timer: 1500,
           }).then(() => {
-            navigate("/"); // Navigate to homepage
+            navigate("/"); 
           });
         }
       })
@@ -87,13 +87,13 @@ const Cartbutton = () => {
             </div>
             <div className="flex flex-col shadow bg-white" id="data">
               {data.map((el) => (
+                // total += el.price
                 <div
                   className="flex flex-col gap-3 py-5 pl-2 sm:pl-6 border-b overflow-hidden"
                   key={el.id}
                 >
                   <div
                     className="flex flex-col sm:flex-row gap-5 items-stretch w-full"
-                    href="#"
                   >
                     <div className="w-full sm:w-1/6 h-28 flex-shrink-0 sm:flex-shrink">
                       <img
@@ -113,8 +113,8 @@ const Cartbutton = () => {
                         <div className="flex flex-col sm:gap-2">
                           <p className="text-sm">
                             Delivery by Mon Sep 27 |
-                            <span className="text-primary-green">Free</span>{" "}
-                            <span className="line-through">₹40</span>
+                            <span className="text-primary-green"> Free</span>{" "}
+                            <span className="line-through"> ₹40</span>
                           </p>
                           <span className="text-xs text-gray-500">
                             7 Days Replacement Policy
@@ -145,11 +145,11 @@ const Cartbutton = () => {
 
               <div className="flex flex-col gap-4 p-6 pb-3">
                 <p className="flex justify-between">
-                  Price <span id="maintotal"></span>
+                  Price <span id="maintotal">₹{total}</span>
                 </p>
                 <p className="flex justify-between">
                   Discount (10% off)
-                  <span className="text-primary-green" id="dissco"></span>
+                  <span className="text-primary-green" id="dissco">₹{discount}</span>
                 </p>
                 <p className="flex justify-between">
                   Delivery Charges{" "}
@@ -158,7 +158,7 @@ const Cartbutton = () => {
 
                 <div className="border border-dashed"></div>
                 <p className="flex justify-between text-lg font-medium">
-                  Total Amount <span id="total"></span>
+                  Total Amount <span id="total">₹{mainTotal}</span>
                 </p>
                 <div className="border border-dashed"></div>
 
