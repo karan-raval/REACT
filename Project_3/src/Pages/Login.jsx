@@ -1,5 +1,5 @@
 import React from "react";
-
+import {Link} from 'react-router-dom' 
 const Login = () => {
   return (
     <>
@@ -63,8 +63,8 @@ const Login = () => {
                   <div>
                     <p className="mt-2">
                       Don't have an account?{" "}
-                      <a   className="text-white-50 fw-bold">
-                        Sign Up
+                      <a   className="text-dark-50 fw-bold">
+                        <Link to={'/signup'}>Sign Up</Link>
                       </a>
                     </p>
                   </div>
