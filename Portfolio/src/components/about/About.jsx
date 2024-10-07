@@ -20,18 +20,23 @@ const About = () => {
                 <div className="about__data grid">
                     <div className="about__info">
                         <p className="about__description">
-                            Hello! I'm Greg, and I'm based in Johannesburg, South Africa. I studied at Varisty College Sandton, where I completed my diploma in Software Development.<br /><br />
-                            Fastforward to today, and I can honestly say it's been a beautiful journery and I hope to grow even further as Software Engineer. My current focus these days
-                            is on expanidng my portfolio by building more projects that I can add on here, as well as being a great team player at my current role.<br /><br />
-                            Here are a few technologies I’ve been working with recently:
+                        A passionate Full Stack Web Developer proficient in front-end and
+full-stack technologies, with expertise in the MERN stack. Skilled
+at creating attractive, functional, and responsive websites, with a
+successful track record of building both solo and collaborative
+projects. Responsible and detail-oriented, with strong problemsolving and communication skills, eager to apply knowledge in realworld projects. An Electrical Engineering graduate transitioning to
+web development, looking forward to contributing innovative
+solutions while continuing to grow as an aspiring full-stack
+developer
                         </p>
                         <ul className="about__list">
+                            <li>HTML 5</li>
+                            <li>Css3</li>
+                            <li>Jquery</li>
+                            <li>C</li>
+                            <li>C++</li>
                             <li>JavaScript (ES6+)</li>
-                            <li>TypeScript</li>
                             <li>React</li>
-                            <li>Node.js</li>
-                            <li>Postgres SQL</li>
-                            <li>NestJS</li>
                         </ul>
                         <button className="btn" onClick={downloadResume}>Donwload CV</button>
                     </div>
