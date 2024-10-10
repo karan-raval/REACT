@@ -2,7 +2,7 @@ import React from 'react'
 
 const Shapes = () => {
     return (
-        <div classNameName='shapes'>
+        <div className='shapes'>
             <svg
                 width="27"
                 height="29"
@@ -25,7 +25,7 @@ const Shapes = () => {
                 <path
                     d="M13 3.3541L2.42705 24.5h21.1459L13 3.3541z"
                     stroke="#FF4C60"
-                    stroke-width="3"
+                    strokewidth="3"
                     fill="none"
                     fill-rule="evenodd"
                 />
@@ -99,7 +99,7 @@ const Shapes = () => {
                 <path
                     d="M13 22.6459L2.42705 1.5h21.1459L13 22.6459z"
                     stroke="#FFD15C"
-                    stroke-width="3"
+                    strokewidth="3"
                     fill="none"
                     fill-rule="evenodd"
                 />

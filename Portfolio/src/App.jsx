@@ -24,14 +24,14 @@ function App() {
        <div className="app" data-theme={theme}>
             <Sidebar theme={theme} switchTheme={switchTheme} />
             <main className='main'>
-                <Home />
-                <About />
+                {/* <Home /> */}
+                {/* <About /> */}
                 <Services />
-                <Resume />
-                <Portfolio />
+                {/* <Resume /> */}
+                {/* <Portfolio /> */}
                 {/* <Testimonials /> */}
-                <Blog />
-                <Contact theme={theme} />
+                {/* <Blog /> */}
+                {/* <Contact theme={theme} /> */}
             </main>
         </div>
     </>
