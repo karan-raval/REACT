@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
   return (
@@ -51,7 +52,7 @@ const Header = () => {
               <a>About</a>
 
             </li>
-            <li><a href="shop.html">Shop</a></li>
+            <li><a href="shop.html"><Link to={'/product'}>Shop</Link></a></li>
             <li><a href="#">Catalogue</a></li>
             <li><a href="#">New Arrivals</a></li>
             <li><a href="contact.html">Contact</a></li>

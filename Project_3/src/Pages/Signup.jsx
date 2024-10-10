@@ -63,7 +63,7 @@ const Signup = () => {
         await addDoc(UserCollection, newUser);
         toast.success("User Signup Successfully", { autoClose: 3000 });
         setTimeout(() => {
-          navigate("/Login");
+          navigate("/login");
         }, 3000);
       } catch (error) {
         toast.error("Signup failed", { autoClose: 3000 });
@@ -81,7 +81,7 @@ const Signup = () => {
                 <div className="card-body p-5 text-center">
                   <form onSubmit={handleSubmit}>
                     <div className="mb-md-5 mt-md-4 pb-5">
-                      <h2 className="fw-bold mb-2 text-uppercase">Login</h2>
+                      <h2 className="fw-bold mb-2 text-uppercase">Signup</h2>
                       <p className="text-white-50 mb-5">
                         Please enter your login and password!
                       </p>
@@ -94,6 +94,7 @@ const Signup = () => {
                           type="email"
                           id="typeEmailX"
                           className="form-control form-control-lg"
+                          onChange={(e) => setEmail(e.target.value)}
                         />
                         <label className="form-label" for="typeEmailX">
                           Email
@@ -108,6 +109,7 @@ const Signup = () => {
                           type="password"
                           id="typePasswordX"
                           className="form-control form-control-lg"
+                          onChange={(e) => setPass(e.target.value)}
                         />
                         <label className="form-label" for="typePasswordX">
                           Password
@@ -124,7 +126,7 @@ const Signup = () => {
                         className="btn btn-outline-light btn-lg px-5"
                         type="submit"
                       >
-                        Login
+                        Signup
                       </button>
 
                       <div className="d-flex justify-content-center text-center mt-4 pt-1">
@@ -142,8 +144,10 @@ const Signup = () => {
                   </form>
                   <div>
                     <p className="mb-1">
-                      Don't have an account?{" "}
-                      <a className="text-danger-50 fw-bold">Sign Up</a>
+                      Don't have an account?
+                      <a className="text-danger-50 fw-bold">
+                        <Link to={"/login"}>Sign Up</Link>
+                      </a>
                     </p>
                   </div>
                 </div>
