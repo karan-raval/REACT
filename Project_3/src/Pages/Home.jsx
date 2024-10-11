@@ -24,7 +24,7 @@ const Home = () => {
             <div className="intro-text text-center text-md-left">
               <p className="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at iaculis quam. Integer accumsan tincidunt fringilla. </p>
               <p>
-                <a  className="btn btn-sm btn-primary">Shop Now</a>
+                <span  className="btn btn-sm btn-primary">Shop Now</span>
               </p>
             </div>
           </div>
@@ -70,7 +70,7 @@ const Home = () => {
       <div className="container">
         <div className="row">
           <div className="col-sm-6 col-md-6 col-lg-4 mb-4 mb-lg-0" data-aos="fade" data-aos-delay="">
-            <a className="block-2-item"  >
+            <span className="block-2-item"  >
               <figure className="image">
                 <img src={women} alt="" className="img-fluid"/>
               </figure>
@@ -78,10 +78,10 @@ const Home = () => {
                 <span className="text-uppercase">Collections</span>
                 <h3>Women</h3>
               </div>
-            </a>
+            </span>
           </div>
           <div className="col-sm-6 col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
-            <a className="block-2-item"  >
+            <span className="block-2-item"  >
               <figure className="image">
                 <img src={children} alt="" className="img-fluid"/>
               </figure>
@@ -89,10 +89,10 @@ const Home = () => {
                 <span className="text-uppercase">Collections</span>
                 <h3>Children</h3>
               </div>
-            </a>
+            </span>
           </div>
           <div className="col-sm-6 col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="200">
-            <a className="block-2-item"  >
+            <span className="block-2-item"  >
               <figure className="image">
                 <img src={men} alt="" className="img-fluid"/>
               </figure>
@@ -100,7 +100,7 @@ const Home = () => {
                 <span className="text-uppercase">Collections</span>
                 <h3>Men</h3>
               </div>
-            </a>
+            </span>
           </div>
         </div>
       </div>
@@ -122,7 +122,7 @@ const Home = () => {
                     <img src={cloth_1} alt="Image placeholder" className="img-fluid"/>
                   </figure>
                   <div className="block-4-text p-4">
-                    <h3><a  >Tank Top</a></h3>
+                    <h3><span  >Tank Top</span></h3>
                     <p className="mb-0">Finding perfect t-shirt</p>
                     <p className="text-primary font-weight-bold">$50</p>
                   </div>
@@ -134,7 +134,7 @@ const Home = () => {
                     <img src={shoe_1} alt="Image placeholder" className="img-fluid"/>
                   </figure>
                   <div className="block-4-text p-4">
-                    <h3><a  >Corater</a></h3>
+                    <h3><span  >Corater</span></h3>
                     <p className="mb-0">Finding perfect products</p>
                     <p className="text-primary font-weight-bold">$50</p>
                   </div>
@@ -146,7 +146,7 @@ const Home = () => {
                     <img src={cloth_2} alt="Image placeholder" className="img-fluid"/>
                   </figure>
                   <div className="block-4-text p-4">
-                    <h3><a  >Polo Shirt</a></h3>
+                    <h3><span  >Polo Shirt</span></h3>
                     <p className="mb-0">Finding perfect products</p>
                     <p className="text-primary font-weight-bold">$50</p>
                   </div>
@@ -158,7 +158,7 @@ const Home = () => {
                     <img src={cloth_3} alt="Image placeholder" className="img-fluid"/>
                   </figure>
                   <div className="block-4-text p-4">
-                    <h3><a  >T-Shirt Mockup</a></h3>
+                    <h3><span  >T-Shirt Mockup</span></h3>
                     <p className="mb-0">Finding perfect products</p>
                     <p className="text-primary font-weight-bold">$50</p>
                   </div>
@@ -170,7 +170,7 @@ const Home = () => {
                     <img src={shoe_1} alt="Image placeholder" className="img-fluid"/>
                   </figure>
                   <div className="block-4-text p-4">
-                    <h3><a  >Corater</a></h3>
+                    <h3><span  >Corater</span></h3>
                     <p className="mb-0">Finding perfect products</p>
                     <p className="text-primary font-weight-bold">$50</p>
                   </div>
@@ -191,13 +191,13 @@ const Home = () => {
         </div>
         <div className="row align-items-center">
           <div className="col-md-12 col-lg-7 mb-5">
-            <a  ><img src={blog_1} alt="Image placeholder" className="img-fluid rounded"/></a>
+            <span  ><img src={blog_1} alt="Image placeholder" className="img-fluid rounded"/></span>
           </div>
           <div className="col-md-12 col-lg-5 text-center pl-md-5">
-            <h2><a  >50% less in all items</a></h2>
-            <p className="post-meta mb-4">By <a  >Carl Smith</a> <span className="block-8-sep">&bullet;</span> September 3, 2018</p>
+            <h2><span  >50% less in all items</span></h2>
+            <p className="post-meta mb-4">By <span  >Carl Smith</span> <span className="block-8-sep">&bullet;</span> September 3, 2018</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam iste dolor accusantium facere corporis ipsum animi deleniti fugiat. Ex, veniam?</p>
-            <p><a   className="btn btn-primary btn-sm">Shop Now</a></p>
+            <p><span   className="btn btn-primary btn-sm">Shop Now</span></p>
           </div>
         </div>
       </div>

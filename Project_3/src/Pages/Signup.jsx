@@ -117,7 +117,7 @@ const Signup = () => {
                       </div>
 
                       <p className="small mb-5 pb-lg-2">
-                        <a className="text-white-50">Forgot password?</a>
+                        <span className="text-white-50">Forgot password?</span>
                       </p>
 
                       <button
@@ -130,24 +130,24 @@ const Signup = () => {
                       </button>
 
                       <div className="d-flex justify-content-center text-center mt-4 pt-1">
-                        <a className="text-white">
+                        <span className="text-white">
                           <i className="fab fa-facebook-f fa-lg"></i>
-                        </a>
-                        <a className="text-white">
+                        </span>
+                        <span className="text-white">
                           <i className="fab fa-twitter fa-lg mx-4 px-2"></i>
-                        </a>
-                        <a className="text-white">
+                        </span>
+                        <span className="text-white">
                           <i className="fab fa-google fa-lg"></i>
-                        </a>
+                        </span>
                       </div>
                     </div>
                   </form>
                   <div>
                     <p className="mb-1">
                       Don't have an account?
-                      <a className="text-danger-50 fw-bold">
+                      <span className="text-danger-50 fw-bold">
                         <Link to={"/login"}>Sign Up</Link>
-                      </a>
+                      </span>
                     </p>
                   </div>
                 </div>
