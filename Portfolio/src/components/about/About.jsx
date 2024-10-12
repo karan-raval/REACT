@@ -5,11 +5,6 @@ import Resume from '../../assets/Karan_Raval_Resume.pdf';
 import AboutBox from './AboutBox';
 
 const About = () => {
-    // const downloadResume = async () => {
-    //     window.open(Resume, '_blank');
-    //     link.download = 'Karan_Raval_Resume.pdf';
-    // }
-
     const downloadResume = async () => {
         window.open(Resume, '_blank');
         const link = document.createElement('a');
@@ -19,10 +14,6 @@ const About = () => {
         link.click();
         document.body.removeChild(link);
     }
-
-  
-    
-
 
     return (
         <section className="about container section" id="about">
@@ -34,7 +25,7 @@ const About = () => {
                 <div className="about__data grid">
                     <div className="about__info">
                         <p className="about__description">
-                        A passionate Full Stack Web Developer proficient in front-end and
+                        A Passionate Full Stack Web Developer proficient in front-end and
 full-stack technologies, with expertise in the MERN stack. Skilled
 at creating attractive, functional, and responsive websites, with a
 successful track record of building both solo and collaborative
