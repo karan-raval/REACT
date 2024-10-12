@@ -1,15 +1,18 @@
-import { collection, getDocs } from "firebase/firestore";
+import { collection, deleteDoc, doc, getDocs } from "firebase/firestore";
 import React, { useEffect, useState } from "react";
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
+import { getData } from "../Redux/Product/action";
 import { db } from "../FirebaseFolder/Firebase";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { toast, ToastContainer } from "react-toastify";
 
 const Cart = () => {
+  const dispatch = useDispatch();
   const proCollection = collection(db, "cart");
   const [state, setState] = useState([]);
-  const user = useSelector((s) => s.UserReducer);
-  console.log(user);
+  const {user} = useSelector((s) => s.UserReducer);
+  // console.log(user);
   useEffect(() => {
     const cartdata = async () => {
       let data = await getDocs(proCollection);
@@ -22,15 +25,31 @@ const Cart = () => {
     cartdata();
   }, []);
 
-  function FilterData() {
-    //  state.filter(el=>el.userEmail==)
-  }
+  useEffect(() => {
+    dispatch(getData);
+  }, []);
 
-  console.log(state);
+  const handleDelete = async (price) => {
+    try {
+      let data = doc(db, "cart", price);
+      await deleteDoc(data);
+      toast.success("Data Deleted Successfully", { autoClose: 3000 });
+      dispatch(getData)
+    } catch (error) {
+      console.log(error);
+      toast.error("Error deleting item", { autoClose: 3000 });
+    }
+  };
+
+
+
+  // console.log(state);
   return (
     <>
       <div className="site-wrap">
         <Header />
+      <ToastContainer />
+
         <div className="bg-light py-3">
           <div className="container">
             <div className="row">
@@ -59,9 +78,9 @@ const Cart = () => {
                       </tr>
                     </thead>
                     <tbody>
-                      {state.map((el) => {
+                      {state && state.filter(el=>el.userEmail==user.email).map((el) => {
                        return ( 
-                      <tr key={el.id}>
+                      <tr>
                     <td className="product-thumbnail">
                       <img src={el.imageURL} alt="Image" className="img-fluid"/>
                     </td>
@@ -70,7 +89,7 @@ const Cart = () => {
                     </td>
                     <td>{el.category}</td>
                     <td>${el.price}</td>
-                    <td><span className="btn btn-primary btn-sm">X</span></td>
+                    <td><button className="btn btn-primary btn-sm" type="button"  onClick={() => handleDelete(el.price)}>X</button></td>
                   </tr> 
                        )})}
                     </tbody>

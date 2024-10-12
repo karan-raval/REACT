@@ -1,7 +1,7 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getData } from "../Redux/Product/action";
-import { collection, doc, getDoc } from "firebase/firestore";
+import { collection, doc, getDoc, getDocs } from "firebase/firestore";
 import { db } from "../FirebaseFolder/Firebase";
 import { Link, useNavigate } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
@@ -14,28 +14,50 @@ const ProductPage = () => {
   const CartCollection = collection(db, "cart");
   const state = useSelector((s) => s.proReducer);
   const navigate = useNavigate();
+  const [count,setcount]=useState(0)
+  const [cartItems, setCartItems] = useState([]);
   // console.log(state);
   useEffect(() => {
     dispatch(getData);
   }, []);
 
   const { user } = useSelector((s) => s.UserReducer);
-  console.log(user);
+  // console.log(user);
+
+
+
 
   const handleCart = async (id) => {
-    let data = doc(db, "products", id);
-    let obj = await getDoc(data);
-    // console.log(obj.data())
-    let d = {
-      ...obj.data(),
-      userEmail: user.email,
-    };
-    console.log(d);
+    if (!user) {
+      alert("Please Login First");
+      navigate("/login");
+      return;
+    }
 
-    await addDoc(CartCollection, d);
-    toast.success("Data Added To Cart Successfully", { autoClose: 3000 });
-    dispatch(getData);
+    // Check if product is already in the cart
+    const productInCart = cartItems.some((item) => item.id === id);
+
+    if (productInCart) {
+      alert("Product is already in the cart");
+    } else {
+      // Add product to the cart
+      const productDoc = doc(db, "products", id);
+      const productData = await getDoc(productDoc);
+
+      if (productData.exists()) {
+        const cartItem = {
+          ...productData.data(),
+          userEmail: user.email,
+        };
+
+        await addDoc(CartCollection, cartItem);
+        toast.success("Data Added To Cart Successfully", { autoClose: 3000 });
+        setCartItems([...cartItems, cartItem]); // Update the cart items state
+        dispatch(getData());
+      }
+    }
   };
+
 
   return (
     <>
@@ -112,41 +134,43 @@ const ProductPage = () => {
                   </div>
                 </div>
                 <div className="row mb-5">
-                  {state.product.map((el) => {
-                    return (
-                      <div
-                        className="col-sm-6 col-lg-4 mb-4"
-                        data-aos="fade-up"
-                      >
-                        <div className="block-4 text-center border">
-                          <figure className="block-4-image">
-                            <span>
-                              <img
-                                src={el.imageURL}
-                                alt="Image placeholder"
-                                className="img-fluid"
+                  {state &&
+                    state.product.map((el) => {
+                      return (
+                        <div
+                          className="col-sm-6 col-lg-4 mb-4"
+                          data-aos="fade-up"
+                          key={el.id}
+                        >
+                          <div className="block-4 text-center border">
+                            <figure className="block-4-image">
+                              <span>
+                                <img
+                                  src={el.imageURL}
+                                  alt="Image placeholder"
+                                  className="img-fluid"
+                                />
+                              </span>
+                            </figure>
+                            <div className="block-4-text p-4">
+                              <h3>
+                                <span>{el.product}</span>
+                              </h3>
+                              <p className="mb-0">{el.category}</p>
+                              <p className="text-primary font-weight-bold">
+                                ${el.price}
+                              </p>
+                              <input
+                                type="submit"
+                                onClick={() => handleCart(el.id)}
+                                className="btn btn-sm btn-primary"
+                                value="Add To Cart"
                               />
-                            </span>
-                          </figure>
-                          <div className="block-4-text p-4">
-                            <h3>
-                              <span>{el.product}</span>
-                            </h3>
-                            <p className="mb-0">{el.category}</p>
-                            <p className="text-primary font-weight-bold">
-                              ${el.price}
-                            </p>
-                            <input
-                              type="submit"
-                              onClick={() => handleCart(el.id)}
-                              className="btn btn-sm btn-primary"
-                              value="Add To Cart"
-                            />
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    );
-                  })}
+                      );
+                    })}
                 </div>
               </div>
 
