@@ -2,7 +2,7 @@ const WorkExperience = [
     {
         id: 1,
         title: "Software Engineer",
-        company: "Kurtosys",
+        company: "FrontEnd",
         yearsActive: "January 2022 - Present",
         information: [
             "Write modern, performant, maintainable code for a diverse array of internal projects",
@@ -12,7 +12,7 @@ const WorkExperience = [
     {
         id: 2,
         title: "Junior Software Developer",
-        company: "Entrostat",
+        company: "BackENd",
         yearsActive: "May 2017 - December 2021",
         information: [
             "Improved and optimized the company's website for a seamless customer experience",
