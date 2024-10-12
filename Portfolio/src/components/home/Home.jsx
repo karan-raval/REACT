@@ -4,7 +4,7 @@ import Me from "../../assets/2.gif";
 import HeaderSocials from "./HeaderSocials";
 import ScrollDown from "./ScrollDown";
 import Shapes from "./Shapes";
-import $ from "jquery";
+// import $ from "jquery";
 
 const Home = () => {
     

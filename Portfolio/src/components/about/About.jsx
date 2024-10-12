@@ -1,13 +1,27 @@
 import React from 'react';
 import './About.css';
-import Image from '../../assets/avatar-2.svg';
-import Resume from '../../assets/Karan Raval Resume.pdf';
+import Image from '../../assets/myphoto.jpg';
+import Resume from '../../assets/Karan_Raval_Resume.pdf';
 import AboutBox from './AboutBox';
 
 const About = () => {
+    // const downloadResume = async () => {
+    //     window.open(Resume, '_blank');
+    //     link.download = 'Karan_Raval_Resume.pdf';
+    // }
+
     const downloadResume = async () => {
         window.open(Resume, '_blank');
+        const link = document.createElement('a');
+        link.href = Resume;
+        link.download = 'Karan_Raval_Resume.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
     }
+
+  
+    
 
 
     return (
