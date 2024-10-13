@@ -1,34 +1,41 @@
+import red from '../../assets/rnw-logo.png'
+import vvp from '../../assets/VVPLogoFi.png'
+import apti from '../../assets/th.jpeg'
 const Study = [
     {
         id: 1,
-        title: "RED AND WHITE ",
-        company: "Full-Stack Devlopment",
-        yearsActive: "11 - SEPTEMBER - 2024 - Present",
+        title: "RED & WHITE Multimedia Education",
+        company: "Full-Stack Web Devlopment",
+        yearsActive: "2023 - Present",
         information: [
             "Write modern, performant, maintainable code for a diverse array of internal projects",
             "Communicate with multi-disciplinary teams of engineers, team leads, and QA Engineers on a daily basis",
         ],
+        img:red,
     },
     {
         id: 2,
-        title: "Junior Software Developer",
+        title: "V.V.P Engineering collage Rajkot",
         company: "Bachelor's Degree",
-        yearsActive: "May 2017 - December 2021",
+        yearsActive: "2020 - 2023",
         information: [
             "Improved and optimized the company's website for a seamless customer experience",
             "Created, communicated, and managed project plans & project timelines",
             "Worked to continually meet the expectation of our clients",
         ],
+        img:vvp,
     },
     {
         id: 3,
-        title: "ELECTRICAL ENGINNERING",
+        title: "A.V.PAREKH TECNICAL INTITUTE , Rajkot",
         company: "Diploma",
         yearsActive: "2017 - 2020",
         information: [
             "Planned, developed, tested, deployed, and maintained web applications and mobile applications",
             "Worked well independently and on a team to solve problems."
         ],
+        img:apti,
+
     },
     // {
     //     id: 4,

@@ -30,8 +30,8 @@ function App() {
                 <Services />
                 <Education />
                 <Resume />
-                <Portfolio />
                 <Testimonials />
+                <Portfolio />
                 <Blog />
                 <Contact theme={theme} />
             </main>

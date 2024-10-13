@@ -32,11 +32,14 @@ const Education = () => {
                     </TabList>
 
                     {WorkExperience.map((experience) => {
-                        const { id, company, yearsActive, title, information } = experience;
+                        const { id,img, company, yearsActive, title, information } = experience;
                         return (
                             <TabPanel className="tab__panel" key={`panel-${id}`}>
+                                <img src={img}  className="logo" />
+                                <br />
+                                <br />
                                 <h2 className="tab__panel-title">
-                                    {title} @ {company}
+                                     {company} @ {title} 
                                 </h2>
                                 <p className="tab__panel-subtitle">{yearsActive}</p>
                                 <ul className="tab__panel-list">
