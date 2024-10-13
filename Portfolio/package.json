@@ -28,6 +28,7 @@
     "react-tsparticles": "^2.12.2",
     "swiper": "^11.1.14",
     "tsparticles": "^3.5.0",
+    "typed.js": "^2.1.0",
     "use-local-storage": "^3.0.0"
   },
   "devDependencies": {
