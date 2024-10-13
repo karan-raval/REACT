@@ -3,18 +3,19 @@ import "./Portfolio.css";
 import { RiGithubLine, RiLink } from "react-icons/ri";
 import { motion } from "framer-motion";
 
-import Work1 from "../../assets/native-jobs.png";
+import Work1 from "../../assets/bt1.png";
 import Work2 from "../../assets/react1.png";
-import Work3 from "../../assets/travel.png";
+import Work3 from "../../assets/bt2.png";
 import Work4 from "../../assets/jspro.png";
 
 const Menu = [
   {
     id: 1,
     image: Work1,
-    title: "React Native Jobs App",
+    title: "Bootstrap Project-1",
     category: ["Frontend"],
-    repositoryUrl: "https://github.com/GregSithole/react-native-jobs",
+    url: "https://my-first-website-bay.vercel.app",
+    repositoryUrl: "https://github.com/karan-raval/my-first-website",
   },
   {
     id: 2,
@@ -27,10 +28,10 @@ const Menu = [
   {
     id: 3,
     image: Work3,
-    title: "Travel Advisor",
+    title: "Bootstrap Project-2",
     category: ["Frontend"],
-    url: "https://travel.gregsithole.com",
-    repositoryUrl: "https://github.com/GregSithole/travel-advisor",
+    url: "https://profound-gumption-fd67b9.netlify.app",
+    repositoryUrl: "https://github.com/karan-raval/BOOTSTRAP-WEBSITE-2-PROJECT",
   },
 //   {
 //     id: 4,
@@ -50,7 +51,6 @@ const Menu = [
   },
 ];
 
-// Portfolio component
 const Portfolio = () => {
   const [items, setItems] = useState(Menu);
   const [activeFilter, setActiveFilter] = useState(0);
