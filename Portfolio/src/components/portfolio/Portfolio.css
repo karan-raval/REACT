@@ -51,6 +51,10 @@
 .portfolio__card:hover .portfolio__mask {
   opacity: 0.9;
 }
+.portfolio__img{
+  width: 908px;
+  height: 220px;
+}
 
 .portfolio__category {
   color: #fff;
