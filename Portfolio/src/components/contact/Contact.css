@@ -11,6 +11,9 @@
   font-size: var(--h3-font-size);
   margin-bottom: 0.5rem;
 }
+.contact__details{
+  text-align: left;
+}
 
 .contact__form-group {
   display: grid;

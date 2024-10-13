@@ -10,6 +10,7 @@ const Home = () => {
     
   return (
     <>
+    <div id="particles-js">
     <section className="home container"   id="home">
       <div className="intro">
         <img src={Me} className="home__img" width="320" />
@@ -20,6 +21,7 @@ const Home = () => {
       </div>
       <Shapes />
     </section>
+    </div>
     </>
   );
 };
