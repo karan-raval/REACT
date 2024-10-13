@@ -5,6 +5,7 @@ import Home from './components/home/Home';
 import About from './components/about/About';
 import Services from './components/services/Services';
 import Resume from './components/resume/Resume';
+import Education from './components/education/Education';
 import Portfolio from './components/portfolio/Portfolio';
 // import Testimonials from './components/testimonials/Testimonials';
 import Blog from './components/blog/Blog';
@@ -28,6 +29,7 @@ function App() {
                 {/* <About /> */}
                 {/* <Services /> */}
                 <Resume />
+                <Education />
                 <Portfolio />
                 {/* <Testimonials /> */}
                 <Blog />
