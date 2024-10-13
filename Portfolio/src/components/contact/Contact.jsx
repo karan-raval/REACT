@@ -36,7 +36,6 @@ const Contact = (props) => {
         .then(
           () => {
             setLoading(false);  
-            // console.log('SUCCESS!');
             toast.success("Successfully sent email.");
             setName("");
             setEmail("");

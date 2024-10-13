@@ -1,5 +1,5 @@
 .testimonial__container {
-  max-width: 700px;
+  max-width: 900px;
   margin: auto;
 }
 
@@ -9,8 +9,8 @@
 }
 
 .thumb {
-  height: 5.6rem;
-  width: 5.6rem;
+  height: 100%;
+  width: 100%;
   margin: 0 auto;
 }
 
