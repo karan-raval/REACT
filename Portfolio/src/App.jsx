@@ -28,8 +28,8 @@ function App() {
                 {/* <Home /> */}
                 {/* <About /> */}
                 {/* <Services /> */}
-                <Resume />
                 <Education />
+                <Resume />
                 <Portfolio />
                 {/* <Testimonials /> */}
                 <Blog />
