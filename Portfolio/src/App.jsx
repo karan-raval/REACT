@@ -7,7 +7,7 @@ import Services from './components/services/Services';
 import Resume from './components/resume/Resume';
 import Education from './components/education/Education';
 import Portfolio from './components/portfolio/Portfolio';
-// import Testimonials from './components/testimonials/Testimonials';
+import Testimonials from './components/testimonials/Testimonials';
 import Blog from './components/blog/Blog';
 import Contact from './components/contact/Contact';
 import useLocalStorage from 'use-local-storage'
@@ -25,13 +25,13 @@ function App() {
        <div className="app" data-theme={theme}>
             <Sidebar theme={theme} switchTheme={switchTheme} />
             <main className='main'>
-                {/* <Home /> */}
-                {/* <About /> */}
-                {/* <Services /> */}
+                <Home />
+                <About />
+                <Services />
                 <Education />
                 <Resume />
                 <Portfolio />
-                {/* <Testimonials /> */}
+                <Testimonials />
                 <Blog />
                 <Contact theme={theme} />
             </main>

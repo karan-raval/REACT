@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
 import emailjs from "@emailjs/browser";
 
@@ -11,6 +11,7 @@ const Contact = (props) => {
     const [subject, setSubject] = useState("");
     const [message, setMessage] = useState("");
     const [loading, setLoading] = useState(false);
+    const form = useRef();
 
     const submitHandler = async (e) => {
         e.preventDefault();
@@ -18,33 +19,36 @@ const Contact = (props) => {
             return toast.error("Please complete the form above");
         }
 
-        setLoading(true);
+        setLoading(true);  
 
         const data = {
-            name,
-            email,
-            subject,
-            message,
+            name:name,
+            email:email,
+            subject:subject,
+            message:message,
+            to_email: "karanraval424@gmail.com", 
         };
 
         emailjs
-            .send(
-                process.env.REACT_APP_EMAILJS_SERVICE_ID,
-                process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
-                data,
-                process.env.REACT_APP_EMAILJS_PUBLIC_API
-            )
-            .then(
-                (result) => {
-                    setLoading(false);
-                    toast.success(`Successfully sent email.`);
-                },
-                (error) => {
-                    setLoading(false);
-                    console.log(error);
-                    toast.error(error.text);
-                }
-            );
+        .sendForm('service_xgzuufa', 'template_0prqimr', form.current, {
+          publicKey: 'AzNwrnyWk3bsAAfhz',
+        })
+        .then(
+          () => {
+            setLoading(false);  
+            // console.log('SUCCESS!');
+            toast.success("Successfully sent email.");
+            setName("");
+            setEmail("");
+            setSubject("");
+            setMessage("");
+          },
+          (error) => {
+            console.log('FAILED...', error.text);
+            toast.error("Error in sending email: " + (error.text || error));
+          },
+        );
+
     };
 
     return (
@@ -59,13 +63,15 @@ const Contact = (props) => {
                     </p>
                 </div>
 
-                <form onSubmit={submitHandler} className="contact__form">
+                <form ref={form} onSubmit={submitHandler} className="contact__form">
                     <div className="contact__form-group">
                         <div className="contact__form-div">
                             <input
                                 type="text"
                                 className="contact__form-input"
                                 placeholder="Insert your name"
+                                value={name} 
+                                name="name"
                                 onChange={(e) => setName(e.target.value)}
                             />
                         </div>
@@ -75,6 +81,8 @@ const Contact = (props) => {
                                 type="email"
                                 className="contact__form-input"
                                 placeholder="Insert your email"
+                                value={email}   
+                                name="email"   
                                 onChange={(e) => setEmail(e.target.value)}
                             />
                         </div>
@@ -85,24 +93,26 @@ const Contact = (props) => {
                             type="text"
                             className="contact__form-input"
                             placeholder="Insert your subject"
+                            value={subject}  
+                            name="subject"   
                             onChange={(e) => setSubject(e.target.value)}
                         />
                     </div>
 
                     <div className="contact__form-div contact__form-area">
                         <textarea
-                            name=""
-                            id=""
                             cols="30"
                             rows="10"
                             className="contact__form-input"
                             placeholder="Write your message"
+                            value={message}
+                            name="message"   
                             onChange={(e) => setMessage(e.target.value)}
                         ></textarea>
                     </div>
 
                     <button type="submit" className="btn">
-                        {loading ? "Sending..." : "Send Message"}
+                        {loading ? "Sending..." : "Send Message"} 
                     </button>
                 </form>
                 <ToastContainer position="bottom-right" theme={props.theme} />
