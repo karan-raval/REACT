@@ -11,7 +11,7 @@ const Testimonials = () => {
 
   return (
     <section className="testimonials container section">
-      <h2 className="section__title">GItHUB Stats</h2>
+      <h2 className="section__title">Github Stats</h2>
 
       <Swiper
         className="testimonial__container grid"
@@ -22,14 +22,14 @@ const Testimonials = () => {
         grabCursor={true}
         pagination={{ clickable: true }}
       >
-            <SwiperSlide className="testimonial__item">
-              <div className="thumb">
-               <GitHubCalendar username="karan-raval" />
-              </div>
-            </SwiperSlide>
+            
             <SwiperSlide className="testimonial__item">
               <img id="github-streak-stats" src="https://github-readme-streak-stats.herokuapp.com/?user=karan-raval&theme=transparent" alt="GitHub Streak Stats" />
-              <br />
+            </SwiperSlide>
+            <SwiperSlide className="testimonial__item">
+              <div className="thumb">
+               <GitHubCalendar username="karan-raval"/>
+              </div>
             </SwiperSlide>
             <SwiperSlide className="testimonial__item">
                <img id="github-stats-card" src="https://github-readme-stats.vercel.app/api?username=karan-raval&theme=transparent&show_icons=true&locale=en" alt="GitHub Stats Card" />
