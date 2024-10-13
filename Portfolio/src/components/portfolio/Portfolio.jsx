@@ -3,28 +3,26 @@ import "./Portfolio.css";
 import { RiGithubLine, RiLink } from "react-icons/ri";
 import { motion } from "framer-motion";
 
-// Import images
 import Work1 from "../../assets/native-jobs.png";
-import Work2 from "../../assets/cryptoverse.png";
+import Work2 from "../../assets/react1.png";
 import Work3 from "../../assets/travel.png";
 import Work4 from "../../assets/jspro.png";
 
-// Menu data
 const Menu = [
   {
     id: 1,
     image: Work1,
     title: "React Native Jobs App",
-    category: ["Frontend", "React"],
+    category: ["Frontend"],
     repositoryUrl: "https://github.com/GregSithole/react-native-jobs",
   },
   {
     id: 2,
     image: Work2,
-    title: "Cryptoverse",
-    category: ["Frontend", "React"],
-    url: "https://cryptoverse.gregsithole.com",
-    repositoryUrl: "https://github.com/GregSithole/crypto-app",
+    title: "NAYKAA CLONE",
+    category: ["React"],
+    url: "https://gentle-queijadas-99e549.netlify.app",
+    repositoryUrl: "https://github.com/karan-raval/REACT/tree/main/Project_1",
   },
   {
     id: 3,
@@ -34,18 +32,18 @@ const Menu = [
     url: "https://travel.gregsithole.com",
     repositoryUrl: "https://github.com/GregSithole/travel-advisor",
   },
-  {
-    id: 4,
-    image: Work4,
-    title: "Wallhaven CLI",
-    category: ["Backend"],
-    url: "https://www.npmjs.com/package/wallhaven-cli",
-    repositoryUrl: "https://github.com/GregSithole/wallhaven-cli",
-  },
+//   {
+//     id: 4,
+//     image: Work4,
+//     title: "Wallhaven CLI",
+//     category: ["Backend"],
+//     url: "https://www.npmjs.com/package/wallhaven-cli",
+//     repositoryUrl: "https://github.com/GregSithole/wallhaven-cli",
+//   },
   {
     id: 5,
     image: Work4,
-    title: "JS-API-PROJECT",
+    title: "FLIPKART CLONE",
     category: ["Js"],
     url: "https://js-api-project-jet.vercel.app/",
     repositoryUrl: "https://github.com/karan-raval/JS-API-Project",
