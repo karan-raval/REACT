@@ -2,29 +2,30 @@ import React from 'react';
 import './Services.css';
 import Image1 from '../../assets/service-1.svg'
 import Image2 from '../../assets/service-2.svg'
-import Image3 from '../../assets/service-3.svg'
+import Image3 from '../../assets/backend.png'
 
 const data = [
     {
         id: 1,
         image: Image1,
-        title: "Responsive design",
+        title: "Front-End Development",
         description:
-            "Ensuring that the website/mobile app is responsive across all platforms",
+            "Design and develop visually appealing, interactive, and responsive user interfaces across all platforms."
+
     },
     {
         id: 2,
         image: Image2,
         title: "Web Development",
         description:
-            "Ensuring that that a website meets the correct standards, and also ensuring it's well maintained",
+            "Build client-side features using HTML, CSS, and JavaScript, focusing on layout, design, and responsiveness.",
     },
     {
         id: 3,
         image: Image3,
-        title: "Mobile Development",
+        title: "Back-End Development",
         description:
-            "Ensuring that a mobile app meets the correct standards, and also ensuring it's well maintained",
+            "Manage server-side logic, databases, and APIs to ensure seamless data flow between the server and users.",
     },
 ];
 
