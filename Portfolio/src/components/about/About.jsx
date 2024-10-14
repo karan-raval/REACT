@@ -29,7 +29,7 @@ const About = () => {
 full-stack technologies, with expertise in the MERN stack. Skilled
 at creating attractive, functional, and responsive websites, with a
 successful track record of building both solo and collaborative
-projects. Responsible and detail-oriented, with strong problemsolving and communication skills, eager to apply knowledge in realworld projects. An Electrical Engineering graduate transitioning to
+projects. Responsible and detail-oriented, with strong problemsolving and communication skills, eager to apply knowledge in realworld projects. An Electrical Engineering graduate transitioning to
 web development, looking forward to contributing innovative
 solutions while continuing to grow as an aspiring full-stack
 developer

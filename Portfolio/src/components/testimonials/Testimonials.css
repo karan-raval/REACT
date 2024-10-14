@@ -1,17 +1,21 @@
 .testimonial__container {
-  max-width: 900px;
+  width: 1000px;
   margin: auto;
 }
-
+.git{
+  padding-left: 50%;
+}
 .testimonial__item {
   text-align: center;
   padding: 0 1.25rem 1.25rem;
 }
-
+.imgs{
+  padding: 5%;
+}
 .thumb {
   height: 100%;
   width: 100%;
-  margin: 0 auto;
+  margin: 6% 6.5%;
 }
 
 .testimonial__title {

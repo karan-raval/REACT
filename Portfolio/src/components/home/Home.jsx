@@ -8,7 +8,6 @@ import Typed from "typed.js";
 
 const Home = () => {
   useEffect(() => {
-    // Initializing Typed.js when the component is mounted
     const options = {
       strings: [
         "Full-Stack Web Development.", 
