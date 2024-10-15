@@ -94,7 +94,7 @@
 }
 
 /* Responsive styles for 430px screen width (small mobile phones) */
-@media (max-width: 430px) {
+@media (max-width: 400px) {
   .testimonials {
     padding: 5px;
   }
@@ -104,8 +104,14 @@
   }
 
   .imgs {
-    width: 100%;
+    width: 70%;
     padding: 0 5px;
+  }
+
+  .thumb {
+    height: 80%;
+    width: 80%;
+    margin: 6% 11%;
   }
 }
 

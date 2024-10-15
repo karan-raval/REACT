@@ -4,7 +4,6 @@
 }
 
 .services__card {
-  width: 360px;
   text-align: center;
   padding: 1.875rem;
   border-radius: var(--border-radius);
