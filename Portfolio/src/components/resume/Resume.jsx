@@ -3,7 +3,7 @@ import "./Resume.css";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import Button from "./Button";
 import { TiHtml5 } from "react-icons/ti";
-import { span } from "framer-motion/client";
+// import { span } from "framer-motion/client";
 import { FaCss3Alt } from "react-icons/fa";
 import { FaJs } from "react-icons/fa";
 import { TbJson } from "react-icons/tb";
@@ -44,7 +44,6 @@ const IconComponent = ({ icon: Icon, name, color, hoverColor }) => {
     <div className="icon-wrapper">
       <Icon className="icon" />
       <span className="icon-name">{name}</span>{" "}
-      {/* The name is always in the DOM but hidden */}
     </div>
   );
 };
@@ -56,40 +55,142 @@ const WorkExperience = [
     company: "Front-End",
     yearsActive: "html",
     information: [
-      <TiHtml5 />,
-      <FaCss3Alt />,
-      <FaJs />,
-      <DiJqueryLogo />,
-      <FaBootstrap />,
-      <RiTailwindCssFill />,
+      <IconComponent
+        icon={TiHtml5}
+        name="HTML 5"
+        color="white"
+        hoverColor="#21a1f1"
+      />,
+      <IconComponent
+        icon={FaCss3Alt}
+        name="css 3"
+        color="white"
+        hoverColor="#21a1f1"
+      />,
+      <IconComponent
+        icon={FaJs}
+        name="Java-Script"
+        color="white"
+        hoverColor="#21a1f1"
+      />,
+      <IconComponent
+        icon={DiJqueryLogo}
+        name="Jquery"
+        color="white"
+        hoverColor="#21a1f1"
+      />,
+      <IconComponent
+        icon={FaBootstrap}
+        name="Bootstrap"
+        color="white"
+        hoverColor="#21a1f1"
+      />,
+      <IconComponent
+        icon={RiTailwindCssFill}
+        name="Tailwind css"
+        color="white"
+        hoverColor="#21a1f1"
+      />,
       <IconComponent
         icon={FaReact}
         name="React"
         color="white"
         hoverColor="#21a1f1"
       />,
-      <IconComponent icon={SiVite} name="vite" color="white" hoverColor="#21a1f1" />,
-      <SiReactrouter />,
-      <SiNpm />,
-      <SiMui />,
-      <TbJson />,
-      <SiRedux />,
+      <IconComponent
+        icon={SiVite}
+        name="vite"
+        color="white"
+        hoverColor="#21a1f1"
+      />,
+      <IconComponent
+        icon={SiReactrouter}
+        name="React-Router"
+        color="white"
+        hoverColor="#21a1f1"
+      />,
+      <IconComponent
+        icon={SiNpm}
+        name="NPM"
+        color="white"
+        hoverColor="#21a1f1"
+      />,
+      <IconComponent
+        icon={SiMui}
+        name="Material-UI"
+        color="white"
+        hoverColor="#21a1f1"
+      />
+     ,
+     <IconComponent
+        icon={TbJson}
+        name="JSON"
+        color="white"
+        hoverColor="#21a1f1"
+      />
+      ,
+      <IconComponent
+        icon={SiRedux}
+        name="Redux"
+        color="white"
+        hoverColor="#21a1f1"
+      />,
     ],
   },
   {
     id: 2,
-    title: "Back ",
+    title: "Back-End Tech.",
     company: "Back-End",
     yearsActive: "May 2017 - December 2021",
     information: [
-      <SiFirebase />,
-      <FaNode />,
-      <SiMongodb />,
-      <SiExpress />,
-      <SiPassport />,
-      <SiAuth0 />,
-      <FaCloudflare />,
-      <SiMongoose />,
+      <IconComponent
+      icon={SiFirebase}
+      name="Fire-Base"
+      color="white"
+      hoverColor="#21a1f1"
+    />,
+      <IconComponent
+      icon={FaNode}
+      name="Node"
+      color="white"
+      hoverColor="#21a1f1"
+    />,
+      <IconComponent
+      icon={SiMongodb}
+      name="Mongo DB"
+      color="white"
+      hoverColor="#21a1f1"
+    />,
+      <IconComponent
+      icon={SiExpress}
+      name="Express"
+      color="white"
+      hoverColor="#21a1f1"
+    />,
+      <IconComponent
+      icon={SiPassport}
+      name="Passport Js"
+      color="white"
+      hoverColor="#21a1f1"
+    />,
+      <IconComponent
+      icon={SiAuth0}
+      name="Auth"
+      color="white"
+      hoverColor="#21a1f1"
+    />,
+      <IconComponent
+      icon={FaCloudflare}
+      name="Cloud Flare"
+      color="white"
+      hoverColor="#21a1f1"
+    />,
+      <IconComponent
+      icon={SiMongoose}
+      name="Mongoose"
+      color="white"
+      hoverColor="#21a1f1"
+    />,
     ],
   },
   {
@@ -98,20 +199,90 @@ const WorkExperience = [
     company: "Tools",
     yearsActive: "February 2016 - April 2017",
     information: [
-      <VscVscode />,
-      <SiPostman />,
-      <FaChrome />,
-      <SiSublimetext />,
-      <SiWebstorm />,
-      <FiCodesandbox />,
-      <FaGitAlt />,
-      <FaGithub />,
-      <SiNetlify />,
-      <SiVercel />,
-      <SiRender />,
-      <FaWindows />,
-      <SiPrettier />,
-      <BsRegex />,
+      <IconComponent
+      icon={VscVscode}
+      name="Vs Code"
+      color="white"
+      hoverColor="#21a1f1"
+    />,
+      <IconComponent
+      icon={SiPostman}
+      name="Postman"
+      color="white"
+      hoverColor="#21a1f1"
+    />,
+      <IconComponent
+      icon={FaChrome}
+      name="Chrome"
+      color="white"
+      hoverColor="#21a1f1"
+    />,
+      <IconComponent
+      icon={SiSublimetext}
+      name="Sublime"
+      color="white"
+      hoverColor="#21a1f1"
+    />,
+      <IconComponent
+      icon={SiWebstorm}
+      name="Webstrom"
+      color="white"
+      hoverColor="#21a1f1"
+    />,
+      <IconComponent
+      icon={FiCodesandbox}
+      name="Code Sandbox"
+      color="white"
+      hoverColor="#21a1f1"
+    />,
+      <IconComponent
+      icon={FaGitAlt}
+      name="Git"
+      color="white"
+      hoverColor="#21a1f1"
+    />,
+      <IconComponent
+      icon={FaGithub}
+      name="Github"
+      color="white"
+      hoverColor="#21a1f1"
+    />,
+      <IconComponent
+      icon={SiNetlify}
+      name="Netlify"
+      color="white"
+      hoverColor="#21a1f1"
+    />,
+      <IconComponent
+      icon={SiVercel}
+      name="Vercel"
+      color="white"
+      hoverColor="#21a1f1"
+    />,
+      <IconComponent
+      icon={SiRender}
+      name="Render"
+      color="white"
+      hoverColor="#21a1f1"
+    />,
+      <IconComponent
+      icon={FaWindows}
+      name="Windows"
+      color="white"
+      hoverColor="#21a1f1"
+    />,
+      <IconComponent
+      icon={SiPrettier}
+      name="Prettier"
+      color="white"
+      hoverColor="#21a1f1"
+    />,
+      <IconComponent
+      icon={BsRegex}
+      name="Regex"
+      color="white"
+      hoverColor="#21a1f1"
+    />,
     ],
   },
 ];

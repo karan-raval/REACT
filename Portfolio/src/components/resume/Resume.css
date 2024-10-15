@@ -129,7 +129,6 @@
   font-family: Arial, sans-serif;
   font-size: 11px;
   font-weight: 600;
-  /* border-radius: 4px; */
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -143,33 +142,11 @@
   height: 16px;
 }
 
-
 /*  */
-
-
-
-
-
-
-
-
-
-/* body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f9;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-} */
-
 .icon-container {
   display: flex;
   flex-wrap: wrap;
-  /* width: 100%; */
-  border: 1px solid red;
-  gap: 30px;
+  gap: 10px;
 }
 
 .icon-wrapper {
@@ -181,26 +158,22 @@
 }
 
 .icon {
-  font-size: 50px;
-  /* color: #fff; */
+  font-size: 40px;
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
-/* Hover effect for the icon */
 .icon-wrapper:hover .icon {
-  color: #0d7ff0; /* Change the color on hover */
-  transform: scale(1.2); /* Slightly zoom the icon */
+  color: #0d7ff0;
+  transform: scale(1.2); 
 }
 
 .icon-name {
-  opacity: 0; /* Initially hidden */
+  opacity: 0; 
   font-size: 14px;
-  color: #dcab0c;
   margin-top: 5px;
-  transition: opacity 0.3s ease; /* Smooth transition for opacity */
+  transition: opacity 0.3s ease; 
 }
 
-/* Show name on hover */
 .icon-wrapper:hover .icon-name {
-  opacity: 1; /* Fully visible on hover */
+  opacity: 1; 
 }
