@@ -3,7 +3,6 @@ import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 const HeaderSocials = () => {
     return (
         <div className='home__socials'>
-            <br />
             <a href='https://github.com/karan-raval' className='home__social-link' target='_blank' rel='noreferrer'>
                 <FaGithub />
             </a>

@@ -31,6 +31,18 @@
   margin: 0.8rem 12.5rem;
 }
 
+@media (min-width: 1200px) {
+.home__socials{
+  display: flex;
+  column-gap: 1rem;
+  /* width: 100px; */
+  margin: 0.8rem 12.5rem;
+}
+
+}
+
+
+
 .home__social-link {
   color: var(--title-color);
   font-size: 1.3rem;
@@ -174,4 +186,55 @@
 .home__education{
   font-size: 1.5rem;
 
+}
+
+
+
+
+
+/* responsive */
+
+@media (max-width: 479px) {
+  .home {
+    /* padding: 10px; */
+  }
+
+  .home__img {
+    width: 150px; /* Reduce the size of the image */
+    margin-bottom: 15px;
+  }
+
+  .home__name {
+    font-size: 2rem; /* Reduce font size */
+  }
+
+  .home__education {
+    font-size: 1.2rem; /* Adjust education text size */
+  }
+
+  /* Adjust the typing-text container for better readability */
+  .typing-text {
+    font-size: 1.2rem;
+  }
+
+  .intro {
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+  }
+  .home__img {
+    width: 280px;
+  }
+
+  .home__name {
+    font-size: 0.8rem;
+  }
+
+  .home__education {
+    font-size: 1.7rem;
+  }
+
+  .typing-text {
+    font-size: 1.7rem;
+  }
 }
