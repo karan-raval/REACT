@@ -124,7 +124,7 @@
   display: inline-flex;
   align-items: center;
   padding: 4px 10px;
-  background-color: #1572B6;
+  background-color: #1572b6;
   color: white;
   font-family: Arial, sans-serif;
   font-size: 11px;
@@ -164,16 +164,16 @@
 
 .icon-wrapper:hover .icon {
   color: #0d7ff0;
-  transform: scale(1.2); 
+  transform: scale(1.2);
 }
 
 .icon-name {
-  opacity: 0; 
+  opacity: 0;
   font-size: 14px;
   margin-top: 5px;
-  transition: opacity 0.3s ease; 
+  transition: opacity 0.3s ease;
 }
 
 .icon-wrapper:hover .icon-name {
-  opacity: 1; 
+  opacity: 1;
 }
