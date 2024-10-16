@@ -42,7 +42,7 @@ const IconComponent = ({ icon: Icon, name, color, hoverColor }) => {
   return (
     <div className="icon-wrapper">
       <Icon className="icon" />
-      <span className="icon-name">{name}</span>{" "}
+      <span className="icon-name">{name}</span>
     </div>
   );
 };
@@ -52,7 +52,6 @@ const WorkExperience = [
     id: 1,
     title: "Programming Languages , Frameworks & Libraries",
     company: "Front-End",
-    yearsActive: "html",
     information: [
       <IconComponent
         icon={TiHtml5}
@@ -138,7 +137,6 @@ const WorkExperience = [
     id: 2,
     title: "Back-End Tech.",
     company: "Back-End",
-    yearsActive: "May 2017 - December 2021",
     information: [
       <IconComponent
         icon={SiFirebase}
@@ -194,7 +192,6 @@ const WorkExperience = [
     id: 3,
     title: "Tool Stack",
     company: "Tools",
-    yearsActive: "February 2016 - April 2017",
     information: [
       <IconComponent
         icon={VscVscode}
@@ -311,7 +308,7 @@ const Resume = () => {
           </TabList>
 
           {WorkExperience.map((experience) => {
-            const { id, company, yearsActive, title, information } = experience;
+            const { id, title, information } = experience;
             return (
               <TabPanel className="tab__panel" key={`panel-${id}`}>
                 <h2 className="tab__panel-title">{title}</h2>
