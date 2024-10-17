@@ -6,7 +6,6 @@ import { GoogleLogout } from '../FirebaseFolder/Firebase';
 import { toast, ToastContainer } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
 
-
 const Header = () => {
   const navigate =useNavigate();
   const handleLogout=()=>{
@@ -29,7 +28,7 @@ const Header = () => {
                 </div>
                 <label
                   className="form-label switch_toggle d-none d-lg-block"
-                  for="checkbox"
+                  htmlFor="checkbox"
                 >
                   <input type="checkbox" id="checkbox" />
                   <div className="slider round open_miniSide"></div>
