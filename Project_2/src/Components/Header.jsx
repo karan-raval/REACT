@@ -1,4 +1,4 @@
-import {React ,useState} from 'react';
+import React from 'react';
 import bell from "../assets/images/bell.svg";
 import msg from "../assets/images/msg.svg";
 import client from "../assets/images/client_img.png";
@@ -15,10 +15,10 @@ const Header = () => {
     }, 1000);
     navigate('/login');
   }
- 
   return (
     <>
        <ToastContainer />
+
       <div className="container-fluid g-0">
           <div className="row">
             <div className="col-lg-12 p-0 ">
@@ -30,11 +30,8 @@ const Header = () => {
                   className="form-label switch_toggle d-none d-lg-block"
                   htmlFor="checkbox"
                 >
-                  <input type="checkbox"   onChange={toggleSidebar} id="checkbox" />
+                  <input type="checkbox" id="che1ckbox" />
                   <div className="slider round open_miniSide"></div>
-                   <div id="sidebar" className={`sidebar ${isOpen ? 'open' : ''}`}>
-        {/* Sidebar content */}
-      </div>
                 </label>
                 <div className="header_right d-flex justify-content-between align-items-center">
                   <div className="header_notification_warp d-flex align-items-center">
