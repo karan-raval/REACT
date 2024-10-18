@@ -48,13 +48,15 @@ const ProductPage = () => {
             </div>
             <div className="row">
               {state.product.map((el) => {
+                  let dis= Math.floor(
+                    ((el.strikedOffPrice - el.price) / el.strikedOffPrice) * 100)
                 return (
                   <div className="col-md-3">
                     <div className="white_card position-relative mb_20 ">
                       <div className="card-body">
                         <div className="ribbon1 rib1-primary">
                           <span className="text-white text-center rib1-primary">
-                            50% off
+                            {dis}% off
                           </span>
                         </div>
                         <img
@@ -68,35 +70,19 @@ const ProductPage = () => {
                             <span className="badge_btn_3  mb-1">
                               {el.category}
                             </span>
+                            <br />
                             <a className="f_w_400 color_text_3 f_s_14 d-block">
                               {el.product}
                             </a>
                           </div>
+
                           <div className="col-auto">
-                            <h4 className="text-dark mt-0">
+                            <h4 className="text-dark mt-1">
                               ₹{el.price} &nbsp;&nbsp;
                               <small className="text-muted font-14">
                                 <del>₹{el.strikedOffPrice}</del>
                               </small>
                             </h4>
-                            {/* <Rating name="read-only" value={3} readOnly />
-                            <ul className="list-inline mb-0 product-review align-self-center">
-                              <li className="list-inline-item">
-                                <i className="fas fa-star text-warning font-16"></i>
-                              </li>
-                              <li className="list-inline-item">
-                                <i className="fas fa-star text-warning font-16 ms-n2"></i>
-                              </li>
-                              <li className="list-inline-item">
-                                <i className="fas fa-star text-warning font-16 ms-n2"></i>
-                              </li>
-                              <li className="list-inline-item">
-                                <i className="fas fa-star text-warning font-16 ms-n2"></i>
-                              </li>
-                              <li className="list-inline-item">
-                                <i className="fas fa-star-half text-warning font-16 ms-n2"></i>
-                              </li>
-                            </ul> */}
                           </div>
                         </div>
                         <div className="d-grid">

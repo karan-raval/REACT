@@ -13,13 +13,13 @@ const Mainroutes = () => {
   return (
     <>
     <Routes>
-        <Route path='/' element={<Home/>} ></Route>
-        <Route path='/signup' element={<Signup/>} ></Route>
-        <Route path='/login' element={<Login/>} ></Route>
-        <Route path='/addproduct' element={<PrivateRouter><AddProduct/></PrivateRouter>} ></Route>
-        <Route path='/product' element={<ProductPage/>} ></Route>
-        <Route path='/product/edit/:id' element={<SingleEditProduct/>} ></Route>
-        <Route path='*' element={<PageNotFound/>} ></Route>
+        <Route path='/' element={<Home/>}></Route>
+        <Route path='/signup' element={<Signup/>}></Route>
+        <Route path='/login' element={<Login/>}></Route>
+        <Route path='/addproduct' element={<PrivateRouter><AddProduct/></PrivateRouter>}></Route>
+        <Route path='/product' element={<PrivateRouter><ProductPage/></PrivateRouter>}></Route>
+        <Route path='/product/edit/:id' element={<PrivateRouter><SingleEditProduct/></PrivateRouter>}></Route>
+        <Route path='*' element={<PageNotFound/>}></Route>
     </Routes>
     </>
   )
