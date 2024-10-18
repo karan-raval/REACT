@@ -3599,7 +3599,7 @@ const Home = () => {
                   <div className="date_picker_wrapper">
                     <div className="default-datepicker">
                       <div className="datepicker-here" data-language="en">
-                        {/* <div className="datepicker-inline"></div> */}
+                        <div className="datepicker-inline"></div>
                       </div>
                     </div>
                   </div>

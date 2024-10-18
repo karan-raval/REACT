@@ -79,8 +79,8 @@ const ProductPage = () => {
                                 <del>₹{el.strikedOffPrice}</del>
                               </small>
                             </h4>
-                            {/* <Rating name="read-only" value={3} readOnly /> */}
-                            {/* <ul className="list-inline mb-0 product-review align-self-center">
+                            {/* <Rating name="read-only" value={3} readOnly />
+                            <ul className="list-inline mb-0 product-review align-self-center">
                               <li className="list-inline-item">
                                 <i className="fas fa-star text-warning font-16"></i>
                               </li>

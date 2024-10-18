@@ -1,6 +1,6 @@
 import { addDoc, collection, getDocs } from "firebase/firestore"
 import { db } from "../../FirebaseFolder/Firebase"
-import { ERROR, LOADING, SUCCESS } from "./actionType"
+import { ERROR, LOADING, SUCCESSs } from "./actionType"
 
 const ProductCollection = collection(db,"products")
 export const addData = (dispatch)=>async(obj)=>{
@@ -17,5 +17,5 @@ export const getData = async(dispatch)=>{
     let data = a.docs.map((el)=>{
         return { id : el.id, ...el.data()}
     })
-    dispatch({type : SUCCESS, payload : data})
+    dispatch({type : SUCCESSs, payload : data})
 }

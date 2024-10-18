@@ -1,4 +1,4 @@
-import { ERROR, LOADING, SUCCESS } from "./actionType"
+import { ERROR, LOADING, SUCCESSs } from "./actionType"
 
 
 let initial = {
@@ -16,7 +16,7 @@ export const proReducer = (state = initial,action)=>{
                 ...state,
                 isLoading : true,
               }
-           case  SUCCESS:
+           case  SUCCESSs:
                return {
                   ...state,
                   isLoading : false,

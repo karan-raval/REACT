@@ -129,6 +129,7 @@ const Login = () => {
                             </button>
                             <hr />
                             <button
+                            type="button"
                               onClick={handleClick}
                               className="btn_1 green full_width text-center"
                             >

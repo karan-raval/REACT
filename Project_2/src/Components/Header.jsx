@@ -1,18 +1,16 @@
-import React, { useState } from 'react';
+import React, { usestatee } from 'react';
 import bell from "../assets/images/bell.svg";
 import msg from "../assets/images/msg.svg";
 import client from "../assets/images/client_img.png";
 import { GoogleLogout } from '../FirebaseFolder/Firebase';
-import { toast, ToastContainer } from 'react-toastify';
+// import { toast, ToastContainer } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
-import { useDispatch, useSelector } from 'react-redux';
+import {  useSelector } from 'react-redux';
 
 const Header = () => {
 
-  const state = useSelector((s)=>s.UserReducer)
-  const [user,setUser] = useState(null)
-  console.log(state)
-  // console.log(state.user.photoURL)
+  const statee = useSelector((s)=>s.UserReducer)
+  console.log(statee)
   const navigate =useNavigate();
   const handleLogout=()=>{
     GoogleLogout()
@@ -23,7 +21,7 @@ const Header = () => {
   }
   return (
     <>
-       <ToastContainer />
+       {/* <ToastContainer /> */}
 
       <div className="container-fluid g-0">
           <div className="row">
@@ -170,17 +168,16 @@ const Header = () => {
                     </li>
                     <li>
                       <a className="CHATBOX_open">
-                        {" "}
                         <img src={msg} alt /> <span>2</span>{" "}
                       </a>
                     </li>
                   </div>
                   <div className="profile_info">
 
-                    <img src={state.isLogin ? state.user.profileURL : client} alt="#" />
+                    <img src={statee.isLogin ? statee.user.profileURL : client} alt="#" />
                     <div className="profile_info_iner">
                       <div className="profile_author_name">
-                        <h5>{state.isLogin ? state.user.name : ""}</h5>
+                        <h5>{statee.isLogin ? statee.user.name : ""}</h5>
                       </div>
                       <div className="profile_info_details">
                         <a>My Profile </a>
