@@ -1,13 +1,13 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from "react";
 import Navbar from "../Components/Navbar";
 import Header from "../Components/Header";
-import { collection, getDocs } from 'firebase/firestore';
-import { useDispatch, useSelector } from 'react-redux';
-import { Link, useNavigate } from 'react-router-dom'
-import { db, GoogleLogout } from '../FirebaseFolder/Firebase';
-import { toast, ToastContainer } from 'react-toastify';
-import { google, UserReducer } from '../Redux/User/UserReducer';
-import 'react-toastify/dist/ReactToastify.css';
+import { collection, getDocs } from "firebase/firestore";
+import { useDispatch, useSelector } from "react-redux";
+import { Link, useNavigate } from "react-router-dom";
+import { db } from "../FirebaseFolder/Firebase";
+import { toast, ToastContainer } from "react-toastify";
+import { google } from "../Redux/User/UserReducer";
+import "react-toastify/dist/ReactToastify.css";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -15,62 +15,61 @@ const Login = () => {
   const [d, setD] = useState([]);
   const UserCollection = collection(db, "users");
   const navigate = useNavigate();
-  const dispatch  = useDispatch();
-  const state = useSelector((s)=>s.UserReducer)
-  const [user,setUser] = useState(null)
-  console.log(state)
-  console.log(state.isLogin)
+  const dispatch = useDispatch();
+  const state = useSelector((s) => s.UserReducer);
+  console.log(state);
+  console.log(state.isLogin);
 
   useEffect(() => {
-      const getData = async () => {
-          try {
-              let data = await getDocs(UserCollection);
-              let val = data.docs.map((el) => ({
-                  id: el.id,
-                  ...el.data(),
-              }))
-              setD(val);
-          } catch (error) {
-              toast.error("Failed to load user data", { autoClose: 3000 });
-          }
-      };
-      getData();
+    const getData = async () => {
+      try {
+        let data = await getDocs(UserCollection);
+        let val = data.docs.map((el) => ({
+          id: el.id,
+          ...el.data(),
+        }));
+        setD(val);
+      } catch (error) {
+        toast.error("Failed to load user data", { autoClose: 3000 });
+      }
+    };
+    getData();
   }, []);
 
   const handleSubmit = (e) => {
-      e.preventDefault();
+    e.preventDefault();
 
-      let user = d.filter((el) => el.email === email && el.pass === pass);
+    let user = d.filter((el) => el.email === email && el.pass === pass);
 
-      if (user.length > 0) {
-          toast.success("Login Successful!", { autoClose: 3000 });
-          setTimeout(() => {
-            navigate("/");
-        }, 3000); 
-      } else {
-          toast.error("Login Unsuccessful! Please check your credentials.", { autoClose: 3000 });
-      }
+    if (user.length > 0) {
+      toast.success("Login Successful!", { autoClose: 3000 });
+      setTimeout(() => {
+        navigate("/");
+      }, 3000);
+    } else {
+      toast.error("Login Unsuccessful! Please check your credentials.", {
+        autoClose: 3000,
+      });
+    }
   };
 
-  const handleClick=()=>{
-    dispatch(google)
-   
-    
-  }
-  useEffect(()=>{
-    if(state.isLogin == true)
-      {
-        navigate('/')
-        
-      }
-  },[state.isLogin])
-  
+  const handleClick = () => {
+    dispatch(google);
+  };
+  // useEffect(()=>{
+  //   if(state.isLogin == true)
+  //     {
+  //       navigate('/')
+
+  //     }
+  // },[state.isLogin])
+
   return (
     <>
-    <Navbar/>
+      <Navbar />
       <section className="main_content dashboard_part large_header_bg">
-       <Header/>
-       <ToastContainer />
+        <Header />
+        <ToastContainer />
 
         <div className="main_content_iner ">
           <div className="container-fluid p-0">
@@ -109,7 +108,8 @@ const Login = () => {
                                 type="text"
                                 className="form-control"
                                 placeholder="Enter your email"
-                                value={email} onChange={(e)=>setEmail(e.target.value)}
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
                               />
                             </div>
                             <div class>
@@ -117,16 +117,23 @@ const Login = () => {
                                 type="password"
                                 className="form-control"
                                 placeholder="Password"
-                                value={pass} onChange={(e)=>setPass(e.target.value)}
+                                value={pass}
+                                onChange={(e) => setPass(e.target.value)}
                               />
                             </div>
-                            <button type='submit' className="btn_1 full_width text-center">
+                            <button
+                              type="submit"
+                              className="btn_1 full_width text-center"
+                            >
                               Log in
                             </button>
                             <hr />
-                            <button onClick={handleClick} className="btn_1 green full_width text-center">
-                              Log in With Google &nbsp;&nbsp; 
-                            <i className="fas fa-caret-right"></i>
+                            <button
+                              onClick={handleClick}
+                              className="btn_1 green full_width text-center"
+                            >
+                              Log in With Google &nbsp;&nbsp;
+                              <i className="fas fa-caret-right"></i>
                             </button>
                             <p>
                               Need an account?
@@ -135,9 +142,7 @@ const Login = () => {
                               </a>
                             </p>
                             <div className="text-center">
-                              <a
-                                className="pass_forget_btn"
-                              >
+                              <a className="pass_forget_btn">
                                 Forget Password?
                               </a>
                             </div>

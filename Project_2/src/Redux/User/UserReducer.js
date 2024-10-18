@@ -7,10 +7,10 @@ let initial = {
 
 export const google = (dispatch) => {
   googleAuth().then((Res) => {
-    // console.log(Res)
+    console.log(Res)
     dispatch({
       type: "SUCCESS",
-      payload: { name: Res.user.displayName, email: Res.user.email },
+      payload: { name: Res.user.displayName, email: Res.user.email, profileURL : Res.user.photoURL },
     });
   });
 };

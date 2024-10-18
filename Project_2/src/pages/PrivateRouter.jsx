@@ -13,4 +13,4 @@ const PrivateRouter = ({children}) => {
   )
 }
 
-export default PrivateRouter
+export default PrivateRouter;

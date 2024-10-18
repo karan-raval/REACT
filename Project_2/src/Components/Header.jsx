@@ -11,6 +11,7 @@ const Header = () => {
 
   const state = useSelector((s)=>s.UserReducer)
   const [user,setUser] = useState(null)
+  console.log(state)
   // console.log(state.user.photoURL)
   const navigate =useNavigate();
   const handleLogout=()=>{
@@ -175,10 +176,11 @@ const Header = () => {
                     </li>
                   </div>
                   <div className="profile_info">
-                    <img src={client} alt="#" />
+
+                    <img src={state.isLogin ? state.user.profileURL : client} alt="#" />
                     <div className="profile_info_iner">
                       <div className="profile_author_name">
-                        {/* <h5>{user?"":state.user.name}</h5> */}
+                        <h5>{state.isLogin ? state.user.name : ""}</h5>
                       </div>
                       <div className="profile_info_details">
                         <a>My Profile </a>
