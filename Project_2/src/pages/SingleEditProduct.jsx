@@ -147,7 +147,7 @@ const SingleEditProduct = () => {
                           
                         </div>
                         <div className="custom-card">
-  <img className="custom-card-img" src={state.imageURL} alt={state.title} />
+  <img className="custom-card-img" src={state.imageURL}  />
   <div className="custom-card-content">
     <h6 className="custom-card-title"><b>Title:</b> {state.title}</h6>
     <h6 className="custom-card-price"><b>Price:</b> ₹{state.price}</h6>

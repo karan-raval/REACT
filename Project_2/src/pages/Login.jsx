@@ -68,46 +68,46 @@ const Login = () => {
   return (
     <>
     <Navbar/>
-      <section class="main_content dashboard_part large_header_bg">
+      <section className="main_content dashboard_part large_header_bg">
        <Header/>
        <ToastContainer />
 
-        <div class="main_content_iner ">
-          <div class="container-fluid p-0">
-            <div class="row justify-content-center">
-              <div class="col-12">
-                <div class="dashboard_header mb_50">
-                  <div class="row">
-                    <div class="col-lg-6">
-                      <div class="dashboard_header_title">
+        <div className="main_content_iner ">
+          <div className="container-fluid p-0">
+            <div className="row justify-content-center">
+              <div className="col-12">
+                <div className="dashboard_header mb_50">
+                  <div className="row">
+                    <div className="col-lg-6">
+                      <div className="dashboard_header_title">
                         <h3> Login</h3>
                       </div>
                     </div>
-                    <div class="col-lg-6">
-                      <div class="dashboard_breadcam text-end">
+                    <div className="col-lg-6">
+                      <div className="dashboard_breadcam text-end">
                         <p>
                           <a href="index.html">Dashboard</a>
-                          <i class="fas fa-caret-right"></i> login
+                          <i className="fas fa-caret-right"></i> login
                         </p>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-12">
-                <div class="white_box mb_30">
-                  <div class="row justify-content-center">
-                    <div class="col-lg-6">
-                      <div class="modal-content cs_modal">
-                        <div class="modal-header justify-content-center theme_bg_1">
-                          <h5 class="modal-title text_white">Log in</h5>
+              <div className="col-lg-12">
+                <div className="white_box mb_30">
+                  <div className="row justify-content-center">
+                    <div className="col-lg-6">
+                      <div className="modal-content cs_modal">
+                        <div className="modal-header justify-content-center theme_bg_1">
+                          <h5 className="modal-title text_white">Log in</h5>
                         </div>
-                        <div class="modal-body">
+                        <div className="modal-body">
                           <form onSubmit={handleSubmit}>
                             <div class>
                               <input
                                 type="text"
-                                class="form-control"
+                                className="form-control"
                                 placeholder="Enter your email"
                                 value={email} onChange={(e)=>setEmail(e.target.value)}
                               />
@@ -115,18 +115,18 @@ const Login = () => {
                             <div class>
                               <input
                                 type="password"
-                                class="form-control"
+                                className="form-control"
                                 placeholder="Password"
                                 value={pass} onChange={(e)=>setPass(e.target.value)}
                               />
                             </div>
-                            <button type='submit' class="btn_1 full_width text-center">
+                            <button type='submit' className="btn_1 full_width text-center">
                               Log in
                             </button>
                             <hr />
-                            <button onClick={handleClick} class="btn_1 green full_width text-center">
+                            <button onClick={handleClick} className="btn_1 green full_width text-center">
                               Log in With Google &nbsp;&nbsp; 
-                            <i class="fas fa-caret-right"></i>
+                            <i className="fas fa-caret-right"></i>
                             </button>
                             <p>
                               Need an account?
@@ -134,9 +134,9 @@ const Login = () => {
                                 <Link to={"/signup"}>Sign Up</Link>
                               </a>
                             </p>
-                            <div class="text-center">
+                            <div className="text-center">
                               <a
-                                class="pass_forget_btn"
+                                className="pass_forget_btn"
                               >
                                 Forget Password?
                               </a>

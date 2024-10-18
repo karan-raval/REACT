@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { Navigate } from 'react-router-dom';
+// import {  useSelector } from 'react-redux';
 
-const PrivateRouter = () => {
-  const { isLoading, isError, data, ISLOGIN } = useSelector((s) => s.loginreducer);
-  console.log(ISLOGIN)
+
+const PrivateRouter = ({children}) => {
+  const { isLoading, isError, data, isLogin } = useSelector((s) => s.UserReducer);
+  console.log(isLogin)
 
   return (
-    ISLOGIN == true ? children : <Navigate to={'/login'} />
+    isLogin == true ? children : <Navigate to={'/login'} />
   )
 }
 

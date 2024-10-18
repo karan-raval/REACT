@@ -1,12 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import bell from "../assets/images/bell.svg";
 import msg from "../assets/images/msg.svg";
 import client from "../assets/images/client_img.png";
 import { GoogleLogout } from '../FirebaseFolder/Firebase';
 import { toast, ToastContainer } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
 
 const Header = () => {
+
+  const state = useSelector((s)=>s.UserReducer)
+  const [user,setUser] = useState(null)
+  // console.log(state.user.photoURL)
   const navigate =useNavigate();
   const handleLogout=()=>{
     GoogleLogout()
@@ -173,7 +178,7 @@ const Header = () => {
                     <img src={client} alt="#" />
                     <div className="profile_info_iner">
                       <div className="profile_author_name">
-                        <h5>{}</h5>
+                        {/* <h5>{user?"":state.user.name}</h5> */}
                       </div>
                       <div className="profile_info_details">
                         <a>My Profile </a>

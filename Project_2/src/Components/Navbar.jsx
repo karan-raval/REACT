@@ -74,7 +74,7 @@ const Navbar = () => {
                 <span>Application </span>
               </div>
             </a>
-            <ul class="mm-collapse mm-show">
+            <ul className="mm-collapse mm-show">
               <li>
                 <Link to={'/login'}>Log In</Link>
               </li>
