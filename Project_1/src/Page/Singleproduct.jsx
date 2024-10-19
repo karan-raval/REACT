@@ -7,6 +7,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { FetchData } from "../Redux/Singleproduct/action";
 import Rating from "@mui/material/Rating";
 import axios from "axios";
+import Swal from "sweetalert2";
+
 
 const Singleproduct = () => {
   const navigate = useNavigate();
@@ -23,7 +25,22 @@ const Singleproduct = () => {
     axios
       .post("https://mock-server-app2-dll0.onrender.com/cart", data[0])
       .then((res) => {
-        navigate("/cart");
+        // navigate("/cart");
+        const Toast = Swal.mixin({
+          toast: true,
+          position: "top-start",
+          showConfirmButton: false,
+          timer: 3000,
+          timerProgressBar: true,
+          didOpen: (toast) => {
+            toast.onmouseenter = Swal.stopTimer;
+            toast.onmouseleave = Swal.resumeTimer;
+          },
+        });
+        Toast.fire({
+          icon: "success",
+          title: "Iteam Added In to cart",
+        });
       })
       .catch((err) => {
         console.error("Error adding to cart:", err);
