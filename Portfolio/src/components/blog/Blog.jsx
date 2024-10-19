@@ -26,7 +26,7 @@ const Blog = () => {
           <span className="portfolio__category">React</span>
           <h3 className="portfolio__title">Admin Dashboard</h3>
           <a
-            href="https://incredible-sorbet-2c1d6e.netlify.app/"
+            href="https://glowing-smakager-6d2b28.netlify.app/"
             target="_blank"
             rel="noreferrer"
             className="portfolio__button"
