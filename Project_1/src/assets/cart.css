@@ -989,7 +989,8 @@ video {
 
 .bg-primary-orange {
   --tw-bg-opacity: 1;
-  background-color: rgba(251, 100, 27, var(--tw-bg-opacity));
+  
+  background-color: #E80071;
 }
 
 .bg-primary-darkBlue {

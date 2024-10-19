@@ -35,7 +35,7 @@ const Cartbutton = () => {
               Swal.fire({
                 position: "center",
                 icon: "success",
-                title: "Your cart has been emptied",
+                title: "Your cart has been successfully cleared. Thank you for shopping :)",
                 showConfirmButton: false,
                 timer: 1500,
               }).then(() => {

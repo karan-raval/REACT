@@ -39,7 +39,7 @@ const Singleproduct = () => {
         });
         Toast.fire({
           icon: "success",
-          title: "Iteam Added In to cart",
+          title: "Item has been added to your cart.",
         });
       })
       .catch((err) => {
