@@ -11,22 +11,22 @@ const Footer = () => {
 
               <ul className="s-footer__linklist">
                 <li>
-                  <a href="#0">Home</a>
+                  <a  >Home</a>
                 </li>
                 <li>
-                  <a href="#0">Blog</a>
+                  <a  >Blog</a>
                 </li>
                 <li>
-                  <a href="#0">Styles</a>
+                  <a  >Styles</a>
                 </li>
                 <li>
-                  <a href="#0">About</a>
+                  <a  >About</a>
                 </li>
                 <li>
-                  <a href="#0">Contact</a>
+                  <a  >Contact</a>
                 </li>
                 <li>
-                  <a href="#0">Privacy Policy</a>
+                  <a  >Privacy Policy</a>
                 </li>
               </ul>
             </div>
@@ -36,22 +36,22 @@ const Footer = () => {
 
               <ul className="s-footer__linklist">
                 <li>
-                  <a href="#0">January 2018</a>
+                  <a  >January 2018</a>
                 </li>
                 <li>
-                  <a href="#0">December 2017</a>
+                  <a  >December 2017</a>
                 </li>
                 <li>
-                  <a href="#0">November 2017</a>
+                  <a  >November 2017</a>
                 </li>
                 <li>
-                  <a href="#0">October 2017</a>
+                  <a  >October 2017</a>
                 </li>
                 <li>
-                  <a href="#0">September 2017</a>
+                  <a  >September 2017</a>
                 </li>
                 <li>
-                  <a href="#0">August 2017</a>
+                  <a  >August 2017</a>
                 </li>
               </ul>
             </div>
@@ -61,22 +61,22 @@ const Footer = () => {
 
               <ul className="s-footer__linklist">
                 <li>
-                  <a href="#0">Facebook</a>
+                  <a  >Facebook</a>
                 </li>
                 <li>
-                  <a href="#0">Instagram</a>
+                  <a  >Instagram</a>
                 </li>
                 <li>
-                  <a href="#0">Twitter</a>
+                  <a  >Twitter</a>
                 </li>
                 <li>
-                  <a href="#0">Pinterest</a>
+                  <a  >Pinterest</a>
                 </li>
                 <li>
-                  <a href="#0">Google+</a>
+                  <a  >Google+</a>
                 </li>
                 <li>
-                  <a href="#0">LinkedIn</a>
+                  <a  >LinkedIn</a>
                 </li>
               </ul>
             </div>

@@ -7407,3 +7407,17 @@ footer h4::after {
 .fa-meanpath:before {
   content: "\f20c"
 }
+
+
+
+.bg1{
+  background-image:url('images/thumbs/featured/featured-guitarman.jpg');
+}
+
+.bg2{
+  background-image:url('images/thumbs/featured/featured-watch.jpg');
+}
+
+.bg3{
+  background-image:url('images/thumbs/featured/featured-beetle.jpg');
+}
