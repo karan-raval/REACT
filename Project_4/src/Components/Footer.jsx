@@ -73,10 +73,10 @@ const Footer = () => {
                   <a  >Pinterest</a>
                 </li>
                 <li>
-                  <a  >Google+</a>
+                  <a>Google+</a>
                 </li>
                 <li>
-                  <a  >LinkedIn</a>
+                  <a>LinkedIn</a>
                 </li>
               </ul>
             </div>

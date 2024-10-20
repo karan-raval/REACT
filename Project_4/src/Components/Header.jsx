@@ -4,7 +4,6 @@ import logo from '../assets/images/logo.svg'
 const Header = () => {
   return (
     <>
-      <div className="s-pageheader">
 
 <header className="header">
     <div className="header__content row">
@@ -86,7 +85,6 @@ const Header = () => {
     </div> 
 </header> 
 
-</div>
     </>
   )
 }

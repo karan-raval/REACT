@@ -6,9 +6,8 @@ function App() {
 
   return (
     <>
-    <Header/>
+    {/* <Header/> */}
     <MainRoutes/>
-    <Footer/>
     </>
   )
 }
