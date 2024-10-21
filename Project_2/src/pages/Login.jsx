@@ -6,8 +6,9 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import { db } from "../FirebaseFolder/Firebase";
 import { toast, ToastContainer } from "react-toastify";
-import { google } from "../Redux/User/UserReducer";
+import { google ,userdatas} from "../Redux/User/UserReducer";
 import "react-toastify/dist/ReactToastify.css";
+
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -40,9 +41,10 @@ const Login = () => {
     e.preventDefault();
 
     let user = d.filter((el) => el.email === email && el.pass === pass);
-
+console.log(user)
     if (user.length > 0) {
       toast.success("Login Successful!", { autoClose: 3000 });
+      dispatch(userdatas)(user[0]);
       setTimeout(() => {
         navigate("/");
       }, 3000);
@@ -51,6 +53,8 @@ const Login = () => {
         autoClose: 3000,
       });
     }
+    
+
   };
 
   const handleClick = () => {

@@ -5,6 +5,13 @@ let initial = {
   user: null,
 };
 
+export const userdatas=(dispatch)=>(obj)=>{
+  dispatch({
+    type: "SUCCESS",
+    payload: obj
+  });
+}
+
 export const google = (dispatch) => {
   googleAuth().then((Res) => {
     console.log(Res)
