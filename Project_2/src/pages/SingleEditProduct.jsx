@@ -18,7 +18,6 @@ const SingleEditProduct = () => {
     imageURL: "",
   });
   const navigate = useNavigate();
-  // const [single,setSingle] = useState({})
   const { id } = useParams();
   useEffect(() => {
     async function getData() {
@@ -144,15 +143,30 @@ const SingleEditProduct = () => {
                               Add Product
                             </button>
                           </form>
-                          
                         </div>
                         <div className="custom-card">
-  <img className="custom-card-img" src={state.imageURL}  />
-  <div className="custom-card-content">
-    <h6 className="custom-card-title"><b>Title:</b> {state.title}</h6>
-    <h6 className="custom-card-price"><b>Price:</b> ₹{state.price}</h6>
-  </div>
-</div>
+                          <img
+                            className="custom-card-img"
+                            src={state.imageURL}
+                          />
+                          <div className="custom-card-content">
+                            <h6 className="custom-card-title">
+                              <b>Title:</b> {state.product}
+                            </h6>
+                            <h6 className="custom-card-title">
+                              <b>Brand:</b> {state.brand}
+                            </h6>
+                            <h6 className="custom-card-title">
+                              <b>Category:</b> {state.category}
+                            </h6>
+                            <h6 className="custom-card-price">
+                              <b>Price:</b> ₹{state.price}
+                            </h6>
+                            <h6 className="custom-card-price">
+                              <b>Offer-Price:</b> ₹{state.strikedOffPrice}
+                            </h6>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -160,9 +174,7 @@ const SingleEditProduct = () => {
               </div>
             </div>
           </div>
-          
         </div>
-      
       </section>
     </>
   );

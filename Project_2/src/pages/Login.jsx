@@ -55,6 +55,7 @@ const Login = () => {
 
   const handleClick = () => {
     dispatch(google);
+    // dispatch(UserReducer);
   };
   // useEffect(()=>{
   //   if(state.isLogin == true)

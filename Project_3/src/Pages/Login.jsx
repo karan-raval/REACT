@@ -15,7 +15,7 @@ const Login = () => {
   const navigate = useNavigate();
   const dispatch  = useDispatch();
   const state = useSelector((s)=>s.UserReducer)
-  const [user,setUser] = useState(null)
+  // const [user,setUser] = useState(null)
   console.log(state)
   console.log(state.isLogin)
 
@@ -63,7 +63,6 @@ const Login = () => {
 
   return (
     <>
-      {/* <Header /> */}
       <ToastContainer />
 
       <section className="vh-100 bgs">
