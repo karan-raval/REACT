@@ -6,9 +6,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import { db } from "../FirebaseFolder/Firebase";
 import { toast, ToastContainer } from "react-toastify";
-import { google ,userdatas} from "../Redux/User/UserReducer";
+import { google, userdatas } from "../Redux/User/UserReducer";
 import "react-toastify/dist/ReactToastify.css";
-
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -41,7 +40,7 @@ const Login = () => {
     e.preventDefault();
 
     let user = d.filter((el) => el.email === email && el.pass === pass);
-console.log(user)
+    console.log(user);
     if (user.length > 0) {
       toast.success("Login Successful!", { autoClose: 3000 });
       dispatch(userdatas)(user[0]);
@@ -53,21 +52,11 @@ console.log(user)
         autoClose: 3000,
       });
     }
-    
-
   };
 
   const handleClick = () => {
     dispatch(google);
-    // dispatch(UserReducer);
   };
-  // useEffect(()=>{
-  //   if(state.isLogin == true)
-  //     {
-  //       navigate('/')
-
-  //     }
-  // },[state.isLogin])
 
   return (
     <>
@@ -134,7 +123,7 @@ console.log(user)
                             </button>
                             <hr />
                             <button
-                            type="button"
+                              type="button"
                               onClick={handleClick}
                               className="btn_1 green full_width text-center"
                             >

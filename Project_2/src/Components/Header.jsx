@@ -10,7 +10,7 @@ import {  useSelector } from 'react-redux';
 const Header = () => {
 
   const statee = useSelector((s)=>s.UserReducer)
-  console.log(statee)
+  console.log(statee.user)
   const navigate =useNavigate();
   const handleLogout=()=>{
     GoogleLogout()

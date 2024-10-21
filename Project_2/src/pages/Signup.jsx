@@ -12,6 +12,7 @@ import 'react-toastify/dist/ReactToastify.css'
 const Signup = () => {
   const [email, setEmail] = useState("");
   const [pass, setPass] = useState("");
+  const [name, setname] = useState("");
   const UserCollection = collection(db, "users");
   const [d, setD] = useState([]);
   const navigate = useNavigate();
@@ -52,7 +53,8 @@ const Signup = () => {
 
       let newUser = {
           email,
-          pass
+          pass,
+          name,
       };
 
       if (existingUser) {
@@ -112,6 +114,7 @@ const Signup = () => {
                                 type="text"
                                 className="form-control"
                                 placeholder="Full Name"
+                                onChange={(e)=>setname(e.target.value)}
                               />
                               <input
                                 type="email"
@@ -125,16 +128,7 @@ const Signup = () => {
                                 placeholder="Password"
                                 onChange={(e)=>setPass(e.target.value)}
                               />
-                            {/* <div className=" cs_check_box">
-                              <input
-                                type="checkbox"
-                                id="check_box"
-                                className="common_checkbox"
-                              />
-                              <label className="form-label" for="check_box">
-                                Keep me up to date
-                              </label>
-                            </div> */}
+                            
                             <button
                               type="submit" 
                               className="btn_1 full_width text-center"
