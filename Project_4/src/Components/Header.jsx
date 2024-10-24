@@ -1,10 +1,11 @@
 import React from 'react'
 import logo from '../assets/images/logo.svg'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
   return (
     <>
-
+   <div class="s-pageheader">
 <header className="header">
     <div className="header__content row">
 
@@ -52,7 +53,7 @@ const Header = () => {
             <h2 className="header__nav-heading h6">Site Navigation</h2>
 
             <ul className="header__nav">
-                <li><a href="index.html" title="">Home</a></li>
+                <li><Link to={'/'}>Home</Link></li>
                 <li className="has-children">
                     <a   title="">Categories</a>
                     <ul className="sub-menu">
@@ -74,8 +75,8 @@ const Header = () => {
                     </ul>
                 </li>
                 <li><a href="style-guide.html" title="">Styles</a></li>
-                <li><a href="about.html" title="">About</a></li>
-                <li><a href="contact.html" title="">Contact</a></li>
+                <li><Link to={'/aboutus'}>About</Link></li>
+                <li><Link to={'/contact'}>Contact</Link></li>
             </ul> 
 
             <a   title="Close Menu" className="header__overlay-close close-mobile-menu">Close</a>
@@ -84,7 +85,7 @@ const Header = () => {
 
     </div> 
 </header> 
-
+</div>
     </>
   )
 }
