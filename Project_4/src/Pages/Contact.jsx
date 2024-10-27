@@ -25,16 +25,15 @@ function Contact() {
             Feel Free To Contact Us.
         </h1>
     </div>
-     {/* <!-- end s-content__header --> */}
 
     <div class="s-content__media col-full">
         <div id="map-wrap">
-            <div id="map-container"></div>
-            <div id="map-zoom-in"></div>
-            <div id="map-zoom-out"></div>
+            <div id="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d892.703862534159!2d70.77821700504678!3d22.291002633035955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959cb147744699d%3A0x2060a6cbc4a6e0bd!2sRed%20%26%20White%20Multimedia%20Education%20-%20Kalawad%20Road!5e0!3m2!1sen!2sin!4v1730007362429!5m2!1sen!2sin" width="1000" height="420" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
         </div>
     </div> 
-    {/* <!-- end s-content__media --> */}
 
     <div class="col-full s-content__main">
 
@@ -65,7 +64,6 @@ function Contact() {
 
             </div>
         </div> 
-        {/* <!-- end row --> */}
 
         <h3>Say Hello.</h3>
 
@@ -92,20 +90,15 @@ function Contact() {
 
             </fieldset>
         </form> 
-        {/* <!-- end form --> */}
 
 
     </div> 
-    {/* <!-- end s-content__main --> */}
 
 </div> 
-{/* <!-- end row --> */}
 
 </section>
- {/* <!-- s-content --> */}
 
 
-{/* <!-- s-extra================================================== --> */}
 <section className="s-extra">
         <div className="row top">
           <div className="col-eight md-six tab-full popular">
@@ -273,7 +266,6 @@ function Contact() {
           </div>
         </div>
       </section>
- {/* <!-- end s-extra --> */}
  <Footer/>
     </>
   )
