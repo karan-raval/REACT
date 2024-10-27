@@ -94,8 +94,6 @@ const Footer = () => {
                 <form id="mc-form" className="group" novalidate="true">
                   <input
                     type="email"
-                    value=""
-                    name="EMAIL"
                     className="email"
                     id="mc-email"
                     placeholder="Email Address"
