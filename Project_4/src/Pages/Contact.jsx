@@ -57,9 +57,9 @@ function Contact() {
             <div class="col-six tab-full">
                 <h3>Contact Info</h3>
 
-                <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="9dfef2f3e9fcfee9ddedf5f4f1f2eef2edf5e4eaf8ffeef4e9f8b3fef2f0">[email&#160;protected]</a><br/>
-                <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d6bfb8b0b996a6bebfbab9a5b9a6beafa1b3b4a5bfa2b3f8b5b9bb">[email&#160;protected]</a> <br/>
-                Phone: (+1) 123 456
+                <p>
+                <a href="/cdn-cgi/l/email-protection" class="__cf_email__" >Karanraval424@gmail.com</a> <br/>
+                Phone: (+91) 63547 15134 
                 </p>
 
             </div>
