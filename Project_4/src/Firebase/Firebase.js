@@ -15,3 +15,16 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+
+export const db = getFirestore(app)
+export const auth = getAuth()
+
+
+export const googleAuth = ()=>{
+   let provider = new GoogleAuthProvider()
+   return signInWithPopup(auth,provider)
+}
+
+export const GoogleLogout = async ()=>{
+    return await signOut(auth)
+}
