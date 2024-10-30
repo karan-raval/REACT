@@ -2,6 +2,7 @@ import React from 'react'
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
 import '../assets/css/Login.css'
+import { Link } from 'react-router-dom';
 
 const Signup = () => {
   return (
@@ -25,6 +26,7 @@ const Signup = () => {
           </div>
           <button type="submit">Register</button>
         </form>
+      <p>Alredy have account ? <Link to={'/login'}>Login</Link></p>
       </div>
       </div>
       <Footer />
