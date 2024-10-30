@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
 import '../assets/css/Login.css'
+import { Link } from "react-router-dom";
 const Login = () => {
   return (
     <>
@@ -20,6 +21,7 @@ const Login = () => {
           </div>
           <button type="submit">Login</button>
         </form>
+        <p>Register Your Self ? <Link to={'/signup'}>Signup</Link></p>
       </div>
       </div>
       <Footer />
