@@ -41,7 +41,7 @@ const Login = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    let user = d.filter((el) => el.email === email && el.pass === pass);
+    let user = d.filter((el) => el.email === email && el.pass === pass && el.username === username);
     console.log(user);
     if (user.length > 0) {
       toast.success("Login Successful!", { autoClose: 3000 });
@@ -61,6 +61,9 @@ const Login = () => {
   };
   return (
     <>
+
+<ToastContainer />
+
       <Header />
       <div className="body">
         <div class="login-container">
