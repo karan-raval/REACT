@@ -55,7 +55,7 @@ const Header = () => {
             <ul className="header__nav">
                 <li><Link to={'/'}>Home</Link></li>
                 <li className="has-children">
-                    <a   title="">Categories</a>
+                    <a>Categories</a>
                     <ul className="sub-menu">
                     <li><a href="category.html">Lifestyle</a></li>
                     <li><a href="category.html">Health</a></li>
@@ -66,7 +66,7 @@ const Header = () => {
                     </ul>
                 </li>
                 <li className="has-children current">
-                    <a   title="">Blog</a>
+                    <a>Blog</a>
                     <ul className="sub-menu">
                     <li><a href="single-video.html">Video Post</a></li>
                     <li><a href="single-audio.html">Audio Post</a></li>
@@ -74,7 +74,7 @@ const Header = () => {
                     <li><a href="single-standard.html">Standard Post</a></li>
                     </ul>
                 </li>
-                <li><a href="style-guide.html" title="">Styles</a></li>
+                <li><a><Link to={'/login'}>Login</Link></a></li>
                 <li><Link to={'/aboutus'}>About</Link></li>
                 <li><Link to={'/contact'}>Contact</Link></li>
             </ul> 
