@@ -1,4 +1,4 @@
-import { googleAuth } from "../../FirebaseFolder/Firebase";
+import { googleAuth } from "../../Firebase/Firebase";
 
 let initial = {
   isLogin: false,
