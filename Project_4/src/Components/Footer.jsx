@@ -91,7 +91,7 @@ const Footer = () => {
               </p>
 
               <div className="subscribe-form">
-                <form id="mc-form" className="group" novalidate="true">
+                <form id="mc-form" className="group">
                   <input
                     type="email"
                     className="email"
@@ -102,7 +102,7 @@ const Footer = () => {
 
                   <input type="submit" name="subscribe" value="Send" />
 
-                  <label for="mc-email" className="subscribe-message"></label>
+                  <label  className="subscribe-message"></label>
                 </form>
               </div>
             </div>

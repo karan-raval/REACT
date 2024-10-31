@@ -65,12 +65,12 @@ const Login = () => {
 <ToastContainer />
 
       <Header />
-      <div className="body">
-        <div class="login-container">
+      <div classname="body">
+        <div classname="login-container">
           <h1>Login</h1>
           <form id="loginForm" onSubmit={handleSubmit}>
-            <div class="input-group">
-              <label for="username">Username</label>
+            <div classname="input-group">
+              <label>Username</label>
               <input
                 type="text"
                 onChange={(e) => setUsername(e.target.value)}
@@ -79,8 +79,8 @@ const Login = () => {
               />
             </div>
 
-            <div class="input-group">
-              <label for="email">Email</label>
+            <div classname="input-group">
+              <label>Email</label>
               <input
                 type="text"
                 onChange={(e) => setEmail(e.target.value)}
@@ -89,8 +89,8 @@ const Login = () => {
               />
             </div>
 
-            <div class="input-group">
-              <label for="password">Password</label>
+            <div classname="input-group">
+              <label >Password</label>
               <input
                 type="password"
                 onChange={(e) => setPass(e.target.value)}
@@ -103,10 +103,10 @@ const Login = () => {
           <button
             type="button"
             onClick={handleClick}
-            className="btn_1 green full_width text-center"
+            classname="btn_1 green full_width text-center"
           >
             Log in With Google &nbsp;&nbsp;
-            <i className="fas fa-caret-right"></i>
+            <i classname="fas fa-caret-right"></i>
           </button>
 
           <p>
