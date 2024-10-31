@@ -6,7 +6,7 @@ import "../assets/css/Login.css";
 import { collection, getDocs } from "firebase/firestore";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
-import { db } from "../FirebaseFolder/Firebase";
+import { db } from "../Firebase/Firebase";
 import { toast, ToastContainer } from "react-toastify";
 import { google, userdatas } from "../Redux/User/UserReducer";
 import "react-toastify/dist/ReactToastify.css";
@@ -68,7 +68,7 @@ const Login = () => {
       <div className="body">
         <div class="login-container">
           <h1>Login</h1>
-          <form id="loginForm">
+          <form id="loginForm" onSubmit={handleSubmit}>
             <div class="input-group">
               <label for="username">Username</label>
               <input
