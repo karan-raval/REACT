@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
-import '../assets/css/Login.css'
+import "../assets/css/Login.css";
 // import { Link } from "react-router-dom";
 import { collection, getDocs } from "firebase/firestore";
 import { useDispatch, useSelector } from "react-redux";
@@ -63,28 +63,53 @@ const Login = () => {
     <>
       <Header />
       <div className="body">
-      <div class="login-container">
-        <h1>Login</h1>
-        <form id="loginForm">
+        <div class="login-container">
+          <h1>Login</h1>
+          <form id="loginForm">
+            <div class="input-group">
+              <label for="username">Username</label>
+              <input
+                type="text"
+                onChange={(e) => setUsername(e.target.value)}
+                name="username"
+                required
+              />
+            </div>
 
-        <div class="input-group">
-            <label for="username">Username</label>
-            <input type="text" onChange={(e) => setUsername(e.target.value)}  name="username" required />
-          </div>
+            <div class="input-group">
+              <label for="email">Email</label>
+              <input
+                type="text"
+                onChange={(e) => setEmail(e.target.value)}
+                name="email"
+                required
+              />
+            </div>
 
-          <div class="input-group">
-            <label for="email">Email</label>
-            <input type="text" onChange={(e) => setEmail(e.target.value)}  name="email" required />
-          </div>
+            <div class="input-group">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                onChange={(e) => setPass(e.target.value)}
+                name="password"
+                required
+              />
+            </div>
+            <button type="submit">Login</button>
+          </form>
+          <button
+            type="button"
+            onClick={handleClick}
+            className="btn_1 green full_width text-center"
+          >
+            Log in With Google &nbsp;&nbsp;
+            <i className="fas fa-caret-right"></i>
+          </button>
 
-          <div class="input-group">
-            <label for="password">Password</label>
-            <input type="password" onChange={(e) => setPass(e.target.value)}  name="password" required />
-          </div>
-          <button type="submit">Login</button>
-        </form>
-        <p>Register Your Self ? <Link to={'/signup'}>Signup</Link></p>
-      </div>
+          <p>
+            Register Your Self ? <Link to={"/signup"}>Signup</Link>
+          </p>
+        </div>
       </div>
       <Footer />
     </>
