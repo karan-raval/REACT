@@ -41,7 +41,9 @@ const Login = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    let user = d.filter((el) => el.email === email && el.pass === pass && el.username === username);
+    let user = d.filter(
+      (el) => el.email === email && el.pass === pass && el.username === username
+    );
     console.log(user);
     if (user.length > 0) {
       toast.success("Login Successful!", { autoClose: 3000 });
@@ -61,9 +63,6 @@ const Login = () => {
   };
   return (
     <>
-
-<ToastContainer />
-
       <Header />
       <div classname="body">
         <div classname="login-container">
@@ -90,7 +89,7 @@ const Login = () => {
             </div>
 
             <div classname="input-group">
-              <label >Password</label>
+              <label>Password</label>
               <input
                 type="password"
                 onChange={(e) => setPass(e.target.value)}
@@ -109,6 +108,7 @@ const Login = () => {
             <i classname="fas fa-caret-right"></i>
           </button>
 
+          <ToastContainer />
           <p>
             Register Your Self ? <Link to={"/signup"}>Signup</Link>
           </p>
