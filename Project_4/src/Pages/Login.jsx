@@ -64,9 +64,22 @@ const Login = () => {
   return (
     <>
       <Header />
+      <ToastContainer
+            className="toast-container-custom"
+            position="top-left"
+            // autoClose={3000}
+            hideProgressBar={false}
+            newestOnTop={true}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            // theme="colored"
+          />
       <div className="body">
         <div className="login-container">
-    <ToastContainer/>
+          
           <h1>Login</h1>
           <form id="loginForm" onSubmit={handleSubmit}>
             <div className="input-group">
@@ -98,12 +111,12 @@ const Login = () => {
                 required
               />
             </div>
-            <button type="submit">Login</button>
+            <button type="submit" className="button">Login</button>
           </form>
           <button
             type="button"
             onClick={handleClick}
-            className="btn_1 green full_width text-center"
+            className="btn_1 green button full_width text-center"
           >
             Log in With Google &nbsp;&nbsp;
             <i className="fas fa-caret-right"></i>
