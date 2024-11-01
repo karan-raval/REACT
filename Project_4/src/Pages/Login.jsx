@@ -66,6 +66,7 @@ const Login = () => {
       <Header />
       <div className="body">
         <div className="login-container">
+    <ToastContainer/>
           <h1>Login</h1>
           <form id="loginForm" onSubmit={handleSubmit}>
             <div className="input-group">
