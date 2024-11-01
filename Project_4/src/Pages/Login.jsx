@@ -61,25 +61,33 @@ const Login = () => {
   const handleClick = () => {
     dispatch(google);
   };
+
+  useEffect(() => {
+    if (state.isLogin) {
+      toast.success("Login Successful!", { autoClose: 3000 });
+      setTimeout(() => {
+        navigate("/");
+      }, 3000);
+    }
+  }, [state.isLogin, navigate]);
+
   return (
     <>
       <Header />
       <ToastContainer
-            className="toast-container-custom"
-            position="top-left"
-            // autoClose={3000}
-            hideProgressBar={false}
-            newestOnTop={true}
-            closeOnClick
-            rtl={false}
-            pauseOnFocusLoss
-            draggable
-            pauseOnHover
-            // theme="colored"
-          />
+        className="toast-container-custom"
+        position="top-left"
+        hideProgressBar={false}
+        newestOnTop={true}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        // theme="colored"
+      />
       <div className="body">
         <div className="login-container">
-          
           <h1>Login</h1>
           <form id="loginForm" onSubmit={handleSubmit}>
             <div className="input-group">
@@ -111,7 +119,9 @@ const Login = () => {
                 required
               />
             </div>
-            <button type="submit" className="button">Login</button>
+            <button type="submit" className="button">
+              Login
+            </button>
           </form>
           <button
             type="button"
