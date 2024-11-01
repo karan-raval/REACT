@@ -22,13 +22,11 @@
   }
   
   .input-group {
-    margin-bottom: 20px;
     text-align: left;
   }
   
   label {
     display: block;
-    margin-bottom: 8px;
     font-size: 16px;
   }
   
@@ -42,7 +40,6 @@
   .button {
     background-color: #ffcc00;
     border: 2px solid #000;
-    /* padding: 12px; */
     width: 100%;
     cursor: pointer;
     box-shadow: 3px 3px 0 #000;
