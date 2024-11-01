@@ -42,7 +42,7 @@ const Login = () => {
     e.preventDefault();
 
     let user = d.filter(
-      (el) => el.email === email && el.pass === pass && el.username === username
+      (el) => el.email === email && el.pass === pass && el.name === username
     );
     console.log(user);
     if (user.length > 0) {
