@@ -108,7 +108,6 @@ const Login = () => {
             <i classname="fas fa-caret-right"></i>
           </button>
 
-          <ToastContainer />
           <p>
             Register Your Self ? <Link to={"/signup"}>Signup</Link>
           </p>

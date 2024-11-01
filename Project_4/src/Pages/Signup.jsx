@@ -8,19 +8,19 @@ const Signup = () => {
   return (
     <>
      <Header />
-      <div classnameName="body">
-      <div classname="login-container">
+      <div className="body">
+      <div className="login-container">
         <h1>Signup</h1>
         <form id="loginForm">
-          <div classname="input-group">
+          <div className="input-group">
             <label for="username">Username</label>
             <input type="text"  name="username" required />
           </div>
-          <div classname="input-group">
+          <div className="input-group">
             <label for="username">Email</label>
             <input type="email" name="email" required />
           </div>
-          <div classname="input-group">
+          <div className="input-group">
             <label for="password">Password</label>
             <input type="password"  name="password" required />
           </div>
