@@ -90,7 +90,7 @@ const Signup = () => {
             <label for="password">Password</label>
             <input type="password"  name="password" required  onChange={(e)=>setPass(e.target.value)} />
           </div>
-          <button type="submit">Register</button>
+          <button type="submit" className="button">Register</button>
         </form>
       <p>Alredy have account ? <Link to={'/login'}>Login</Link></p>
       </div>
