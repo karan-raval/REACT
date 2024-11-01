@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const Header = () => {
   return (
     <>
-   <div class="s-pageheader">
+   <div className="s-pageheader">
 <header className="header">
     <div className="header__content row">
 
@@ -37,7 +37,7 @@ const Header = () => {
             <form role="search" method="get" className="header__search-form" action="#">
                 <label>
                     <span className="hide-content">Search for:</span>
-                    <input type="search" className="search-field" placeholder="Type Keywords" value="" name="s" title="Search for:" autocomplete="off"/>
+                    <input type="search" className="search-field" placeholder="Type Keywords" value="" name="s" title="Search for:" autoComplete="off"/>
                 </label>
                 <input type="submit" className="search-submit" value="Search"/>
             </form>
@@ -57,21 +57,21 @@ const Header = () => {
                 <li className="has-children">
                     <a>Categories</a>
                     <ul className="sub-menu">
-                    <li><a href="category.html">Lifestyle</a></li>
-                    <li><a href="category.html">Health</a></li>
-                    <li><a href="category.html">Family</a></li>
-                    <li><a href="category.html">Management</a></li>
-                    <li><a href="category.html">Travel</a></li>
-                    <li><a href="category.html">Work</a></li>
+                    <li><a>Lifestyle</a></li>
+                    <li><a>Health</a></li>
+                    <li><a>Family</a></li>
+                    <li><a>Management</a></li>
+                    <li><a>Travel</a></li>
+                    <li><a>Work</a></li>
                     </ul>
                 </li>
                 <li className="has-children current">
                     <a>Blog</a>
                     <ul className="sub-menu">
-                    <li><a href="single-video.html">Video Post</a></li>
-                    <li><a href="single-audio.html">Audio Post</a></li>
-                    <li><a href="single-gallery.html">Gallery Post</a></li>
-                    <li><a href="single-standard.html">Standard Post</a></li>
+                    <li><a>Video Post</a></li>
+                    <li><a>Audio Post</a></li>
+                    <li><a>Gallery Post</a></li>
+                    <li><a>Standard Post</a></li>
                     </ul>
                 </li>
                 <li><a><Link to={'/login'}>Login</Link></a></li>
