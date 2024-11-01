@@ -1,5 +1,6 @@
 import { googleAuth } from "../../Firebase/Firebase";
 
+
 let initial = {
   isLogin: false,
   user: null,
@@ -20,6 +21,7 @@ export const google = (dispatch) => {
       payload: { name: Res.user.displayName, email: Res.user.email, profileURL : Res.user.photoURL },
     });
   });
+  
 };
 
 export const UserReducer = (state = initial, action) => {

@@ -1,5 +1,5 @@
 import { addDoc, collection, getDocs } from "firebase/firestore"
-import { db } from "../../FirebaseFolder/Firebase"
+import { db } from "../../Firebase/Firebase"
 import { ERROR, LOADING, SUCCESSs } from "./actionType"
 
 const ProductCollection = collection(db,"products")
