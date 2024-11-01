@@ -64,11 +64,11 @@ const Login = () => {
   return (
     <>
       <Header />
-      <div classname="body">
-        <div classname="login-container">
+      <div className="body">
+        <div className="login-container">
           <h1>Login</h1>
           <form id="loginForm" onSubmit={handleSubmit}>
-            <div classname="input-group">
+            <div className="input-group">
               <label>Username</label>
               <input
                 type="text"
@@ -78,7 +78,7 @@ const Login = () => {
               />
             </div>
 
-            <div classname="input-group">
+            <div className="input-group">
               <label>Email</label>
               <input
                 type="text"
@@ -88,7 +88,7 @@ const Login = () => {
               />
             </div>
 
-            <div classname="input-group">
+            <div className="input-group">
               <label>Password</label>
               <input
                 type="password"
@@ -102,10 +102,10 @@ const Login = () => {
           <button
             type="button"
             onClick={handleClick}
-            classname="btn_1 green full_width text-center"
+            className="btn_1 green full_width text-center"
           >
             Log in With Google &nbsp;&nbsp;
-            <i classname="fas fa-caret-right"></i>
+            <i className="fas fa-caret-right"></i>
           </button>
 
           <p>
