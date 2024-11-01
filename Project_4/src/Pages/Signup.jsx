@@ -80,15 +80,15 @@ const Signup = () => {
         <form id="loginForm" onSubmit={handleSubmit} >
           <div className="input-group">
             <label for="username">Username</label>
-            <input type="text"  name="username" required />
+            <input type="text"  name="username" required  onChange={(e)=>setname(e.target.value)} />
           </div>
           <div className="input-group">
             <label for="username">Email</label>
-            <input type="email" name="email" required />
+            <input type="email" name="email" required  onChange={(e)=>setEmail(e.target.value)} />
           </div>
           <div className="input-group">
             <label for="password">Password</label>
-            <input type="password"  name="password" required />
+            <input type="password"  name="password" required  onChange={(e)=>setPass(e.target.value)} />
           </div>
           <button type="submit">Register</button>
         </form>
