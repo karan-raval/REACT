@@ -3,9 +3,9 @@ import React from 'react'
 const CreateBlog = () => {
   return (
     <>
-     <section class="s-content s-content--narrow s-content--no-padding-bottom">
+     <section class="s-content--narrow">
 
-<article class="row format-standard">
+{/* <article class="row format-standard">
 
     <div class="s-content__header col-full">
         <h1 class="s-content__header-title">
@@ -120,7 +120,7 @@ const CreateBlog = () => {
 
     </div>
 
-</article>
+</article> */}
 
 
 <div class="comments-wrap">
@@ -128,9 +128,9 @@ const CreateBlog = () => {
     <div id="comments" class="row">
         <div class="col-full">
 
-            <h3 class="h2">5 Comments</h3>
+            {/* <h3 class="h2">5 Comments</h3> */}
 
-            <ol class="commentlist">
+            {/* <ol class="commentlist">
 
                 <li class="depth-1 comment">
 
@@ -270,7 +270,7 @@ const CreateBlog = () => {
                     </div>
 
                 </li>  
-            </ol> 
+            </ol>  */}
 
 
             <div class="respond">
