@@ -112,16 +112,16 @@ const Header = () => {
                     <li>
                       <a>Gallery Post</a>
                     </li>
-                    <li>
-                      <a><Link to={'/createblog'}>Standard Post</Link></a>
-                    </li>
+                    <Link to={'/createblog'}><li>
+                    <a>Standard Post</a>
+                    </li></Link>
                   </ul>
                 </li>
-                <li>
+                <Link to={"/login"}><li>
                   <a>
-                    <Link to={"/login"}>Login</Link>
+                    Login
                   </a>
-                </li>
+                </li></Link>
                 <li>
                   <Link to={"/aboutus"}>About</Link>
                 </li>
