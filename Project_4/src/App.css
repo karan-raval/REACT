@@ -5032,6 +5032,11 @@ footer h4::after {
   padding: 8.4rem 0 9rem;
   margin-top: 10.2rem;
 }
+.comments-wrapp {
+  background-color: #e5e5e5;
+  padding: 4.4rem 0 9rem;
+  /* margin-top: 10.2rem; */
+}
 
 #comments {
   padding-top: 1.2rem;
