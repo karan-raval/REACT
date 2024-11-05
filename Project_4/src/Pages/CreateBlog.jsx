@@ -7,7 +7,7 @@ const CreateBlog = () => {
     <>
       <Header />
       <section class="s-content--narrow">
-        <div class="comments-wrap">
+        <div class="comments-wrapp">
           <div id="comments" class="row">
             <div class="col-full">
               <div class="respond">
