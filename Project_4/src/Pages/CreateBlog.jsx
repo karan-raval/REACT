@@ -1,8 +1,11 @@
 import React from 'react'
+import Header from "../Components/Header"
+import Footer from "../Components/Footer"
 
 const CreateBlog = () => {
   return (
     <>
+    <Header/>
      <section class="s-content--narrow">
 
 {/* <article class="row format-standard">
@@ -281,15 +284,15 @@ const CreateBlog = () => {
                     <fieldset>
 
                         <div class="form-field">
-                                <input name="cName" type="text" id="cName" class="full-width" placeholder="Your Name" value=""/>
+                                <input name="cName" type="text" id="cName" class="full-width" placeholder="Your Name"  />
                         </div>
 
                         <div class="form-field">
-                                <input name="cEmail" type="text" id="cEmail" class="full-width" placeholder="Your Email" value=""/>
+                                <input name="cEmail" type="text" id="cEmail" class="full-width" placeholder="Your Email"  />
                         </div>
 
                         <div class="form-field">
-                                <input name="cWebsite" type="text" id="cWebsite" class="full-width" placeholder="Website" value=""/>
+                                <input name="cWebsite" type="text" id="cWebsite" class="full-width" placeholder="Website"  />
                         </div>
 
                         <div class="message form-field">
@@ -309,6 +312,8 @@ const CreateBlog = () => {
 
 </section> 
 
+
+<Footer/>
 
     </>
   )
