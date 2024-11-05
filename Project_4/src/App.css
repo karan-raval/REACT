@@ -3388,6 +3388,9 @@ body.search-is-visible {
 .header__nav li:hover > a,
 .header__nav li:focus > a {
   color: #ffffff;
+  background-color: gray;
+  border-radius: 5%;
+  padding: 0 1rem;
 }
 
 .header__nav li:hover li,
