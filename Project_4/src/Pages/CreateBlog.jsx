@@ -3,6 +3,40 @@ import Header from "../Components/Header";
 import Footer from "../Components/Footer";
 
 const CreateBlog = () => {
+  const dispatch = useDispatch();
+  const state = useSelector((s) => s.proReducer);
+  const navigate = useNavigate();
+  console.log(state);
+  const [fromdata, setState] = useState({
+    product: "",
+    brand: "",
+    price: "",
+    strikedOffPrice: "",
+    category: "",
+    imageURL: "",
+  });
+
+  const handleChange = (e) => {
+    let { name, value } = e.target;
+    setState({ ...fromdata, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    let obj = {
+      product,
+      brand,
+      price,
+      strikedOffPrice,
+      category,
+      imageURL,
+    };
+    
+    dispatch(addData)(obj);
+    navigate("/product");
+  };
+
+  let { product, brand, price, strikedOffPrice, category, imageURL } = fromdata;
   return (
     <>
       <Header />
