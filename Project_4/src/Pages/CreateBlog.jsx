@@ -1,4 +1,7 @@
-import React from "react";
+import { React, useState } from "react";
+import { addData } from "../Redux/Product/action";
+import { useDispatch, useSelector } from "react-redux";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
 
@@ -31,7 +34,7 @@ const CreateBlog = () => {
       category,
       imageURL,
     };
-    
+
     dispatch(addData)(obj);
     navigate("/product");
   };
@@ -48,6 +51,7 @@ const CreateBlog = () => {
                 <h3 class="h2">Write Your Blog </h3>
 
                 <form
+                onSubmit={handleSubmit}
                   name="contactForm"
                   id="contactForm"
                   method="post"
