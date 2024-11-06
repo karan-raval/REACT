@@ -52,16 +52,13 @@ const CreateBlog = () => {
 
                 <form
                 onSubmit={handleSubmit}
-                  name="contactForm"
                   id="contactForm"
-                  method="post"
-                  action=""
                 >
                   <fieldset>
                     <div class="form-field">
                       <input
                       onChange={handleChange}
-                        name="cName"
+                        name="name"
                         type="text"
                         id="cName"
                         class="full-width"
@@ -72,22 +69,31 @@ const CreateBlog = () => {
                     <div class="form-field">
                       <input
                       onChange={handleChange}
-                        name="cEmail"
+                        name="heading"
                         type="text"
-                        id="cEmail"
                         class="full-width"
-                        placeholder="Your Email"
+                        placeholder="Enter Heading"
                       />
                     </div>
 
                     <div class="form-field">
                       <input
                       onChange={handleChange}
-                        name="cWebsite"
+                        name="des"
                         type="text"
                         id="cWebsite"
                         class="full-width"
-                        placeholder="Website"
+                        placeholder="Enter description"
+                      />
+                    </div>
+                    <div class="form-field">
+                      <input
+                      onChange={handleChange}
+                        name="cat"
+                        type="text"
+                        id="cWebsite"
+                        class="full-width"
+                        placeholder="Enter Categories"
                       />
                     </div>
 
