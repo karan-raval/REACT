@@ -60,6 +60,7 @@ const CreateBlog = () => {
                   <fieldset>
                     <div class="form-field">
                       <input
+                      onChange={handleChange}
                         name="cName"
                         type="text"
                         id="cName"
@@ -70,6 +71,7 @@ const CreateBlog = () => {
 
                     <div class="form-field">
                       <input
+                      onChange={handleChange}
                         name="cEmail"
                         type="text"
                         id="cEmail"
@@ -80,6 +82,7 @@ const CreateBlog = () => {
 
                     <div class="form-field">
                       <input
+                      onChange={handleChange}
                         name="cWebsite"
                         type="text"
                         id="cWebsite"
@@ -90,6 +93,7 @@ const CreateBlog = () => {
 
                     <div class="message form-field">
                       <textarea
+                      onChange={handleChange}
                         name="cMessage"
                         id="cMessage"
                         class="full-width"
