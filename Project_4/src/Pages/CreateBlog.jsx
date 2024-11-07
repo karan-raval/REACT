@@ -11,7 +11,7 @@ const CreateBlog = () => {
   const navigate = useNavigate();
   console.log(state);
   const [fromdata, setState] = useState({
-    product: "",
+    name: "",
     brand: "",
     price: "",
     strikedOffPrice: "",
@@ -39,7 +39,7 @@ const CreateBlog = () => {
     navigate("/product");
   };
 
-  let { product, brand, price, strikedOffPrice, category, imageURL } = fromdata;
+  // let { product, brand, price, strikedOffPrice, category, imageURL } = fromdata;
   return (
     <>
       <Header />
@@ -60,7 +60,6 @@ const CreateBlog = () => {
                       onChange={handleChange}
                         name="name"
                         type="text"
-                        id="cName"
                         class="full-width"
                         placeholder="Your Name"
                       />
@@ -81,7 +80,6 @@ const CreateBlog = () => {
                       onChange={handleChange}
                         name="des"
                         type="text"
-                        id="cWebsite"
                         class="full-width"
                         placeholder="Enter description"
                       />
@@ -91,17 +89,27 @@ const CreateBlog = () => {
                       onChange={handleChange}
                         name="cat"
                         type="text"
-                        id="cWebsite"
                         class="full-width"
                         placeholder="Enter Categories"
                       />
                     </div>
 
+        <label>Enter Date
+                    <div class="form-field">
+                      <input
+                      onChange={handleChange}
+                        name="date"
+                        type="date"
+                        class="half-width"
+                        placeholder="Enter Date"
+                      />
+                    </div>
+                    </label>
+
                     <div class="message form-field">
                       <textarea
                       onChange={handleChange}
-                        name="cMessage"
-                        id="cMessage"
+                        name="message"
                         class="full-width"
                         placeholder="Your Message"
                       ></textarea>
