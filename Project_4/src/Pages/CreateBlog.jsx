@@ -11,7 +11,7 @@ import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 
 const CreateBlog = () => {
-  const [age, setAge] = useState("");
+  // const [age, setAge] = useState("");
 
   const handleChangee = (event) => {
     setAge(event.target.value);
@@ -92,15 +92,17 @@ const CreateBlog = () => {
                         placeholder="Enter description"
                       />
                     </div>
-                    <Box sx={{ minWidth: 120 }}>
+                         <div class="form-field">
+                    <Box >
                       <FormControl fullWidth>
-                        <InputLabel id="demo-simple-select-label">
-                          Age
+                        <InputLabel id="demo-simple-select-label" >
+                        Categories
                         </InputLabel>
                         <Select
+                        class="full-width"
                           labelId="demo-simple-select-label"
                           id="demo-simple-select"
-                          value={age}
+                          // value={age}
                           label="Age"
                           onChange={handleChangee}
                         >
@@ -110,15 +112,14 @@ const CreateBlog = () => {
                         </Select>
                       </FormControl>
                     </Box>
-                    <div class="form-field">
-                      <input
+                      {/*<input
                         onChange={handleChange}
                         name="cat"
                         type="text"
                         class="full-width"
                         placeholder="Enter Categories"
-                      />
-                    </div>
+                      />*/}
+                    </div> 
                     <div class="form-field">
                       <input
                         onChange={handleChange}
