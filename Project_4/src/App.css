@@ -1189,28 +1189,7 @@ body[data-aos-easing="ease-in-sine"] [data-aos] {
   }
 }
 
-/* End: Progress Bar */
 
-/* Start: Fullscreen */
-
-/* End: Fullscreen */
-
-/* Start: Mute/Volume */
-
-/* End: Mute/Volume */
-
-/* Start: Track (Captions and Chapters) */
-
-/* End: Track (Captions and Chapters) */
-
-/* Start: Error */
-
-/* End: Error */
-
-/* ===================================================================
-* # prettyprint GitHub Theme 
-*
-* ------------------------------------------------------------------- */
 .prettyprint {
   background: #e5e5e5;
   font-family: Menlo, "Bitstream Vera Sans Mono", "DejaVu Sans Mono", Monaco,
@@ -1345,9 +1324,6 @@ body {
   padding: 0;
 }
 
-/* ------------------------------------------------------------------- 
-* ## links
-* ------------------------------------------------------------------- */
 a {
   color: #0054a5;
   -webkit-transition: all 0.3s ease-in-out;
@@ -1365,10 +1341,7 @@ a:active {
   outline: 0;
 }
 
-/* ===================================================================
-* # typography & general theme styles
-* 
-* ------------------------------------------------------------------- */
+
 h1,
 h2,
 h3,
