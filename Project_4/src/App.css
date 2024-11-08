@@ -1313,88 +1313,11 @@ body[data-aos-easing="ease-in-sine"] [data-aos] {
   }
 }
 
-/* Specify class=linenums on a pre to get line numbering */
 ol.linenums {
   margin-top: 0;
   margin-bottom: 0;
 }
 
-/* IE indents via margin-left */
-
-/* Alternate shading for lines */
-
-/*# sourceMappingURL=vendor.css.map */
-
-/* =================================================================== 
- *
- *  Philosophy v1.0 Main Stylesheet
- *  1-2-2018
- *  ------------------------------------------------------------------
- *
- *  TOC:
- *  # base style overrides
- *    ## links
- *  # typography & general theme styles
- *    ## Lists
- *    ## responsive video container
- *    ## floated image
- *    ## tables
- *    ## spacing 
- *    ## pace.js styles - minimal
- *  # preloader (line scale)
- *  # forms
- *    ## Style Placeholder Text
- *    ## Change Autocomplete styles in Chrome
- *  # buttons
- *  # additional components
- *    ## alert box
- *    ## additional typo styles
- *    ## pagination
- *  # reusable and common theme styles
- *    ## mediaelement style overrides
- *    ## close button for search and mobile navigation
- *    ## slick slider
- *    ## masonry entries
- *    ## post formats - masonry view
- *  # pageheader
- *    ## header logo
- *    ## header social
- *    ## header-toggle
- *    ## header-search
- *    ## header search trigger
- *    ## main navigation
- *    ## pageheader content
- *    ## feature section animation
- *  # s-content
- *    ## masonry layout
- *  # s-extra
- *    ## popular posts
- *    ## about
- *    ## tags
- *  # footer
- *    ## footer link list
- *    ## subscribe form
- *    ## copyright
- *    ## go to top
- *  # blog styles
- *    ## content main
- *    ## content media
- *    ## post tags
- *    ## author profile
- *    ## blog single page navigation
- *    ## format gallery
- *    ## format video
- *    ## format audio
- *    ## comments
- *  # page styles
- *    ## contact page
- *
- * =================================================================== */
-
-/* ===================================================================
- * # base style overrides
- *
- * ------------------------------------------------------------------- */
 html {
   font-size: 10px;
 }
@@ -3197,10 +3120,6 @@ body.search-is-visible {
   padding-right: 33px;
 }
 
-/* ------------------------------------------------------------------- 
-* responsive:
-* header components
-* ------------------------------------------------------------------- */
 @media only screen and (max-width: 1000px) {
   .header__social {
     font-size: 21px;
@@ -5242,10 +5161,6 @@ footer h4::after {
   margin-top: 3.6rem;
 }
 
-/*!
- *  Font Awesome 4.2.0 by @davegandy - http://fontawesome.io - @fontawesome
- *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
- */
 @font-face {
   font-family: "FontAwesome";
   src: url("../fonts/fontawesome-webfont.eot?v=4.2.0");
