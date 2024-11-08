@@ -1,11 +1,11 @@
-import * as React from 'react';
+import  React from 'react';
 import { useState } from "react";
 import { addData } from "../Redux/Product/action";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, Navigate, useNavigate } from "react-router-dom";
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
-// import Box from '@mui/material/Box';
+import Box from '@mui/material/Box';
 // import InputLabel from '@mui/material/InputLabel';
 // import MenuItem from '@mui/material/MenuItem';
 // import FormControl from '@mui/material/FormControl';
@@ -98,7 +98,7 @@ const CreateBlog = () => {
                         placeholder="Enter description"
                       />
                     </div>
-                    {/* <Box sx={{ minWidth: 120 }}>
+                    <Box sx={{ minWidth: 120 }}>
       <FormControl fullWidth>
         <InputLabel id="demo-simple-select-label">Age</InputLabel>
         <Select
@@ -113,7 +113,7 @@ const CreateBlog = () => {
           <MenuItem value={30}>Thirty</MenuItem>
         </Select>
       </FormControl>
-    </Box> */}
+    </Box>
                     <div class="form-field">
                       <input
                       onChange={handleChange}
