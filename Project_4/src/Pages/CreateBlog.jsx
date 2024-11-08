@@ -93,6 +93,15 @@ const CreateBlog = () => {
                         placeholder="Enter Categories"
                       />
                     </div>
+                    <div class="form-field">
+                      <input
+                      onChange={handleChange}
+                        name="imgURL"
+                        type="text"
+                        class="full-width"
+                        placeholder="Your Image Link"
+                      />
+                    </div>
 
         <label>Enter Date
                     <div class="form-field">
@@ -106,14 +115,7 @@ const CreateBlog = () => {
                     </div>
                     </label>
 
-                    <div class="message form-field">
-                      <textarea
-                      onChange={handleChange}
-                        name="message"
-                        class="full-width"
-                        placeholder="Your Message"
-                      ></textarea>
-                    </div>
+                    
 
                     <button
                       type="submit"
