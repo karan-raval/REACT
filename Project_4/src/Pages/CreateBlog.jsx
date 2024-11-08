@@ -1,20 +1,19 @@
-import {React, useState } from "react";
+import { React, useState } from "react";
 import { addData } from "../Redux/Product/action";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, Navigate, useNavigate } from "react-router-dom";
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
-import Box from '@mui/material/Box';
-import InputLabel from '@mui/material/InputLabel';
-import MenuItem from '@mui/material/MenuItem';
-import FormControl from '@mui/material/FormControl';
-import Select from '@mui/material/Select';
+import Box from "@mui/material/Box";
+import InputLabel from "@mui/material/InputLabel";
+import MenuItem from "@mui/material/MenuItem";
+import FormControl from "@mui/material/FormControl";
+import Select from "@mui/material/Select";
 
 const CreateBlog = () => {
-  
-  const [age, setAge] = useState('');
+  const [age, setAge] = useState("");
 
-   const handleChangee = (event) => {
+  const handleChangee = (event) => {
     setAge(event.target.value);
   };
 
@@ -62,14 +61,11 @@ const CreateBlog = () => {
               <div class="respond">
                 <h3 class="h2">Write Your Blog </h3>
 
-                <form
-                onSubmit={handleSubmit}
-                  id="contactForm"
-                >
+                <form onSubmit={handleSubmit} id="contactForm">
                   <fieldset>
                     <div class="form-field">
                       <input
-                      onChange={handleChange}
+                        onChange={handleChange}
                         name="name"
                         type="text"
                         class="full-width"
@@ -79,7 +75,7 @@ const CreateBlog = () => {
 
                     <div class="form-field">
                       <input
-                      onChange={handleChange}
+                        onChange={handleChange}
                         name="heading"
                         type="text"
                         class="full-width"
@@ -89,7 +85,7 @@ const CreateBlog = () => {
 
                     <div class="form-field">
                       <input
-                      onChange={handleChange}
+                        onChange={handleChange}
                         name="des"
                         type="text"
                         class="full-width"
@@ -97,24 +93,26 @@ const CreateBlog = () => {
                       />
                     </div>
                     <Box sx={{ minWidth: 120 }}>
-      <FormControl fullWidth>
-        <InputLabel id="demo-simple-select-label">Age</InputLabel>
-        <Select
-          labelId="demo-simple-select-label"
-          id="demo-simple-select"
-          value={age}
-          label="Age"
-          onChange={handleChangee}
-        >
-          <MenuItem value={10}>Ten</MenuItem>
-          <MenuItem value={20}>Twenty</MenuItem>
-          <MenuItem value={30}>Thirty</MenuItem>
-        </Select>
-      </FormControl>
-    </Box>
+                      <FormControl fullWidth>
+                        <InputLabel id="demo-simple-select-label">
+                          Age
+                        </InputLabel>
+                        <Select
+                          labelId="demo-simple-select-label"
+                          id="demo-simple-select"
+                          value={age}
+                          label="Age"
+                          onChange={handleChangee}
+                        >
+                          <MenuItem value={10}>Ten</MenuItem>
+                          <MenuItem value={20}>Twenty</MenuItem>
+                          <MenuItem value={30}>Thirty</MenuItem>
+                        </Select>
+                      </FormControl>
+                    </Box>
                     <div class="form-field">
                       <input
-                      onChange={handleChange}
+                        onChange={handleChange}
                         name="cat"
                         type="text"
                         class="full-width"
@@ -123,7 +121,7 @@ const CreateBlog = () => {
                     </div>
                     <div class="form-field">
                       <input
-                      onChange={handleChange}
+                        onChange={handleChange}
                         name="imgURL"
                         type="text"
                         class="full-width"
@@ -131,19 +129,18 @@ const CreateBlog = () => {
                       />
                     </div>
 
-        <label>Enter Date
-                    <div class="form-field">
-                      <input
-                      onChange={handleChange}
-                        name="date"
-                        type="date"
-                        class="half-width"
-                        placeholder="Enter Date"
-                      />
-                    </div>
+                    <label>
+                      Enter Date
+                      <div class="form-field">
+                        <input
+                          onChange={handleChange}
+                          name="date"
+                          type="date"
+                          class="half-width"
+                          placeholder="Enter Date"
+                        />
+                      </div>
                     </label>
-
-                    
 
                     <button
                       type="submit"
