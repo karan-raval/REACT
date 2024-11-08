@@ -7437,78 +7437,121 @@ footer h4::after {
 .bg3 {
   background-image: url("./assets/images/featured-beetle.jpg");
 }
-#sy1{
+#sy1 {
   position: absolute;
-   left: 33.3333%;
-   top: 2181px
-  }
-#sy2{
-  position: absolute; 
-  left: 0%; 
-  top: 1980px
+  left: 33.3333%;
+  top: 2181px;
 }
-#sy3{
+#sy2 {
+  position: absolute;
+  left: 0%;
+  top: 1980px;
+}
+#sy3 {
   position: relative;
-   height: 3554.44px
+  height: 3554.44px;
 }
-#sy4{
-  position: absolute; left: 0%;
-   top: 0px
+#sy4 {
+  position: absolute;
+  left: 0%;
+  top: 0px;
 }
-#sy5{
-  position: absolute; left: 33.3333%; top: 0px
+#sy5 {
+  position: absolute;
+  left: 33.3333%;
+  top: 0px;
 }
-#sy6{
-  position: absolute; left: 66.6667%; top: 0px
+#sy6 {
+  position: absolute;
+  left: 66.6667%;
+  top: 0px;
 }
-#sy7{
-  position: absolute; left: 33.3333%; top: 559px
+#sy7 {
+  position: absolute;
+  left: 33.3333%;
+  top: 559px;
 }
-#sy8{
-  position: absolute; left: 66.6667%; top: 763px
+#sy8 {
+  position: absolute;
+  left: 66.6667%;
+  top: 763px;
 }
-#sy9{
-  position: absolute; left: 0%; top: 811px
+#sy9 {
+  position: absolute;
+  left: 0%;
+  top: 811px;
 }
-#sy10{
-  position: absolute; left: 33.3333%; top: 1322px
+#sy10 {
+  position: absolute;
+  left: 33.3333%;
+  top: 1322px;
 }
-#sy11{
-  opacity: 1; width: 960px
+#sy11 {
+  opacity: 1;
+  width: 960px;
 }
-#sy12{
-  width: 320px; position: relative; left: -320px; top: 0px; z-index: 998; opacity: 0
+#sy12 {
+  width: 320px;
+  position: relative;
+  left: -320px;
+  top: 0px;
+  z-index: 998;
+  opacity: 0;
 }
-#sy13{
-  width: 320px; position: relative; left: -640px; top: 0px; z-index: 998; opacity: 0
+#sy13 {
+  width: 320px;
+  position: relative;
+  left: -640px;
+  top: 0px;
+  z-index: 998;
+  opacity: 0;
 }
-#sy14{
-  position: absolute; left: 66.6667%; top: 1526px
+#sy14 {
+  position: absolute;
+  left: 66.6667%;
+  top: 1526px;
 }
-#sy15{
-  width: 100%; height: 42px; min-width: 1.67772e+08px
+#sy15 {
+  width: 100%;
+  height: 42px;
+  min-width: 1.67772e8px;
 }
-#sy16{
-  position: absolute; left: 0%; top: 1574px
+#sy16 {
+  position: absolute;
+  left: 0%;
+  top: 1574px;
 }
-#sy17{
-  position: absolute; left: 66.6667%; top: 2403px
+#sy17 {
+  position: absolute;
+  left: 66.6667%;
+  top: 2403px;
 }
-#sy18{
-  position: absolute; left: 0%; top: 2791px
+#sy18 {
+  position: absolute;
+  left: 0%;
+  top: 2791px;
 }
-#sy19{
-  left: 100%; margin-left: -1.67772e+07px
+#sy19 {
+  left: 100%;
+  margin-left: -1.67772e7px;
 }
-#sy20{
-  left: 0px; width: 100%
+#sy20 {
+  left: 0px;
+  width: 100%;
 }
-#sy21{
-  display: none
+#sy21 {
+  display: none;
 }
-#sy22{
-  display: none; width: 100%; height: 42px
+#sy22 {
+  display: none;
+  width: 100%;
+  height: 42px;
 }
-#sy23{
-  width: 320px; position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1
+#sy23 {
+  width: 320px;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  z-index: 999;
+  opacity: 1;
 }
