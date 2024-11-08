@@ -1,24 +1,22 @@
-import  React from 'react';
-import { useState } from "react";
+import {React, useState } from "react";
 import { addData } from "../Redux/Product/action";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, Navigate, useNavigate } from "react-router-dom";
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
 import Box from '@mui/material/Box';
-// import InputLabel from '@mui/material/InputLabel';
-// import MenuItem from '@mui/material/MenuItem';
-// import FormControl from '@mui/material/FormControl';
-// import Select, { SelectChangeEvent } from '@mui/material/Select';
+import InputLabel from '@mui/material/InputLabel';
+import MenuItem from '@mui/material/MenuItem';
+import FormControl from '@mui/material/FormControl';
+import Select from '@mui/material/Select';
 
 const CreateBlog = () => {
   
-  // const [age, setAge] = React.useState('');
+  const [age, setAge] = useState('');
 
-  // const handleChange = (event: SelectChangeEvent) => {
-    // setAge(event.target.value as string);
-  // };
-
+   const handleChangee = (event) => {
+    setAge(event.target.value);
+  };
 
   const dispatch = useDispatch();
   const state = useSelector((s) => s.proReducer);
@@ -106,7 +104,7 @@ const CreateBlog = () => {
           id="demo-simple-select"
           value={age}
           label="Age"
-          onChange={handleChange}
+          onChange={handleChangee}
         >
           <MenuItem value={10}>Ten</MenuItem>
           <MenuItem value={20}>Twenty</MenuItem>
