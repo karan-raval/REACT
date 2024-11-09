@@ -11,6 +11,30 @@ import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 
 const CreateBlog = () => {
+  // Get the current date
+const today = new Date();
+
+// Array of month names
+const monthNames = [
+  "January", "February", "March", "April", "May", "June", "July",
+  "August", "September", "October", "November", "December"
+];
+
+// Get the current month name
+const month = monthNames[today.getMonth()];
+
+// Get the current day and year
+const date = today.getDate();
+const year = today.getFullYear();
+
+ let all=date+" "+month+" "+year  
+
+let obj={
+  date:all
+}
+
+// document.write(`${obj.date}`)
+
   // const [age, setAge] = useState("");
 
   const handleChangee = (event) => {
