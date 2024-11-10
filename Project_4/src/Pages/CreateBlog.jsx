@@ -25,7 +25,7 @@ const year = today.getFullYear();
 
  let all=date+" "+month+" "+year  
 
-let obj={
+let Date={
   date:all
 }
 
@@ -62,6 +62,7 @@ let obj={
       strikedOffPrice,
       category,
       imageURL,
+      Date,
     };
 
     dispatch(addData)(obj);
