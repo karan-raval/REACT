@@ -40,12 +40,10 @@ let Datee={
   const navigate = useNavigate();
   console.log(state);
   const [fromdata, setState] = useState({
-    name: "",
-    brand: "",
-    price: "",
-    strikedOffPrice: "",
-    category: "",
-    imageURL: "",
+    namee: "",
+    heading: "",
+    des: "",
+    imgURL: "",
   });
 
   const handleChange = (e) => {
@@ -56,12 +54,10 @@ let Datee={
   const handleSubmit = (e) => {
     e.preventDefault();
     let obj = {
-      product,
-      brand,
-      price,
-      strikedOffPrice,
-      category,
-      imageURL,
+      namee,
+      heading,
+      des,
+      imgURL,
       Datee,
     };
 
@@ -85,7 +81,9 @@ let Datee={
                     <div class="form-field">
                       <input
                         onChange={handleChange}
-                        name="name"
+                        name="namee"
+                        value={namee}
+                        // name="namee"
                         type="text"
                         class="full-width"
                         placeholder="Your Name"
@@ -96,6 +94,7 @@ let Datee={
                       <input
                         onChange={handleChange}
                         name="heading"
+                        value={heading}
                         type="text"
                         class="full-width"
                         placeholder="Enter Heading"
@@ -105,6 +104,7 @@ let Datee={
                     <div class="form-field">
                       <input
                         onChange={handleChange}
+                        value={des}
                         name="des"
                         type="text"
                         class="full-width"
@@ -142,6 +142,7 @@ let Datee={
                     <div class="form-field">
                       <input
                         onChange={handleChange}
+                        value={imgURL}
                         name="imgURL"
                         type="text"
                         class="full-width"
