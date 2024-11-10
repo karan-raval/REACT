@@ -25,7 +25,7 @@ const year = today.getFullYear();
 
  let all=date+" "+month+" "+year  
 
-let Date={
+let Datee={
   date:all
 }
 
@@ -62,7 +62,7 @@ let Date={
       strikedOffPrice,
       category,
       imageURL,
-      Date,
+      Datee,
     };
 
     dispatch(addData)(obj);
@@ -149,7 +149,7 @@ let Date={
                       />
                     </div>
 
-                    <label>
+                    {/* <label>
                       Enter Date
                       <div class="form-field">
                         <input
@@ -160,7 +160,7 @@ let Date={
                           placeholder="Enter Date"
                         />
                       </div>
-                    </label>
+                    </label> */}
 
                     <button
                       type="submit"
