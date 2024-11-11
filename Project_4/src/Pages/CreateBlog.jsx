@@ -37,9 +37,6 @@ const CreateBlog = () => {
 
   let all = date + " " + month + " " + year;
 
-  // let Datee = {
-  //   date: all,
-  // };
 
   const handleChangee = (event) => {
     setAge(event.target.value);
