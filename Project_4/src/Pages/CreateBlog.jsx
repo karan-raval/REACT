@@ -11,25 +11,33 @@ import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 
 const CreateBlog = () => {
-const today = new Date();
+  const today = new Date();
 
-const monthNames = [
-  "January", "February", "March", "April", "May", "June", "July",
-  "August", "September", "October", "November", "December"
-];
+  const monthNames = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
 
-const month = monthNames[today.getMonth()];
+  const month = monthNames[today.getMonth()];
 
-const date = today.getDate();
-const year = today.getFullYear();
+  const date = today.getDate();
+  const year = today.getFullYear();
 
- let all=date+" "+month+" "+year  
+  let all = date + " " + month + " " + year;
 
-let Datee={
-  date:all
-}
-
-
+  let Datee = {
+    date: all,
+  };
 
   const handleChangee = (event) => {
     setAge(event.target.value);
@@ -83,7 +91,6 @@ let Datee={
                         onChange={handleChange}
                         value={blogname}
                         name="blogname"
-                        // name="namee"
                         type="text"
                         class="full-width"
                         placeholder="Your Name"
@@ -111,26 +118,26 @@ let Datee={
                         placeholder="Enter description"
                       />
                     </div>
-                         <div class="form-field">
-                    <Box >
-                      <FormControl fullWidth>
-                        <InputLabel id="demo-simple-select-label" >
-                        Categories
-                        </InputLabel>
-                        <Select
-                        class="full-width"
-                          labelId="demo-simple-select-label"
-                          id="demo-simple-select"
-                          // value={age}
-                          label="Age"
-                          onChange={handleChangee}
-                        >
-                          <MenuItem value={10}>Ten</MenuItem>
-                          <MenuItem value={20}>Twenty</MenuItem>
-                          <MenuItem value={30}>Thirty</MenuItem>
-                        </Select>
-                      </FormControl>
-                    </Box>
+                    <div class="form-field">
+                      <Box>
+                        <FormControl fullWidth>
+                          <InputLabel id="demo-simple-select-label">
+                            Categories
+                          </InputLabel>
+                          <Select
+                            class="full-width"
+                            labelId="demo-simple-select-label"
+                            id="demo-simple-select"
+                            // value={age}
+                            label="Age"
+                            onChange={handleChangee}
+                          >
+                            <MenuItem value={10}>Ten</MenuItem>
+                            <MenuItem value={20}>Twenty</MenuItem>
+                            <MenuItem value={30}>Thirty</MenuItem>
+                          </Select>
+                        </FormControl>
+                      </Box>
                       {/*<input
                         onChange={handleChange}
                         name="cat"
@@ -138,7 +145,7 @@ let Datee={
                         class="full-width"
                         placeholder="Enter Categories"
                       />*/}
-                    </div> 
+                    </div>
                     <div class="form-field">
                       <input
                         onChange={handleChange}
@@ -149,19 +156,6 @@ let Datee={
                         placeholder="Your Image Link"
                       />
                     </div>
-
-                    {/* <label>
-                      Enter Date
-                      <div class="form-field">
-                        <input
-                          onChange={handleChange}
-                          name="date"
-                          type="date"
-                          class="half-width"
-                          placeholder="Enter Date"
-                        />
-                      </div>
-                    </label> */}
 
                     <button
                       type="submit"
