@@ -74,7 +74,7 @@ const CreateBlog = () => {
     };
 
     dispatch(addData)(obj);
-    navigate("/product");
+    navigate("/");
   };
 
   let { blogname, heading, des, imgURL } = fromdata;
@@ -129,7 +129,7 @@ const CreateBlog = () => {
                             Categories
                           </InputLabel>
                           <Select
-                            class="full-width"
+                            class="full-width font"
                             labelId="demo-simple-select-label"
                             id="demo-simple-select"
                             onChange={handleSort}
