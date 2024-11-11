@@ -40,7 +40,7 @@ let Datee={
   const navigate = useNavigate();
   console.log(state);
   const [fromdata, setState] = useState({
-    namee: "",
+    blogname: "",
     heading: "",
     des: "",
     imgURL: "",
@@ -54,7 +54,7 @@ let Datee={
   const handleSubmit = (e) => {
     e.preventDefault();
     let obj = {
-      namee,
+      blogname,
       heading,
       des,
       imgURL,
@@ -65,7 +65,7 @@ let Datee={
     navigate("/product");
   };
 
-  // let { product, brand, price, strikedOffPrice, category, imageURL } = fromdata;
+  let { blogname, heading, des, imgURL } = fromdata;
   return (
     <>
       <Header />
@@ -81,8 +81,8 @@ let Datee={
                     <div class="form-field">
                       <input
                         onChange={handleChange}
-                        name="namee"
-                        value={namee}
+                        value={blogname}
+                        name="blogname"
                         // name="namee"
                         type="text"
                         class="full-width"
