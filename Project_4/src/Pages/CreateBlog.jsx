@@ -88,7 +88,7 @@ const CreateBlog = () => {
               <div className="respond">
                 <h3 className="h2">Write Your Blog </h3>
 
-                <form onSubmit={handleSubmit} id="contactForm">
+                <form onSubmit={handleSubmit}>
                   <fieldset>
                     <div className="form-field">
                       <input
@@ -123,13 +123,13 @@ const CreateBlog = () => {
                       />
                     </div>
                     <div className="form-field">
-                      <Box className="font">
+                      <Box className="h2">
                         <FormControl fullWidth>
-                          <InputLabel id="demo-simple-select-label">
+                          <InputLabel >
                             Categories
                           </InputLabel>
                           <Select
-                            className="full-width "
+                            
                             onChange={handleSort}
                           >
                             <MenuItem value={"Lifestyle"}>Lifestyle</MenuItem>
