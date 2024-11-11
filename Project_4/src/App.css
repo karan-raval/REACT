@@ -2336,10 +2336,6 @@ input::-moz-focus-inner {
   background-image: url("../images/icon-arrow-right-w.svg");
 }
 
-/* ------------------------------------------------------------------- 
-* responsive:
-* pagination
-* ------------------------------------------------------------------- */
 @media only screen and (max-width: 600px) {
   .pgn ul {
     padding: 0 5rem;
@@ -2354,22 +2350,10 @@ input::-moz-focus-inner {
   }
 }
 
-/* ===================================================================
-* # reusable and common theme styles
-*
-* ------------------------------------------------------------------- */
-
 .narrow {
   max-width: 800px;
 }
 
-/* ------------------------------------------------------------------- 
-* ## mediaelement style overrides
-* ------------------------------------------------------------------- */
-
-/* ------------------------------------------------------------------- 
-* ## close button for search and mobile navigation 
-* ------------------------------------------------------------------- */
 .header__overlay-close {
   position: absolute;
   display: block;
@@ -2407,9 +2391,6 @@ input::-moz-focus-inner {
   transform: rotate(-45deg);
 }
 
-/* ------------------------------------------------------------------- 
-* ## slick slider 
-* ------------------------------------------------------------------- */
 .slick-slider .slick-slide {
   outline: none;
 }
@@ -2461,9 +2442,6 @@ input::-moz-focus-inner {
   background: #ffffff;
 }
 
-/* ------------------------------------------------------------------- 
-* ## masonry entries 
-* ------------------------------------------------------------------- */
 .masonry .entry {
   margin-bottom: 40px;
 }
@@ -2606,12 +2584,6 @@ input::-moz-focus-inner {
   display: none;
 }
 
-/* ------------------------------------------------------------------- 
-*  ## post formats - masonry view
-* ------------------------------------------------------------------- */
-
-/* format quote & format link
-* --------------------------------------- */
 .format-quote,
 .format-link {
   text-align: center;
@@ -2715,8 +2687,6 @@ input::-moz-focus-inner {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-/* format video
-* --------------------------------------- */
 .format-video .entry__thumb a {
   cursor: zoom-in;
   display: block;
@@ -2742,10 +2712,6 @@ input::-moz-focus-inner {
   background-size: contain;
 }
 
-/* ===================================================================
-* # pageheader
-*
-* ------------------------------------------------------------------- */
 .s-pageheader {
   min-height: 174px;
   background-image: url(./assets/images/hero-bg.jpg);
@@ -2789,9 +2755,6 @@ input::-moz-focus-inner {
   max-width: 1350px;
 }
 
-/* -------------------------------------------------------------------
-* ## header logo
-* ------------------------------------------------------------------- */
 .header__logo {
   display: inline-block;
   margin: 0;
@@ -2814,9 +2777,6 @@ input::-moz-focus-inner {
   height: 48px;
 }
 
-/* -------------------------------------------------------------------
-* ## header social
-* ------------------------------------------------------------------- */
 .header__social {
   list-style: none;
   font-size: 23px;
@@ -2842,9 +2802,6 @@ input::-moz-focus-inner {
   margin-right: 0;
 }
 
-/* ------------------------------------------------------------------- 
-* ## header-toggle
-* ------------------------------------------------------------------- */
 .header__toggle-menu {
   display: none;
   width: 40px;
@@ -2865,7 +2822,6 @@ input::-moz-focus-inner {
   bottom: auto;
   left: auto;
   background-color: white;
-  -webkit-transition: background 0.2s ease-in-out;
   transition: background 0.2s ease-in-out;
   font: 0/0 a;
   text-shadow: none;
@@ -2890,9 +2846,6 @@ input::-moz-focus-inner {
   bottom: -8px;
 }
 
-/* ------------------------------------------------------------------- 
-* ## header-search
-* ------------------------------------------------------------------- */
 .header__search {
   display: block;
   text-align: center;
