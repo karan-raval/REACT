@@ -3232,10 +3232,6 @@ body.search-is-visible {
   transform: translate3d(0, 0, 0);
 }
 
-/* ------------------------------------------------------------------- 
-* responsive:
-* main navigation
-* ------------------------------------------------------------------- */
 @media only screen and (min-width: 801px) {
   .header__nav li.has-children:hover > a::after,
   .header__nav li.has-children:focus > a::after {
@@ -3337,9 +3333,6 @@ body.search-is-visible {
   }
 }
 
-/* -------------------------------------------------------------------
-* ## pageheader content
-* ------------------------------------------------------------------- */
 .featured {
   background-color: #151515;
   height: 564px;
