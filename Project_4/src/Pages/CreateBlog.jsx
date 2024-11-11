@@ -11,6 +11,8 @@ import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 
 const CreateBlog = () => {
+  const [sort, setSort] = useState("");
+
   const today = new Date();
 
   const monthNames = [
@@ -35,9 +37,9 @@ const CreateBlog = () => {
 
   let all = date + " " + month + " " + year;
 
-  let Datee = {
-    date: all,
-  };
+  // let Datee = {
+  //   date: all,
+  // };
 
   const handleChangee = (event) => {
     setAge(event.target.value);
@@ -59,6 +61,10 @@ const CreateBlog = () => {
     setState({ ...fromdata, [name]: value });
   };
 
+  const handleSort = (e) => {
+    setSort(e.target.value);
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     let obj = {
@@ -66,7 +72,8 @@ const CreateBlog = () => {
       heading,
       des,
       imgURL,
-      Datee,
+      all,
+      sort,
     };
 
     dispatch(addData)(obj);
@@ -128,13 +135,14 @@ const CreateBlog = () => {
                             class="full-width"
                             labelId="demo-simple-select-label"
                             id="demo-simple-select"
-                            // value={age}
-                            label="Age"
-                            onChange={handleChangee}
+                            onChange={handleSort}
                           >
-                            <MenuItem value={10}>Ten</MenuItem>
-                            <MenuItem value={20}>Twenty</MenuItem>
-                            <MenuItem value={30}>Thirty</MenuItem>
+                            <MenuItem value={"Lifestyle"}>Lifestyle</MenuItem>
+                            <MenuItem value={"Health"}>Health</MenuItem>
+                            <MenuItem value={"Family"}>Family</MenuItem>
+                            <MenuItem value={"Management"}>Management</MenuItem>
+                            <MenuItem value={"Travel"}>Travel</MenuItem>
+                            <MenuItem value={"Work"}>Work</MenuItem>
                           </Select>
                         </FormControl>
                       </Box>
