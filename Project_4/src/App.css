@@ -1741,9 +1741,7 @@ td:last-child {
   -webkit-overflow-scrolling: touch;
 }
 
-/* ------------------------------------------------------------------- 
-* ## spacing 
-* ------------------------------------------------------------------- */
+
 button,
 .btn {
   margin-bottom: 1.2rem;
@@ -1769,9 +1767,6 @@ form,
   margin-bottom: 3rem;
 }
 
-/* ------------------------------------------------------------------- 
-* ## pace.js styles - minimal
-* ------------------------------------------------------------------- */
 .pace {
   -webkit-pointer-events: none;
   pointer-events: none;
@@ -1794,10 +1789,6 @@ form,
   height: 4px;
 }
 
-/* ===================================================================
-* # preloader (line scale)
-*
-* ------------------------------------------------------------------- */
 #preloader {
   position: fixed;
   top: 0;
@@ -1875,10 +1866,7 @@ form,
   }
 }
 
-/* ===================================================================
-* # forms
-*
-* ------------------------------------------------------------------- */
+
 fieldset {
   border: none;
 }
@@ -2007,17 +1995,10 @@ label > input[type="radio"] {
   top: 0.15rem;
 }
 
-/* ------------------------------------------------------------------- 
-* ## Style Placeholder Text
-* ------------------------------------------------------------------- */
-
 .placeholder {
   color: #6d6d6d !important;
 }
 
-/* ------------------------------------------------------------------- 
-* ## Change Autocomplete styles in Chrome
-* ------------------------------------------------------------------- */
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus input:-webkit-autofill,
@@ -2030,10 +2011,6 @@ select:-webkit-autofill:focus {
   transition: background-color 5000s ease-in-out 0s;
 }
 
-/* ===================================================================
-* # buttons
-*
-* ------------------------------------------------------------------- */
 .btn,
 button,
 input[type="submit"],
@@ -2135,14 +2112,6 @@ input::-moz-focus-inner {
   padding: 0;
 }
 
-/* =================================================================== 
-* # additional components
-*
-* ------------------------------------------------------------------- */
-
-/* ------------------------------------------------------------------- 
-* ## alert box
-* ------------------------------------------------------------------- */
 .alert-box {
   padding: 2.1rem 4rem 2.1rem 3rem;
   position: relative;
@@ -2184,12 +2153,6 @@ input::-moz-focus-inner {
   color: #bba31b;
 }
 
-/* ------------------------------------------------------------------- 
-* ## additional typo styles
-* ------------------------------------------------------------------- */
-
-/* drop cap 
-* ----------------------------------------------- */
 .drop-cap::first-letter {
   float: left;
   margin: 0;
@@ -2203,24 +2166,6 @@ input::-moz-focus-inner {
   color: #000000;
 }
 
-/* line definition style 
-* ----------------------------------------------- */
-
-/* dictionary definition style 
-* ----------------------------------------------- */
-
-/** 
-* Pull Quotes
-* -----------
-* markup:
-*
-* <aside class="pull-quote">
-*    <blockquote>
-*       <p></p>
-*    </blockquote>
-* </aside>
-*
-* --------------------------------------------------------------------- */
 .pull-quote {
   position: relative;
   padding: 2.1rem 3rem 2.1rem 0px;
@@ -2255,18 +2200,6 @@ input::-moz-focus-inner {
   content: none;
 }
 
-/** 
-* Stats Tab
-* ---------
-* markup:
-*
-* <ul class="stats-tabs">
-*    <li><a href="#">[value]<em>[name]</em></a></li>
-* </ul>
-*
-* Extend this object into your markup.
-*
-* --------------------------------------------------------------------- */
 .stats-tabs {
   padding: 0;
   margin: 3rem 0;
@@ -2306,9 +2239,6 @@ input::-moz-focus-inner {
   color: #727272;
 }
 
-/* -------------------------------------------------------------------
-* ## pagination 
-* ------------------------------------------------------------------- */
 .pgn {
   margin: 3rem auto;
   text-align: center;
