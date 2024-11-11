@@ -81,57 +81,55 @@ const CreateBlog = () => {
   return (
     <>
       <Header />
-      <section class="s-content--narrow">
-        <div class="comments-wrapp">
-          <div id="comments" class="row">
-            <div class="col-full">
-              <div class="respond">
-                <h3 class="h2">Write Your Blog </h3>
+      <section className="s-content--narrow">
+        <div className="comments-wrapp">
+          <div id="comments" className="row">
+            <div className="col-full">
+              <div className="respond">
+                <h3 className="h2">Write Your Blog </h3>
 
                 <form onSubmit={handleSubmit} id="contactForm">
                   <fieldset>
-                    <div class="form-field">
+                    <div className="form-field">
                       <input
                         onChange={handleChange}
                         value={blogname}
                         name="blogname"
                         type="text"
-                        class="full-width"
+                        className="full-width"
                         placeholder="Your Name"
                       />
                     </div>
 
-                    <div class="form-field">
+                    <div className="form-field">
                       <input
                         onChange={handleChange}
                         name="heading"
                         value={heading}
                         type="text"
-                        class="full-width"
+                        className="full-width"
                         placeholder="Enter Heading"
                       />
                     </div>
 
-                    <div class="form-field">
+                    <div className="form-field">
                       <input
                         onChange={handleChange}
                         value={des}
                         name="des"
                         type="text"
-                        class="full-width"
+                        className="full-width"
                         placeholder="Enter description"
                       />
                     </div>
-                    <div class="form-field">
-                      <Box>
+                    <div className="form-field">
+                      <Box className="font">
                         <FormControl fullWidth>
                           <InputLabel id="demo-simple-select-label">
                             Categories
                           </InputLabel>
                           <Select
-                            class="full-width font"
-                            labelId="demo-simple-select-label"
-                            id="demo-simple-select"
+                            className="full-width "
                             onChange={handleSort}
                           >
                             <MenuItem value={"Lifestyle"}>Lifestyle</MenuItem>
@@ -145,20 +143,20 @@ const CreateBlog = () => {
                       </Box>
                       
                     </div>
-                    <div class="form-field">
+                    <div className="form-field">
                       <input
                         onChange={handleChange}
                         value={imgURL}
                         name="imgURL"
                         type="text"
-                        class="full-width"
+                        className="full-width"
                         placeholder="Your Image Link"
                       />
                     </div>
 
                     <button
                       type="submit"
-                      class="submit btn--primary btn--large full-width"
+                      className="submit btn--primary btn--large full-width"
                     >
                       Submit
                     </button>
