@@ -143,13 +143,7 @@ const CreateBlog = () => {
                           </Select>
                         </FormControl>
                       </Box>
-                      {/*<input
-                        onChange={handleChange}
-                        name="cat"
-                        type="text"
-                        class="full-width"
-                        placeholder="Enter Categories"
-                      />*/}
+                      
                     </div>
                     <div class="form-field">
                       <input
