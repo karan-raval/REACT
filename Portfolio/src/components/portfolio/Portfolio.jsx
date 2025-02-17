@@ -33,14 +33,6 @@ const Menu = [
     url: "https://profound-gumption-fd67b9.netlify.app",
     repositoryUrl: "https://github.com/karan-raval/BOOTSTRAP-WEBSITE-2-PROJECT",
   },
-//   {
-//     id: 4,
-//     image: Work4,
-//     title: "Wallhaven CLI",
-//     category: ["Backend"],
-//     url: "https://www.npmjs.com/package/wallhaven-cli",
-//     repositoryUrl: "https://github.com/GregSithole/wallhaven-cli",
-//   },
   {
     id: 5,
     image: Work4,

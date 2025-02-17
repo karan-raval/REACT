@@ -8,7 +8,7 @@ import { addDoc, collection, getDocs } from 'firebase/firestore';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'
 const Signup = () => {
-   const [email, setEmail] = useState("");
+  const [email, setEmail] = useState("");
   const [pass, setPass] = useState("");
   const [name, setname] = useState("");
   const UserCollection = collection(db, "users");

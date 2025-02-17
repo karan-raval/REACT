@@ -38,7 +38,7 @@ const Education = () => {
                                 <img src={img}  className="logo" />
                                 <br />
                                 <br />
-                                    <h2 className="tab__panel-title">
+                                <h2 className="tab__panel-title">
                                      {company} @ {title} 
                                 </h2>
                                 <p className="tab__panel-subtitle">{yearsActive}</p>

@@ -37,6 +37,7 @@ import { SiAuth0 } from "react-icons/si";
 import { BsRegex } from "react-icons/bs";
 import { FaCloudflare } from "react-icons/fa6";
 import { SiMongoose } from "react-icons/si";
+import { FaDev } from "react-icons/fa";
 
 const IconComponent = ({ icon: Icon, name, color, hoverColor }) => {
   return (
@@ -77,12 +78,12 @@ const WorkExperience = [
         color="white"
         hoverColor="#21a1f1"
       />,
-      <IconComponent
-        icon={FaBootstrap}
-        name="Bootstrap"
-        color="white"
-        hoverColor="#21a1f1"
-      />,
+      // <IconComponent
+      //   icon={FaBootstrap}
+      //   name="Bootstrap"
+      //   color="white"
+      //   hoverColor="#21a1f1"
+      // />,
       <IconComponent
         icon={RiTailwindCssFill}
         name="Tailwind css"
@@ -224,17 +225,24 @@ const WorkExperience = [
         hoverColor="#21a1f1"
       />,
       <IconComponent
-        icon={FiCodesandbox}
-        name="Code Sandbox"
+        icon={FaDev}
+        name="Dev C++"
         color="white"
         hoverColor="#21a1f1"
       />,
+      
       <IconComponent
         icon={FaGitAlt}
         name="Git"
         color="white"
         hoverColor="#21a1f1"
       />,
+      <IconComponent
+      icon={FiCodesandbox}
+      name="Code Sandbox"
+      color="white"
+      hoverColor="#21a1f1"
+    />,
       <IconComponent
         icon={FaGithub}
         name="Github"
@@ -247,12 +255,7 @@ const WorkExperience = [
         color="white"
         hoverColor="#21a1f1"
       />,
-      <IconComponent
-        icon={SiVercel}
-        name="Vercel"
-        color="white"
-        hoverColor="#21a1f1"
-      />,
+
       <IconComponent
         icon={SiRender}
         name="Render"
@@ -274,6 +277,12 @@ const WorkExperience = [
       <IconComponent
         icon={BsRegex}
         name="Regex"
+        color="white"
+        hoverColor="#21a1f1"
+      />,
+      <IconComponent
+        icon={SiVercel}
+        name="Vercel"
         color="white"
         hoverColor="#21a1f1"
       />,

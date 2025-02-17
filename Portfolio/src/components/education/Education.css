@@ -123,3 +123,9 @@
 [data-theme="dark"] .tab__panel-subtitle {
   color: #f8f9fa;
 }
+
+@media screen and (max-width: 400px) {
+  .logo{
+margin-left: 15%;
+}
+}
